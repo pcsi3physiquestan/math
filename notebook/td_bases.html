@@ -1,0 +1,550 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TD Bases &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/td_bases.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TD Calcul littéral" href="td_litteral.html" />
+    <link rel="prev" title="Exercices" href="td_math_1.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/td_bases.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/td_bases.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/td_bases.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-equations">
+   TD Equations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equation-du-second-degre-equations-numeriques">
+     Equation du second degré: Equations numériques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equations-diverses-equations-numeriques">
+     Equations diverses: Equations numériques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#systemes-d-equations">
+     Systèmes d’équations
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-etude-de-fonctions">
+   TD Etude de fonctions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limites-de-fonctions">
+     Limites de fonctions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#representation-graphique">
+     Représentation graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-nombres-complexes">
+   TD Nombres complexes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#complexes-representation-graphique">
+     Complexes: Représentation graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="td-bases">
+<h1>TD Bases<a class="headerlink" href="#td-bases" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="td-equations">
+<h2>TD Equations<a class="headerlink" href="#td-equations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="equation-du-second-degre-equations-numeriques">
+<h3>Equation du second degré: Equations numériques<a class="headerlink" href="#equation-du-second-degre-equations-numeriques" title="Permalink to this headline">¶</a></h3>
+<p>Résoudre les équations ou inéquations suivantes (l’inconnue est toujours <span class="math notranslate nohighlight">\(x\)</span>):</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(x^2+3x-1=0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((x-3)(x-4)=1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((x-3)(x-4)=0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^2+x=-1\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(x^2+2x-3 &lt; 0\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\((x-3)(x-4)&gt;1\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="equations-diverses-equations-numeriques">
+<h3>Equations diverses: Equations numériques<a class="headerlink" href="#equations-diverses-equations-numeriques" title="Permalink to this headline">¶</a></h3>
+<p>Résoudre les équations (ou systèmes d’équations suivants):</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(e^{x^2}=k\)</span> avec comme inconnue <span class="math notranslate nohighlight">\(x\)</span></p></li>
+<li><p>Chercher <span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(b\)</span> tels que <span class="math notranslate nohighlight">\(ab = 3\textrm{~et~}a+b=5\)</span></p></li>
+<li><p>Déterminer <span class="math notranslate nohighlight">\(x\)</span> tel que <span class="math notranslate nohighlight">\(\frac{x+3}{x-2}=x\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="systemes-d-equations">
+<h3>Systèmes d’équations<a class="headerlink" href="#systemes-d-equations" title="Permalink to this headline">¶</a></h3>
+<p>Résoudre les systèmes d’équations suivants (les inconnues sont x,y,z):</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ee30aaea-3854-4567-bde8-07270abe47f0">
+<span class="eqno">(21)<a class="headerlink" href="#equation-ee30aaea-3854-4567-bde8-07270abe47f0" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	&amp;\begin{cases}
+		3x - 2y + z &amp;= 1\\
+		2x - 3y + 5z &amp;= 0\\
+		6x - y - 4z &amp;= 4
+	\end{cases}\\
+	&amp;\begin{cases}
+		x - 2y &amp;= 3\\
+		2x - y &amp;= 0\\
+	\end{cases}\\
+	&amp;\begin{cases}
+		5x &amp;= 3 - 4y\\
+		3y &amp;= 5x - 2\\
+	\end{cases}\\
+\end{align}\]</div>
+</div>
+</div>
+</div>
+<div class="section" id="td-etude-de-fonctions">
+<h2>TD Etude de fonctions<a class="headerlink" href="#td-etude-de-fonctions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="limites-de-fonctions">
+<h3>Limites de fonctions<a class="headerlink" href="#limites-de-fonctions" title="Permalink to this headline">¶</a></h3>
+<p>Déterminer, en le justifiant, les limites suivantes:</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to +\infty} -3x^3 + 4x^2 - 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0} -3\frac{1}{x^3} + 4\frac{1}{x^2} - 2\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to +\infty} \frac{-4x^2-2x-1}{-3x^3+2x^2-x-5}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} \frac{-4x^3-2x-1}{-2x^2-x-5}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to +\infty} \frac{-4x^3-2x-1}{-2x^3-x-5}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} \frac{-4x^2-2x-1}{-2x^2-x-5}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0} \frac{\sin(x)}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to 0} x-\ln (x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to +\infty} x^2-\ln (x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} x^2-e^{-x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to +\infty} \frac{e^{x}}{x}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\lim\limits_{x \to -\infty} xe^{x}\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="representation-graphique">
+<h3>Représentation graphique<a class="headerlink" href="#representation-graphique" title="Permalink to this headline">¶</a></h3>
+<p>Etudier complètement les fonctions suivantes puis réaliser un tracé graphique complet (points et caractéristiques importantes à faire apparaître sur le graphique).</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2 - 3x + 1\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(\zeta) = \zeta^3 - 2 \zeta^2 - \zeta + 2\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{x-1}{x-2}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}/{2}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = \frac{x^2+2x-1}{x}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{*}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \frac{3x^2-2x-1}{x+1}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(\gamma) = \cos(\gamma)\)</span> sur <span class="math notranslate nohighlight">\([0;2\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x+2 - \frac{4e^2}{e^x+3}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = e^2 - x + 1\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = x^2\ln(x)\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+*}\)</span>. On montrera que la fonction peut être prolongée en <span class="math notranslate nohighlight">\(x=0\)</span> et on déterminera la tangente en <span class="math notranslate nohighlight">\(x=0\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln \frac{e^x-1}{e^{2x}+1}\)</span>. Déterminer le domaine de définition le plus large de la fonction puis l’étudier sur cet intervale.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sqrt{x^2 - 4}\)</span> Déterminer le domaine de définition le plus large de la fonction puis l’étudier sur cet intervale.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln(x) - x\)</span>  sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+}\)</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="td-nombres-complexes">
+<h2>TD Nombres complexes<a class="headerlink" href="#td-nombres-complexes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="complexes-representation-graphique">
+<h3>Complexes: Représentation graphique<a class="headerlink" href="#complexes-representation-graphique" title="Permalink to this headline">¶</a></h3>
+<p>Représenter graphiquement les complexes suivant dans le plan complexe puis déterminer leur norme et leur argument.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(z = 3 + 4j\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z = 4 - 5j\)</span></p></li>
+<li><p>Les conjugués des deux complexes précédents</p></li>
+<li><p>Leur somme, leur différence puis leur produit</p></li>
+<li><p><span class="math notranslate nohighlight">\(z = 4 e^{j \frac{\pi}{6}}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z = 2 e^{j \frac{\pi}{3}}\)</span></p></li>
+<li><p>Les conjugués des deux complexes précédents</p></li>
+<li><p>Leur somme, leur différence puis leur produit</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="td_math_1.html" title="previous page">Exercices</a>
+    <a class='right-next' id="next-link" href="td_litteral.html" title="next page">TD Calcul littéral</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

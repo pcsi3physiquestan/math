@@ -1,0 +1,539 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Développements limités &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/dl.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Géométrie vectorielle" href="geometrie.html" />
+    <link rel="prev" title="Exercice d’application: Équations différentielles" href="td_ed.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_ed.html">
+     Exercice d’application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/dl.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/dl.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/dl.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#developpements-limites-principe-general">
+   Développements limités: principe général
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#developpements-limites-fonctions-usuelles">
+   Développements limités: fonctions usuelles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#manipulation-des-developpements-limites">
+   Manipulation des développements limités
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-approximation-en-physique">
+   Méthode: Approximation en physique
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="developpements-limites">
+<h1>Développements limités<a class="headerlink" href="#developpements-limites" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="developpements-limites-principe-general">
+<h2>Développements limités: principe général<a class="headerlink" href="#developpements-limites-principe-general" title="Permalink to this headline">¶</a></h2>
+<p><strong>Approximations polynômiales</strong><br />
+Le principe d’un développement limité consiste à remplacer le comportement d’une fonction <span class="math notranslate nohighlight">\(f(x)\)</span> autour d’un point <span class="math notranslate nohighlight">\(x_0\)</span> par un polynôme de degré <span class="math notranslate nohighlight">\(n\)</span> dont les coefficients vont dépendre de la fonction <span class="math notranslate nohighlight">\(f\)</span> et du point <span class="math notranslate nohighlight">\(x_0\)</span>. Cela suppose certaines régularités sur la fonction et l’écart entre le polynôme et la fonction est alors d’autant plus faible que:</p>
+<ul class="simple">
+<li><p>on calcule la fonction en <span class="math notranslate nohighlight">\(x\)</span> près de <span class="math notranslate nohighlight">\(x_0\)</span></p></li>
+<li><p>le degré <span class="math notranslate nohighlight">\(n\)</span> du polynôme est plus élevé</p></li>
+</ul>
+<p>Vous verrez les conditions d’applications en cours de mathématiques plus tard. En physique, on les supposera toujours vérifiées. On admettra ces formules en physique.</p>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Développements limités</p>
+<p>Soit une fonction <span class="math notranslate nohighlight">\(f\)</span> définie et <span class="math notranslate nohighlight">\(n\)</span> fois dérivable au voisinage d’un point <span class="math notranslate nohighlight">\(x_0\)</span>. Soit un point <span class="math notranslate nohighlight">\(x\)</span> situé dans ce voisinage, alors on a:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a6c202cc-ad98-415b-84a0-5204b36d689e">
+<span class="eqno">(48)<a class="headerlink" href="#equation-a6c202cc-ad98-415b-84a0-5204b36d689e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f(x) = \sum\limits_{k=0}^{n} \frac{f^{(k)}(x_0)}{k !}{(x-x_0)}^k + \epsilon(x) {(x-x_0)}^n
+\end{equation}\]</div>
+<p>où <span class="math notranslate nohighlight">\(f^{(k)}\)</span> désigne la k-ième dérivée de la fonction f et <span class="math notranslate nohighlight">\(\epsilon(x)\)</span> est une fonction tendant vers 0 quand x tend vers <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Traitement du terme négligeable<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On dit que le terme <span class="math notranslate nohighlight">\(\epsilon(x)\)</span> est négligeable devant <span class="math notranslate nohighlight">\({(x-x_0)^n}\)</span> et a fortiori devant les autres termes (qui sont des puissances inférieures) quand x tend vers <span class="math notranslate nohighlight">\(x_0\)</span>. En mathématiques, on remplace le terme <span class="math notranslate nohighlight">\(\epsilon(x) {(x-x_0)}^n\)</span> par <span class="math notranslate nohighlight">\(o({(x-x_0)}^n)\)</span> ce qui signifie la même chose. On parle de développement limité (DL) à l’ordre n.</p>
+<p class="card-text">En physique, on va remplacer <span class="math notranslate nohighlight">\(f(x)\)</span> par la somme polynomiale sans tenir compte du terme en <span class="math notranslate nohighlight">\(\epsilon(x) {(x-x_0)}^n\)</span>.  En physique, on préfèrera parler d’approximation polynomiales à l’ordre n. Néanmoins, les techniques vues en mathématiques restent utilisables en physique et le terme employé importe peu.</p>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Ordre 0 et ordre 1<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">A l’ordre 0, on a simplement: <span class="math notranslate nohighlight">\(f(x) \approx f(x_0)\)</span>, cela revient à calculer la limite en <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+<p class="card-text">A l’ordre 1, on a: <span class="math notranslate nohighlight">\(f(x) \approx f(x_0) + f'(x_0) (x-x_0)\)</span> on confond alors la fonction f avec sa tangente en <span class="math notranslate nohighlight">\(x_0\)</span>. On parle de <strong>linéarisation</strong>.</p>
+</div>
+</details><div class="note admonition">
+<p class="admonition-title">Exemple : Développements limités de la fonction sinus</p>
+<ul class="simple">
+<li><p>Ordre 1: <span class="math notranslate nohighlight">\(\sin(x) = x + o(x)\)</span></p></li>
+<li><p>Ordre 3: <span class="math notranslate nohighlight">\(\sin(x) = x - \frac{x^3}{3} + o(x^3)\)</span></p></li>
+<li><p>Ordre 5: <span class="math notranslate nohighlight">\(\sin(x) = x - \frac{x^3}{3} + \frac{x^5}{120} + o(x^5)\)</span></p></li>
+<li><p>Ordre 7: <span class="math notranslate nohighlight">\(\sin(x) = x - \frac{x^3}{3} + \frac{x^5}{120} - \frac{x^7}{5040} + o(x^7)\)</span></p></li>
+</ul>
+<div class="figure align-center" id="fig-337">
+<a class="reference internal image-reference" href="../_images/math_dl_sinus.png"><img alt="../_images/math_dl_sinus.png" src="../_images/math_dl_sinus.png" style="width: 50%;" /></a>
+</div>
+</div>
+</div>
+<div class="section" id="developpements-limites-fonctions-usuelles">
+<h2>Développements limités: fonctions usuelles<a class="headerlink" href="#developpements-limites-fonctions-usuelles" title="Permalink to this headline">¶</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Développements limités usuels</p>
+<p>Si la fonction est inconnue, on doit utiliser la formule ci-dessus. On utilise néanmoins souvent les mêmes formules en physique, il est donc bon de connaître leur développement (qu’on peut utiliser directement). Ils s’agit de fonctions usuelles prises autour du point <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e64208e8-e960-44bc-8bc9-0ea344ce6976">
+<span class="eqno">(49)<a class="headerlink" href="#equation-e64208e8-e960-44bc-8bc9-0ea344ce6976" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	{(1+x)}^{a} &amp;=_{0} 1 +  ax + \frac{a(a+1)}{2}x^2 + \cdots &amp;= &amp;1+ \sum\limits_{k=1}^{n} \frac{1}{k !}(\prod\limits_{j=0}^{j=k-1}(a-j))x^k + o(x^n)\\
+	\frac{1}{1+x} &amp;=_{0} 1 -  x + x^2 - x^3 + \cdots &amp;=&amp; \sum\limits_{k=0}^{n} {(-x)}^k + o(x^n)\\
+	\ln(1+x) &amp;= x -  \frac{x^2}{2} + \frac{x^3}{3} + \cdots &amp;=&amp; \sum\limits_{k=1}^{n} \frac{{(-1)}^(k-1)}{k} x^k + o(x^n)\\
+	e^x &amp;=_{0} 1 + x + \frac{x^2}{2} + \frac{x^3}{6} + \cdots &amp;=&amp; \sum\limits_{k=0}^{n} \frac{{(x)}^k}{k!} + o(x^n)\\
+	\cos(x) &amp;=_{0} 1 -  \frac{x^2}{2} &amp;=&amp; \sum\limits_{k=0}^{n} \frac{{(-1)}^k}{(2k)!} x^{2k}+ o(x^{2n})\\
+	\sin(x) &amp;=_{0} x -  \frac{x^3}{6} &amp;=&amp; \sum\limits_{k=0}^{n} \frac{{(-1)}^k}{(2k+1)!} x^{2k+1}+ o(x^{2n+1})\\
+\end{align}\]</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>Les développements limités précédents sont TOUS données autour de x=0. Si on a la même fonction mais que le développements limités est autour d’une autre valeur de x, il faut recalculer les coefficients du polynômes avec la formules précédentes (ou se débrouiller avec les méthodes proposées par la suite).</p>
+</div>
+<p><em>En physique la connaissance jusqu’à l’ordre 2 suffit.</em></p>
+</div>
+<div class="section" id="manipulation-des-developpements-limites">
+<h2>Manipulation des développements limités<a class="headerlink" href="#manipulation-des-developpements-limites" title="Permalink to this headline">¶</a></h2>
+<p>En physique, on utilise souvent les formules courantes données ci-dessus. Associées à la “composition” des fonctions, on peut en général s’en sortir. On peut en effet utiliser les opérations usuelles pour les développements limités. Mais certaines règles sont à respecter.</p>
+<div class="important admonition">
+<p class="admonition-title">Opérations sur les développements limités</p>
+<p>Règle générale: si l’on fait un développements limités à l’ordre N, alors on ne doit garder <strong>QUE</strong> les termes de degré inférieurs où égal dans les DL et <strong>TOUS</strong> les termes de degré inférieurs où égal dans les DL.</p>
+<p><strong>Addition et soustraction:</strong> Il faut faire attention à une règle: si aucun ordre n’est précisé, cela signifie qu’on attend un résultat non nul. Donc si on obtient un résultat nul à l’ordre n, il faut reprendre le calcul à l’ordre n+1.</p>
+<p><strong>Multiplication:</strong> on peut multiplier des DL mais il faut faire très attention car si on fait un DL à l’ordre n, il faut garder TOUT les termes d’ordres inférieur ou égal à n et UNIQUEMENT ces termes: les termes d’ordre supérieur doivent être enlevés.</p>
+<p><strong>Composition de fonctions:</strong> on peut appliquer un DL usuels à une fonction simple, on peut aussi composer 2 DL en respectant la même règle que pour la multiplication et en vérifiant bien qu’on peut le faire: si on fait le DL de <strong><span class="math notranslate nohighlight">\(g(f(x))\)</span></strong> en <strong><span class="math notranslate nohighlight">\(x=0\)</span></strong>, on utilise la formule du DL de f en <strong><span class="math notranslate nohighlight">\(x=0\)</span></strong> et la formule du DL de g en <strong><span class="math notranslate nohighlight">\(y=f(0)\)</span></strong>.</p>
+<p><strong>Division:</strong> il est possible de diviser des DL mais le principe est moins directe que la multiplication (cours de math). On utilise souvent le DL de <span class="math notranslate nohighlight">\(\frac{1}{1+x}\)</span>.</p>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Exemple : Compositions simples</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\sqrt{1-x} &amp;= {(1-x)}^{1/2} = 1+ \frac{1}{2} (-x) - \frac{1}{8} {(-x)}^2 + o(x^2) = 1 - \frac{1}{2} x - \frac{1}{8} x^2 + o(x^2)\\
+	\frac{1}{1-x} &amp;= 1 - (-x) + {(-x)}^2 - {(-x)}^3 + o(x^3) = 1 + x + x^2 + x^3 + o(x^3)\\
+	\textrm{On peut }&amp;\textrm{de même étudier des développements en $x=+\infty$ en remplaçant $x$ par $u=1/x$ qui tend vers 0:}\\
+	\frac{x}{x+1} &amp;= \frac{1}{1+ 1/x} = \frac{1}{1+u} =_{u \rightarrow 0} 1 - u + u^2 +o(u^2) =_{x \rightarrow + \infty} 1 - \frac{1}{x} + \frac{1}{x^2} + o(\frac{1}{x^2})
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="methode-approximation-en-physique">
+<h2>Méthode: Approximation en physique<a class="headerlink" href="#methode-approximation-en-physique" title="Permalink to this headline">¶</a></h2>
+<p>On aura très rarement une variable x qui tend explicitement vers 0. Les DL sont avant tout utilisés en physique comme des approximations pour des études de comportements asymptotiques ou la simplification d’équations différentielles complexes (linéarisation =&gt; ordre 1).</p>
+<p>Une approximation revient en général à négliger un terme devant un autre, c’est-à-dire qu’on aura souvent comme condition <span class="math notranslate nohighlight">\(r \ll a\)</span>, c’est-à-dire r négligeable devant a. C’est alors la grandeur <span class="math notranslate nohighlight">\(\frac{r}{a}\)</span> qui tend vers 0: on fera donc un DL limité de la fonction quand <span class="math notranslate nohighlight">\(r/a\)</span> tend vers 0.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On est arrivé au résultat suivant: <span class="math notranslate nohighlight">\(PM = \sqrt{r^2 + a^2 - 2ar \cos \theta}\)</span> (PM est une longueur). On cherche à simplifier cette expression dans le cas où <span class="math notranslate nohighlight">\(r\gg a\)</span>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On commence par factoriser par r pour faire apparaître la grandeur <span class="math notranslate nohighlight">\(a/r \ll 1\)</span></p>
+<div class="amsmath math notranslate nohighlight" id="equation-5fbbf260-7b4b-416a-b9c8-6a1ed7996827">
+<span class="eqno">(50)<a class="headerlink" href="#equation-5fbbf260-7b4b-416a-b9c8-6a1ed7996827" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+PM = r \sqrt{1 + 2 cos \theta\frac{a}{r} + \frac{a^2}{r^2}}
+\end{equation}\]</div>
+<ul class="simple">
+<li><p class="card-text">A l’ordre 0: <span class="math notranslate nohighlight">\(PM \approx r\)</span></p></li>
+<li><p class="card-text">A l’ordre 1:</p>
+<ul>
+<li><p class="card-text">on néglige sous la racine le terme d’ordre 2: <span class="math notranslate nohighlight">\(PM \approx r \sqrt{1 + 2 cos \theta \frac{a}{r}}\)</span></p></li>
+<li><p class="card-text">puis on utilise le DL de <span class="math notranslate nohighlight">\(\sqrt{1+x}\)</span> autour de 0 avec <span class="math notranslate nohighlight">\(x = 2 cos \theta \frac{a}{r}\)</span>:</p></li>
+</ul>
+</li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-8b251b41-f1fd-4d48-bd4a-394281798c21">
+<span class="eqno">(51)<a class="headerlink" href="#equation-8b251b41-f1fd-4d48-bd4a-394281798c21" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+PM \approx r (1 + \cos \theta \frac{a}{r}) = r + \cos \theta a
+\end{equation}\]</div>
+</div>
+</details><div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>Attention: On ne peut négliger un terme s’il n’y a pas de terme très grand devant lui. Par exemple, dans <span class="math notranslate nohighlight">\(\frac{r}{r+a}\)</span> où <span class="math notranslate nohighlight">\(r\ll a\)</span>. Au dénominateur, on peut négliger r devant a mais au numérateur, on doit laisser r car il est seul (donc négligeable devant rien). On a donc: <span class="math notranslate nohighlight">\(\frac{r}{r+a} \approx \frac{r}{a}\)</span> (c’est un développement limité à l’ordre 1, pour s’en rendre compte, il faut factoriser par a au dénominateur).</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="td_ed.html" title="previous page">Exercice d’application: Équations différentielles</a>
+    <a class='right-next' id="next-link" href="geometrie.html" title="next page">Géométrie vectorielle</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,678 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Géométrie dans l’espace &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_espace.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Dérivation d’un vecteur" href="geom_derivation.html" />
+    <link rel="prev" title="Géométrie dans le plan" href="geom_plan.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_ed.html">
+     Exercice d’application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/geom_espace.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/geom_espace.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/geom_espace.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#angle-oriente">
+   Angle orienté
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#base-directe-et-produit-vectoriel">
+   Base directe et produit vectoriel
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#base-directe">
+     Base directe
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#produit-vectoriel">
+     Produit vectoriel
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#produit-vectoriel-vecteur-d-une-base-orthonormee-direct">
+     Produit vectoriel: vecteur d’une base orthonormée direct
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-calculer-un-produit-vectoriel">
+     Méthode: Calculer un produit vectoriel
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coordonnees-cartesiennes">
+   Coordonnées cartésiennes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coordonnees-cylindriques">
+   Coordonnées cylindriques
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#coordonnees-spheriques">
+   Coordonnées sphériques
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#coordonnees-spheriques-definition">
+     Coordonnées sphériques: Définition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#relation-spherique-cartesien">
+     Relation sphérique-cartésien
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="geometrie-dans-l-espace">
+<h1>Géométrie dans l’espace<a class="headerlink" href="#geometrie-dans-l-espace" title="Permalink to this headline">¶</a></h1>
+<p>Tout ce qui a été dit en introduction reste vrai et nous allons voir que de nombreuses propriétés du plan restent vraies. On pourra ainsi redéfinir les coordonnées cartésiennes en rajoutant simplement la troisième coordonnée (z suivant un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>).</p>
+<p>Nous allons par contre voir que la notion d’angle orienté doit être précisée et les systèmes de coordonées “locaux” seront de deux types: cylindriques et sphériques.</p>
+<div class="section" id="angle-oriente">
+<h2>Angle orienté<a class="headerlink" href="#angle-oriente" title="Permalink to this headline">¶</a></h2>
+<p>Lorsqu’on s’intéresse à l’orientation des angles, on ne peut plus définir de “sens trigonométrique” (tout dépend de quel coté on regarde le plan!).</p>
+<p><strong>Orientation d’un plan</strong><br />
+Soit un plan <span class="math notranslate nohighlight">\((\Pi)\)</span> de l’espace, on oriente le plan par un vecteur normal au plan <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span>. Les angles sont alors orientés en cohérence avec le vecteur normal <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span>, c’est-à-dire:</p>
+<ul class="simple">
+<li><p>Règle du tire-bouchon: Un tire-bouchon se vissant dans le sens de <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> tourne dans le sens des angles de <span class="math notranslate nohighlight">\((\Pi)\)</span> comptés positivement.</p></li>
+<li><p>Règle de la main droite: Si l’on place le majeur <strong>de la main droite</strong> dans le sens de <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span>, les angles allant du pouce vers l’index sont comptés positivement.</p></li>
+</ul>
+<div class="figure align-center" id="fig-340">
+<img alt="../_images/mathematiques_orientation_angle.jpg" src="../_images/mathematiques_orientation_angle.jpg" />
+</div>
+</div>
+<div class="section" id="base-directe-et-produit-vectoriel">
+<h2>Base directe et produit vectoriel<a class="headerlink" href="#base-directe-et-produit-vectoriel" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-directe">
+<h3>Base directe<a class="headerlink" href="#base-directe" title="Permalink to this headline">¶</a></h3>
+<p><strong>Trièdre directe</strong><br />
+Soit trois vecteurs de l’espace <span class="math notranslate nohighlight">\((\overrightarrow{i}, \overrightarrow{j}, \overrightarrow{k})\)</span> de sorte qu’aucun ne soit colinéaire à un autre vecteur du triplet, on dit qu’ils forme un trièdre directe si:</p>
+<ul class="simple">
+<li><p>règle de la main droite: l’on peut superposer simultanément <span class="math notranslate nohighlight">\(\overrightarrow{i}\)</span> au pouce de la main droite, <span class="math notranslate nohighlight">\(\overrightarrow{j}\)</span> à l’index de la main droite et <span class="math notranslate nohighlight">\(\overrightarrow{k}\)</span> au majeur de la main droite.</p></li>
+<li><p>règle du tire-bouchon: un tire-bouchon vissant dans le sens de <span class="math notranslate nohighlight">\(\overrightarrow{i}\)</span> amène <span class="math notranslate nohighlight">\(\overrightarrow{j}\)</span> sur <span class="math notranslate nohighlight">\(\overrightarrow{k}\)</span> en un quart de tour (et pas trois quart de tour)</p></li>
+</ul>
+<div class="figure align-center" id="fig-341">
+<img alt="../_images/mathematiques_trois_doigts_triedre.jpg" src="../_images/mathematiques_trois_doigts_triedre.jpg" />
+</div>
+<div class="figure align-center" id="fig-342">
+<img alt="../_images/mathematiques_tire_bouchon_triedre.jpg" src="../_images/mathematiques_tire_bouchon_triedre.jpg" />
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Permutation des vecteurs<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Si l’on permute deux vecteurs d’une base directe, elle devient indirecte (c’est-à-dire non directe).</p>
+<p class="card-text">De la même manière, le symétrique d’une base directe par rapport à un plan est une base indirecte. On pourra faire le lien avec la notion de chiralité en chimie.</p>
+</div>
+</details><div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p>En physique, on travaillera toujours avec des <strong>bases orthonormées directes.</strong></p>
+</div>
+</div>
+<div class="section" id="produit-vectoriel">
+<h3>Produit vectoriel<a class="headerlink" href="#produit-vectoriel" title="Permalink to this headline">¶</a></h3>
+<p><strong>Produit vectoriel</strong><br />
+Soit deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u_1}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_2}\)</span>, on définit le produit vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{u_1} \wedge \overrightarrow{u_2}\)</span> comme le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{w}\)</span> tel que:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\left \| \overrightarrow{w} \right \|= \left \| u_1 \right \| \left \| u_2 \right \| \vert \sin (\overrightarrow{u_1} ; \overrightarrow{u_2}) \vert\)</span></p></li>
+<li><p>Le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{w}\)</span> est perpendiculaire au plan <span class="math notranslate nohighlight">\((\Pi)\)</span> formé par les vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u_1}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_2}\)</span>.</p></li>
+<li><p>Le sens de <span class="math notranslate nohighlight">\(\overrightarrow{w}\)</span> est tel que le trièdre <span class="math notranslate nohighlight">\((\overrightarrow{u_1}; \overrightarrow{u_2}; \overrightarrow{w})\)</span> est direct.</p></li>
+</ul>
+<p><strong>Propriété d’un produit vectoriel</strong></p>
+<ul class="simple">
+<li><p>Bilinéarité du produit vectoriel</p></li>
+<li><p>Antisymétrie: <span class="math notranslate nohighlight">\(\overrightarrow{u} \wedge \overrightarrow{v} = - \overrightarrow{v} \wedge \overrightarrow{u}\)</span></p></li>
+<li><p>Si <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> sont deux vecteurs colinéaires, leur produit vectoriel est nul. En particulier, le produit vectoriel d’un vecteur par lui-même est nul.</p></li>
+</ul>
+<p>Ces propriétés sont fondamentales pour le calcul d’un produit vectoriel.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Expression vectorielle<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On peut simplifier l’expression du produit vectoriel en remarquant qu’il s’écrit: <span class="math notranslate nohighlight">\(\overrightarrow{w} = \pm \left \| u_1 \right \| \left \| u_2 \right \| \sin \theta \overrightarrow{n}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est un vecteur unitaire orthogonal à <span class="math notranslate nohighlight">\(\overrightarrow{u_1}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_2}\)</span> et tel que le trièdre <span class="math notranslate nohighlight">\((\overrightarrow{u_1},\overrightarrow{u_2},\overrightarrow{n})\)</span> soit directe. Le signe de la composante du vecteur suivant le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est inclus dans le signe de l’angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+</div>
+</details></div>
+<div class="section" id="produit-vectoriel-vecteur-d-une-base-orthonormee-direct">
+<h3>Produit vectoriel: vecteur d’une base orthonormée direct<a class="headerlink" href="#produit-vectoriel-vecteur-d-une-base-orthonormee-direct" title="Permalink to this headline">¶</a></h3>
+<p>Considérons <span class="math notranslate nohighlight">\((\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> une base orthonormée directe. On a:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8dc38207-ba7b-4294-93ea-0b0a31872dd6">
+<span class="eqno">(54)<a class="headerlink" href="#equation-8dc38207-ba7b-4294-93ea-0b0a31872dd6" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    \overrightarrow{e_x} \wedge \overrightarrow{e_y} &amp;= \overrightarrow{e_z}\\
+    \overrightarrow{e_z} \wedge \overrightarrow{e_x} &amp;= \overrightarrow{e_y}\\
+    \overrightarrow{e_y} \wedge \overrightarrow{e_z} &amp;= \overrightarrow{e_x}\\
+    \overrightarrow{e_y} \wedge \overrightarrow{e_x} &amp;= -\overrightarrow{e_z}\\
+    \overrightarrow{e_x} \wedge \overrightarrow{e_z} &amp;= -\overrightarrow{e_y}\\
+    \overrightarrow{e_z} \wedge \overrightarrow{e_y} &amp;= -\overrightarrow{e_x}
+\end{align}\]</div>
+<p><strong>Démonstration</strong><br />
+La démonstration est triviale en remarquant que les vecteurs sont orthogonaux et que leur norme est 1.</p>
+</div>
+<div class="section" id="methode-calculer-un-produit-vectoriel">
+<h3>Méthode: Calculer un produit vectoriel<a class="headerlink" href="#methode-calculer-un-produit-vectoriel" title="Permalink to this headline">¶</a></h3>
+<p>Nous allons voir ici comment calculer un produit vectoriel.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Soit une base orthonormée direct <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>. On considère deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u} = u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v} = v_x \overrightarrow{e_x} + v_z \overrightarrow{e_z}\)</span>. Calculer le produit vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{u} \wedge \overrightarrow{v}\)</span>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Calcul<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On va utiliser succissement la bilinéarité puis les expressions des produits vectoriels des vecteurs de la base.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\overrightarrow{u} \wedge \underline{v} &amp;= \left(u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\right) \wedge \left(v_x \overrightarrow{e_x} + v_z \overrightarrow{e_z}\right)\\
+	&amp;= u_x v_x \underbrace{\overrightarrow{e_x} \wedge \overrightarrow{e_x}}_{= 0 \textrm{(colinéaires)}} + u_x v_z \underbrace{\overrightarrow{e_x} \wedge \overrightarrow{e_z}}_{= -1} \\
+	+&amp; u_y v_x \underbrace{\overrightarrow{e_y} \wedge \overrightarrow{e_x}}_{= -1} + u_y v_z \underbrace{\overrightarrow{e_y} \wedge \overrightarrow{e_z}}_{= 1}\\
+	&amp;= - u_x v_z - u_y v_x + u_y v_z
+\end{align*}\]</div>
+</div>
+</details></div>
+</div>
+<div class="section" id="coordonnees-cartesiennes">
+<h2>Coordonnées cartésiennes<a class="headerlink" href="#coordonnees-cartesiennes" title="Permalink to this headline">¶</a></h2>
+<p>On définit notament un repère cartésien comme un repère orthonormé direct: <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> où <span class="math notranslate nohighlight">\((\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> forme un trièdre direct.</p>
+<p>Il s’agit à nouveau d’un repère global.</p>
+<div class="figure align-center" id="fig-343">
+<img alt="../_images/mathematiques_coord_cartesien.png" src="../_images/mathematiques_coord_cartesien.png" />
+</div>
+</div>
+<div class="section" id="coordonnees-cylindriques">
+<h2>Coordonnées cylindriques<a class="headerlink" href="#coordonnees-cylindriques" title="Permalink to this headline">¶</a></h2>
+<p>Le système de coordonnées cylindriques revient à repérer le point M sur les bords d’un cylindre. Il faut alors le rayon et la hauteur du cylindre et l’angle de rotation par rapport à une référence.</p>
+<p><strong>Coordonnées cylindriques.</strong><br />
+Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>, soit un point M quelconque de l’espace et H son projeté orthogonal dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span>. On définit les coordonnées cylindriques (d’axe Oz) de M notées <span class="math notranslate nohighlight">\((r , \theta, z)\)</span> par:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(r = OH\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta=(\overrightarrow{e_x} ,\overrightarrow{OH})\)</span>, le plan <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_z})\)</span> étant orienté par <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z\)</span>: coordonnées cartésiennes suivant<span class="math notranslate nohighlight">\( \overrightarrow{e_z}\)</span>
+\end{itemize}</p></li>
+</ul>
+<div class="figure align-center" id="fig-344">
+<img alt="../_images/mathematiques_coord_cylindriques.png" src="../_images/mathematiques_coord_cylindriques.png" />
+</div>
+<p><strong>Base cylindrique</strong><br />
+On définit la base <strong>locale</strong> cylindrique (cf. figure précédente) associée au point M par la famille <span class="math notranslate nohighlight">\((\overrightarrow{e_r} ; \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> tel que:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> est le vecteur de la base cartésienne.</p></li>
+<li><p>vecteur radiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est défini tel que <span class="math notranslate nohighlight">\(\overrightarrow{OH} = r \overrightarrow{e_r}\)</span>.</p></li>
+<li><p>vecteur orthoradiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> tel que la base <span class="math notranslate nohighlight">\(( \overrightarrow{e_r}, \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> soit une base orthonormée directe soit: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}= \overrightarrow{e_z} \wedge \overrightarrow{e_r}\)</span></p></li>
+</ul>
+<div class="note admonition">
+<p class="admonition-title">Attention :</p>
+<p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> pointe toujours dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p>
+<p>C’est une base locale, cela veut dire que les vecteurs dépendant du points M. Autrement dit, si l’on suit un point M mobile, les vecteurs de la base varieront au cours du temps.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Rappel<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Les relations entre <span class="math notranslate nohighlight">\((r, \theta)\)</span> et (x,y) ainsi qu’entre les vecteurs de la base cylindriques et les vecteurs de la base cartésiennes sont les mêmes que les relations entre la base polaire et la base cartésienne dans le plan. On pourra s’en convaincre avec la représentation du plan perpendiculaire à l’axe Oz et passant par le point M (attention, le centre du plan n’est pas nécessairement le point O):</p>
+<div class="figure align-center" id="fig-345">
+<img alt="../_images/mathematiques_proj_cylindrique.png" src="../_images/mathematiques_proj_cylindrique.png" />
+</div>
+</div>
+</details></div>
+<div class="section" id="coordonnees-spheriques">
+<h2>Coordonnées sphériques<a class="headerlink" href="#coordonnees-spheriques" title="Permalink to this headline">¶</a></h2>
+<p>Les coordonnées cylindriques revient à placer le point M sur une sphère et repérer ses coordonnées. Il faut ainsi le rayon de la sphère et deux coordonnées angulaires pour le placer sur la sphère. A l’image du repérage sur le globe terrestre, on utilisera un axe de référence (l’âxe des pôles) pour définir la <strong>colatitude</strong> (on ne travaille pas avec la latitude pour des raisons mathématiques non développées ici) et un méridien de référence pour définir la longitude (ou azimuth).</p>
+<div class="section" id="coordonnees-spheriques-definition">
+<h3>Coordonnées sphériques: Définition<a class="headerlink" href="#coordonnees-spheriques-definition" title="Permalink to this headline">¶</a></h3>
+<p><strong>Coordonnéees sphériques</strong><br />
+Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>, soit un point M quelconque de l’espace et H son projeté orthogonal dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span>. On définit les coordonnées sphériques (d’axe Oz) de M notées <span class="math notranslate nohighlight">\((r , \theta, \phi)\)</span> par:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(r = OM\)</span></p></li>
+<li><p>Colatitude: <span class="math notranslate nohighlight">\(\theta=(\overrightarrow{e_z} ,\overrightarrow{OM})\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0; \pi]\)</span></p></li>
+<li><p>Azimuth: <span class="math notranslate nohighlight">\(\phi = (\overrightarrow{e_x} ,\overrightarrow{OH})\)</span> avec <span class="math notranslate nohighlight">\(\phi \in [0; 2 \pi]\)</span>. Le plan <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_z})\)</span> étant orienté par <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span></p></li>
+</ul>
+<div class="figure align-center" id="fig-346">
+<img alt="../_images/mathematiques_coord_spheriques.png" src="../_images/mathematiques_coord_spheriques.png" />
+</div>
+<div class="note dropdown admonition">
+<p class="admonition-title">Attention : Définition des angles</p>
+<p>Il faut noter la différence de domaine de définition de <span class="math notranslate nohighlight">\(\theta\)</span> et <span class="math notranslate nohighlight">\(\phi\)</span>. Elle est cruciale pour que chaque point possède un jeu de coordonnées uniques.</p>
+</div>
+<p><strong>Parallèle et méridien</strong><br />
+On définit le parallèle au point M comme le plan passant par M est parallèle au plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> (donc perpendiculaire à <span class="math notranslate nohighlight">\(Oz\)</span>).</p>
+<p>On définit le méridien au point M comme le plan passant par M et contenant <span class="math notranslate nohighlight">\(Oz\)</span>. <span class="math notranslate nohighlight">\(\phi\)</span> est l’angle entre le plan <span class="math notranslate nohighlight">\(xOz\)</span> et le méridien.</p>
+<p><strong>Base sphérique</strong><br />
+On définit la base <strong>locale</strong> sphérique (cf. figure précédente) associée au point M par la famille <span class="math notranslate nohighlight">\((\overrightarrow{e_r} ; \overrightarrow{e_{\theta}}, \overrightarrow{e_{\phi}})\)</span> tel que:</p>
+<ul class="simple">
+<li><p>vecteur radiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est défini tel que <span class="math notranslate nohighlight">\(\overrightarrow{OP} = r \overrightarrow{e_r}\)</span>.</p></li>
+<li><p>vecteur azimutal: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\phi}} = \overrightarrow{e_z} \wedge \frac{\overrightarrow{OH}}{OH}\)</span>: il est dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> perpendiculaire à (OH) dans le sens des <span class="math notranslate nohighlight">\(\phi\)</span> croissants.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}} = \overrightarrow{e_{\phi}} \wedge \overrightarrow{e_r}\)</span>: il est dans le plan du méridien, orthogonal à <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> et dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p></li>
+</ul>
+<div class="note dropdown admonition attention">
+<p class="admonition-title">Attention</p>
+<p>C’est une base locale: les vecteurs dépendent donc du point M. Plus précisément, il dépendant des coordonnées angulaires.</p>
+</div>
+</div>
+<div class="section" id="relation-spherique-cartesien">
+<h3>Relation sphérique-cartésien<a class="headerlink" href="#relation-spherique-cartesien" title="Permalink to this headline">¶</a></h3>
+<p>Il est extrêment important de savoir passer des coordonnées sphériques aux coordonnées cartésiennes et réciproquement.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Exprimer la coordonnées radiale r en fonction de x, y et z et les coordonées x,y et z en fonction des coordonnées sphériques.</p>
+<p>Exprimer les vecteurs de la base sphérique dans la base cartésiennes en faisant intervenir les coordonnées angulaires du point M.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Méthode<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">La méthode la plus simple est de passer par le parallèle et le méridien pour réaliser les projections et les calculs trigonométriques. On utilise notamment le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>  qui porte la droite PM (P est le centre du cercle parallèle) car il présente l’intérêt d’être présent dans les deux plans: celui du méridien (cf. schéma) et celui du parallèle.</p>
+<p class="card-text"><strong>Coordonnées</strong><br />
+Il vient (utiliser les schémas de coupe du parallèle et du méridien - <strong>s’entraîner à le prouver</strong>):</p>
+<div class="figure align-center" id="fig-347">
+<img alt="../_images/mathematiques_parallele_spherique.jpg" src="../_images/mathematiques_parallele_spherique.jpg" />
+</div>
+<div class="figure align-center" id="fig-348">
+<img alt="../_images/mathematiques_meridien_spherique.jpg" src="../_images/mathematiques_meridien_spherique.jpg" />
+</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	r = \sqrt{x^2 + y^2 + z^2}\\
+	x = r \sin \theta \cos \varphi \\
+	y = r \sin \theta \sin \varphi \\
+	z = r \cos \theta
+\end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\overrightarrow{e_r} = \sin \theta \cos \varphi \overrightarrow{e_x} + \sin \theta \sin \varphi \overrightarrow{e_y} + \cos\theta \overrightarrow{e_z}\\
+	\overrightarrow{e_{\theta}} = \cos \theta \cos \varphi \overrightarrow{e_x} + \cos \theta \sin \varphi \overrightarrow{e_y} - \sin\theta \overrightarrow{e_z}\\
+	\overrightarrow{e_{\varphi}} = - \sin \varphi \overrightarrow{e_x} + \cos \varphi \overrightarrow{e_y}
+\end{align*}\]</div>
+</div>
+</details></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="geom_plan.html" title="previous page">Géométrie dans le plan</a>
+    <a class='right-next' id="next-link" href="geom_derivation.html" title="next page">Dérivation d’un vecteur</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

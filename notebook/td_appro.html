@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TD Approfondissement &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/td_appro.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Calcul différentiel" href="calcdiff.html" />
+    <link rel="prev" title="TD Calcul littéral" href="td_litteral.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/td_appro.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/td_appro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/td_appro.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-equations">
+   TD Equations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equations-diverses-resolution-graphique">
+     Equations diverses: Résolution graphique
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-etude-de-fonctions">
+   TD Etude de fonctions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#limites-de-fonctions">
+     Limites de fonctions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#composition-de-fonctions-trigonometriques">
+     Composition de fonctions trigonométriques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#representation-graphique">
+     Représentation graphique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformations-graphiques">
+     Transformations graphiques
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-geometrie">
+   TD Géométrie
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#cercle-trigonometrique">
+     Cercle trigonométrique
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equations-trigonometriques">
+     Equations trigonométriques
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#probleme-de-trigonometrie">
+     Problème de trigonométrie
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#td-nombres-complexes">
+   TD Nombres complexes
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fractions-de-complexes">
+     Fractions de complexes
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="td-approfondissement">
+<h1>TD Approfondissement<a class="headerlink" href="#td-approfondissement" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="td-equations">
+<h2>TD Equations<a class="headerlink" href="#td-equations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="equations-diverses-resolution-graphique">
+<h3>Equations diverses: Résolution graphique<a class="headerlink" href="#equations-diverses-resolution-graphique" title="Permalink to this headline">¶</a></h3>
+<p>Résoudre les équations (ou systèmes d’équations suivants):</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Déterminer graphiquement les conditions sur <span class="math notranslate nohighlight">\(k\)</span> pour qu’il existe une solution à l’équation <span class="math notranslate nohighlight">\(4x = k(e^x - 1)\)</span> telle que <span class="math notranslate nohighlight">\(x&gt;0\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="td-etude-de-fonctions">
+<h2>TD Etude de fonctions<a class="headerlink" href="#td-etude-de-fonctions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="limites-de-fonctions">
+<h3>Limites de fonctions<a class="headerlink" href="#limites-de-fonctions" title="Permalink to this headline">¶</a></h3>
+<p>Montrer que la fonctions suivantes admet en <span class="math notranslate nohighlight">\(+\infty\)</span> et en <span class="math notranslate nohighlight">\(- \infty\)</span> des asymptotes olbiques dont on déterminera les équations.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\frac{-4x^3-2x-1}{-2x^2-x-5}\)</span></p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="composition-de-fonctions-trigonometriques">
+<h3>Composition de fonctions trigonométriques<a class="headerlink" href="#composition-de-fonctions-trigonometriques" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Démontrer toutes les relations du cours faisant intervenir la composée d’une fonction trigonométrique et une fonction réciproque d’une fonction trigonométrique.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="representation-graphique">
+<h3>Représentation graphique<a class="headerlink" href="#representation-graphique" title="Permalink to this headline">¶</a></h3>
+<p>Les fonctions hyperboliques <span class="math notranslate nohighlight">\(\cosh ,\ \sinh,\ \tanh\)</span> sont définies sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> par:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\cosh (x) &amp;= \frac{e^x + e^{-x}}{2}\\
+	\sinh (x) &amp;= \frac{e^x - e^{-x}}{2}\\
+	\tanh (x) &amp;= \frac{\sinh (x)}{\cosh (x)}
+\end{align*}\]</div>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p>Etudier chacune des trois fonctions (valeurs limites, monotonie… ) et en déduire le tracé des trois fonctions.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\cosh ^2 - \sinh ^2 = 1\)</span>.</p></li>
+<li><p>Déterminer les domaines de définition des trois fonctions réciproques et l’allure graphique de leur tracé. On limitera les calculs pour cette questions.</p></li>
+<li><p>Résoudre l’équation <span class="math notranslate nohighlight">\(\cosh (x) = 3\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="transformations-graphiques">
+<h3>Transformations graphiques<a class="headerlink" href="#transformations-graphiques" title="Permalink to this headline">¶</a></h3>
+<p>En partant du tracé (connus) des fonctions usuelles, déterminer le tracé le plus complet possibles des fonctions suivantes (points et caractéristiques importantes à faire apparaître sur le graphique). One ne fera AUCUNE étude de fonction, on utilisera uniquement les transformations usuelles des fonctions pour réaliser ces tracés. On pourra réaliser des tracés intermédiaires si nécessaires.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(f(x) = 4x^2 - 12x + 4\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(f(x) = x^2 - 3x + 1\)</span> (obtenu dans l’exercice précédent).</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = \frac{z^2}{4} - \frac{3z}{2} + 1\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(f(z) = z^2 - 3z + 1\)</span> (obtenu dans l’exercice précédent).</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \ln(\frac{1}{x})\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+*}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = 4\ln(1-x)\)</span> sur <span class="math notranslate nohighlight">\(]-\infty;1[\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \log(x) = \frac{\ln(x)}{\ln(10)}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+*}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\ln(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \cos(2x)\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\cos(x)\)</span>. Préciser la période de la fonction et représenter un tracé graphique sur 3 périodes.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \sin(\frac{x}{2}-\frac{ \pi}{3})\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\sin(x)\)</span> Préciser la période de la fonction et représenter un tracé graphique sur 3 périodes.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = 4 \cos(\frac{x}{3}+\frac{ \pi}{6})\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\cos(x)\)</span> Préciser la période de la fonction et représenter un tracé graphique sur 3 périodes.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = -2 \sin(2 \pi x-0.5)\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\sin(x)\)</span> Préciser la période de la fonction.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \cos(x) + \sin(x)\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(z) = e^{z/2}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(e^z\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(t) = 4 e^{-3t}\)</span>  sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(e^z\)</span>. On précisera bien la tangente en <span class="math notranslate nohighlight">\(t=0\)</span> et l’intersection de celle-ci avec l’axe des abscisses.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = 3 e^{3-x}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = - e^{x+2}\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(e^x\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = 5 (1-e^{-x/3})\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}^{+}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(e^z\)</span>. On précisera bien la tangente en <span class="math notranslate nohighlight">\(t=0\)</span> et l’intersection de celle-ci avec l’asymptote de la fonction en <span class="math notranslate nohighlight">\(+\infty\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \rm{argsh}(x)\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\sinh(x)\)</span>. On précisera le domaine de définition de la fonction. (argsh est la fonction réciproque de sinh)</p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \arccos(x)\)</span> Déterminer le domaine de définition le plus large de la fonction puis l’étudier sur cet intervale. On connaît le tracé de la fonction <span class="math notranslate nohighlight">\(\cos (x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(f(x) = \arctan(x)\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> connaissant le tracé de la fonction <span class="math notranslate nohighlight">\(\tan(x)\)</span></p></li>
+</ol>
+</div>
+</div>
+</div>
+<div class="section" id="td-geometrie">
+<h2>TD Géométrie<a class="headerlink" href="#td-geometrie" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="cercle-trigonometrique">
+<h3>Cercle trigonométrique<a class="headerlink" href="#cercle-trigonometrique" title="Permalink to this headline">¶</a></h3>
+<p>En utilisant les propriétés des fonctions trigonométriques, représenter sur le cercle trigonométrique (ou les axes associés) les grandeurs suivantes et préciser à chaque fois le signe de la grandeur obtenues.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sin(\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [\pi/2;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [-\pi;-\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [\pi/2;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(-\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(-\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [\pi;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(-\cos(\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(-\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(-\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [-\pi;-\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1-\cos(\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [\pi/2;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(1-\sin(-\theta)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [\pi/2;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(\theta+\pi/2)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(\theta+\pi/2)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(\theta+\pi/2)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(\theta+\pi)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(\theta+\pi)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(\theta+\pi)\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0;\pi/2]\)</span></p></li>
+<li><p>L’arc compris entre les angles <span class="math notranslate nohighlight">\(\theta_1\)</span> et <span class="math notranslate nohighlight">\(\theta_2\)</span> avec <span class="math notranslate nohighlight">\(\theta_1 \in [0;\pi/2]\)</span> et <span class="math notranslate nohighlight">\(\theta_2 \in [\pi;3 \pi/2]\)</span>. Que vaut la longueur de cet arc?</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="equations-trigonometriques">
+<h3>Equations trigonométriques<a class="headerlink" href="#equations-trigonometriques" title="Permalink to this headline">¶</a></h3>
+<p>Résoudre les équations trigonométriques suivantes en déterminant <strong>toutes les solutions</strong>. On utilisera intelligement le cercle trigonométrique.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\sin(x) = k\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(x) = \frac{1}{2}\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(x) = -1\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\sin(x/2) = -\frac{\sqrt{2}}{2}\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(x) = k\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(x) = \frac{3}{\sqrt{2}}\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(x) = 0\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\cos(2x) = -\frac{1}{2}\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(x) = k\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(x) = 3\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(x) = 1\)</span> sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(-\tan(x/4) = 1/6\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(x) = Q(y-1/y)\)</span> et <span class="math notranslate nohighlight">\(\cos(x)&gt;0\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span> avec Q et y positifs.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\tan(z) = \frac{x}{1-x^2}\)</span> et <span class="math notranslate nohighlight">\(\cos(z)=\frac{1-x^2}{\sqrt{{(1-x^2)}^2+x^2}}\)</span> sur <span class="math notranslate nohighlight">\([-\pi;\pi]\)</span> avec <span class="math notranslate nohighlight">\(x&gt;0\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="probleme-de-trigonometrie">
+<h3>Problème de trigonométrie<a class="headerlink" href="#probleme-de-trigonometrie" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Montrer, en utilisant les définitions <strong>géométriques</strong> des grandeurs <span class="math notranslate nohighlight">\(\sin(\theta)\)</span>, <span class="math notranslate nohighlight">\(\cos(\theta)\)</span> et <span class="math notranslate nohighlight">\(\tan(\theta)\)</span> que <span class="math notranslate nohighlight">\(\tan{\theta} = \frac{\sin(\theta)}{\cos(\theta)}\)</span></p>
+</div>
+</div>
+</div>
+<div class="section" id="td-nombres-complexes">
+<h2>TD Nombres complexes<a class="headerlink" href="#td-nombres-complexes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="fractions-de-complexes">
+<h3>Fractions de complexes<a class="headerlink" href="#fractions-de-complexes" title="Permalink to this headline">¶</a></h3>
+<p>Déterminer le module et l’argument des complexes suivant en fonction de x (réel strictement positif) et j le complexe dont le carré est égal à -1.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(z=\frac{1}{1+jx}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z=\frac{1}{1-x^2+3jx}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z=\frac{j x}{1-x^2+3jx}\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z=\frac{-Kx^2}{1- LCx^2 + jRCx}\)</span> avec <span class="math notranslate nohighlight">\(K,L,C\)</span> positifs</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="td_litteral.html" title="previous page">TD Calcul littéral</a>
+    <a class='right-next' id="next-link" href="calcdiff.html" title="next page">Calcul différentiel</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

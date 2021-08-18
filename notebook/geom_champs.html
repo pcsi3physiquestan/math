@@ -1,0 +1,706 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Champs scalaires et champs vectoriels &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_champs.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="TD Géométrie vectorielle" href="td_geom.html" />
+    <link rel="prev" title="Dérivation d’un vecteur" href="geom_derivation.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_ed.html">
+     Exercice d’application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/geom_champs.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/geom_champs.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/geom_champs.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#champ-vectoriel-et-champ-scalaire">
+   Champ vectoriel et champ scalaire
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#derivation-et-differentielle">
+   Dérivation et différentielle
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#derivees-partielles">
+     Dérivées partielles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#calcul-de-derivees-partielles">
+     Calcul de dérivées partielles
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#deplacement-infinitesimal">
+     Déplacement infinitésimal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expression-du-deplacement-elementaire">
+     Expression du déplacement élémentaire.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#differentielle">
+     Différentielle
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#gradient">
+   Gradient
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Gradient
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#proprietes-du-gradient">
+     Propriétés du gradient
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#expressions-du-gradient">
+     Expressions du gradient
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="champs-scalaires-et-champs-vectoriels">
+<h1>Champs scalaires et champs vectoriels<a class="headerlink" href="#champs-scalaires-et-champs-vectoriels" title="Permalink to this headline">¶</a></h1>
+<p>Nous allons être très souvent confrontés à des grandeurs définies en tout l’espace (ou portion). On parlera de <strong>champ</strong>. On peut citer l’énergie potentielle qui peut se définir en tout point de l’espace.</p>
+<p>Nous sommes alors confrontés à des fonctions de plusieurs variables (les 3 variables d’espaces différentes suivant le systèmes de coordonnées).</p>
+<p>Mais comme dans le cas d’une fonction à plusieurs variables, on peut être amené à s’interroger sur la monotonie d’une telle fonction. Il apparaît évident que les concepts mathématiques doivent être modifiés (en effet, en un même point, on peut compredre que le taux de variation va dépendre de la direction dans laquelle on se déplace - suivant x ? suivant y ? suivant x ET z ? … ).</p>
+<p>C’est dans cette optique que nous allons introduire la notion de <strong>gradient</strong>.</p>
+<div class="section" id="champ-vectoriel-et-champ-scalaire">
+<h2>Champ vectoriel et champ scalaire<a class="headerlink" href="#champ-vectoriel-et-champ-scalaire" title="Permalink to this headline">¶</a></h2>
+<p><strong>Champ vectoriel et champ scalaire</strong><br />
+Soit une fonction f qui associe à tout point de l’espace un réel (un scalaire). On dit que f est un champ scalaire.</p>
+<p>Soit une fonction f qui associe à tout point de l’espace un vecteur. On dit que f est un champ vectoriel. Par convention, on note les champs vectoriels avec une flèche comme des vecteurs.</p>
+<p><strong>Expression des champs</strong><br />
+Un champ scalaire peut être vu comme une fonction de trois variables: les trois coordonnées de l’espace. Il pourra avoir différentes expressions suivant le système de coordonnée choisi.</p>
+<p>Un champ vectoriel peut être vu comme un vecteur dont les coordonnées dépendent du point M (trois fonctions scalaires). Cette vision suffit lorsqu’on est en coordonnées cartésiennes où la base est globale. Si l’on exprime le champ vectoriel dans des coordonnées cylindriques ou sphériques, il ne faut pas oublier que les vecteurs de la base vont aussi varier avecle point M.</p>
+<div class="hint admonition">
+<p class="admonition-title">Exemple</p>
+<p>Considérons l’énergie potentielle associée à une force (par exemple la pesanteur). On peut associer à tout point de l’espace <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> une énergie potentielle <span class="math notranslate nohighlight">\(E_p(x,y,z)\)</span>. Par exemple <span class="math notranslate nohighlight">\(E_p(x,y,z) = mgz\)</span> (dans ce cas, le champ ne dépend pas de x et y).</p>
+<p>Un dispositif magnétique (aimant par exemple) crée un champ magnétique en tout point de l’espace. Il s’agit d’un champ vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{B}(M)\)</span>.</p>
+</div>
+</div>
+<div class="section" id="derivation-et-differentielle">
+<h2>Dérivation et différentielle<a class="headerlink" href="#derivation-et-differentielle" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="derivees-partielles">
+<h3>Dérivées partielles<a class="headerlink" href="#derivees-partielles" title="Permalink to this headline">¶</a></h3>
+<p><strong>Dérivées partielles</strong><br />
+Soit un champ scalaire <span class="math notranslate nohighlight">\(f(x,y,z)\)</span>, on définit la dérivée partielle <span class="math notranslate nohighlight">\({(\frac{\partial f}{\partial x})}_{y,z}(x_0,y_0,z_0)\)</span> comme la dérivée en <span class="math notranslate nohighlight">\(x=x_0\)</span> de la fonction <span class="math notranslate nohighlight">\(g\)</span> qui à <span class="math notranslate nohighlight">\(x\)</span> associe <span class="math notranslate nohighlight">\(g(x) = f(x,y_0,z_0)\)</span>.</p>
+<p>Cela revient à traiter <span class="math notranslate nohighlight">\(f\)</span> comme une fonction d’une variable où y et z sont des constantes. On parle de dérivée partielle de f par rapport à x à y et z constants.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text"><strong>Variables constantes</strong><br />
+Les variables en indice définissent les variables qui restent constantes. En mécanique, on les omet souvent car elles sont évidentes. Elles deviendront extrêmement importante en thermodynamique car elles peuvent changer.</p>
+</div>
+</details><p><strong>Interprétation</strong><br />
+On rappelle qu’une dérivée est un taux de variation qui donne une information sur la pente de la courbe. Ici, il s’agit d’une fonction de plusieurs variables, sa représentation n’est plus une courbe (cette représentation n’est d’ailleurs possible que pour une fonction de deux variables: c’est une surface). Mais on peut s’intéresser au taux de variation dans une direction particulière: celle où une seule des variables varie (x pour une dérivée partielle par rapport à x).</p>
+<p>Les dérivées partielles donnent donc des informations sur les variations d’un champ scalaire dans certaines directions de l’espace. Mais nous allons voir qu’avec ces informations, on peut obtenir la variation du champ scalaire en un point M dans n’importe quelle direction de l’espace.</p>
+</div>
+<div class="section" id="calcul-de-derivees-partielles">
+<h3>Calcul de dérivées partielles<a class="headerlink" href="#calcul-de-derivees-partielles" title="Permalink to this headline">¶</a></h3>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère les fonctions:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	f(x,y) &amp;= xy^2\\
+	g(r, \theta) &amp;= r \sin \theta
+\end{align*}\]</div>
+<p>Calculer toutes les dérivées partielles.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On trouve:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\frac{\partial f}{\partial x} &amp;= y^2\\
+	\frac{\partial f}{\partial y} &amp;= 2xy\\
+	\frac{\partial f}{\partial r} &amp;= \sin \theta \\
+	\frac{\partial f}{\partial \theta} &amp;= r \cos\theta
+\end{align*}\]</div>
+</div>
+</details></div>
+<div class="section" id="deplacement-infinitesimal">
+<h3>Déplacement infinitésimal<a class="headerlink" href="#deplacement-infinitesimal" title="Permalink to this headline">¶</a></h3>
+<p>Un déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span> correspond à un déplacement infinitésimal (c’est-à-dire tendant vers O) à partir du point M vers un point M’: <span class="math notranslate nohighlight">\(\overrightarrow{dOM} = \overrightarrow{MM'}_{M' \to M}\)</span>.</p>
+<p>On ne précise pas ici comment M’ tend vers M (en ligne droite, en ligne courbe, suivant l’axe Ox, suivant une direction dans le plan xOy… ). Suivant les cas cette précision a son importance. On distingue deux cas:</p>
+<ul class="simple">
+<li><p>on utilise un déplacement infinitésimal le plus général possible. On considère alors que chaque coordonnées du point M varie de manière infinitésimal et indépendante pour donner les coordonnées du point M’.</p></li>
+</ul>
+<p>Par exemple, en coordonnées cartésiennes, on va passer d’un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> à un point <span class="math notranslate nohighlight">\(M'(x+dx,y+dy,z+dz)\)</span> où dx, dy et dz représentent des variations infinitésimales des trois coordonnées.</p>
+<ul class="simple">
+<li><p>on utilise un déplacement infinitésimal dans une direction particulière. C’est en général le cas quand on suit une courbe (une trajectoire par exemple). On peut alors utiliser l’expression du déplacement élémentaire général en préciser des expressions pour les variations élémentaires.</p></li>
+</ul>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Déplacement infinitésimal en coordonnées cartésiennes.</p>
+<p>On rappelle qu’on passe d’un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> à un point <span class="math notranslate nohighlight">\(M'(x+dx, y+dy, z+dz)\)</span>. Il vient que le déplacement élémentaire est:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f58bfdf0-4ec3-49d3-a3f9-39a521cd3947">
+<span class="eqno">(57)<a class="headerlink" href="#equation-f58bfdf0-4ec3-49d3-a3f9-39a521cd3947" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dOM} = dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}
+\end{equation}\]</div>
+<p>En effet, on observe sur le schéma suivant que l’on peut décomposer le vecteur en une somme de trois vecteurs dans chaque direction Ox, Oy et Oz de distance respectives dx, dy et dz.</p>
+<div class="figure align-center" id="fig-349">
+<img alt="../_images/mecanique_depl_elem_cartesien.png" src="../_images/mecanique_depl_elem_cartesien.png" />
+</div>
+</div>
+<p>Les expressions des déplacements élémentaires dans chaque système de coordonnées doivent être connus et on doit savoir redémontrer leur expression. Le cas des coordonnées cylindriques et sphériques sera traité en exercice par la suite.</p>
+</div>
+<div class="section" id="expression-du-deplacement-elementaire">
+<h3>Expression du déplacement élémentaire.<a class="headerlink" href="#expression-du-deplacement-elementaire" title="Permalink to this headline">¶</a></h3>
+<p>On rappelle qu’il faut connaître par coeur ces expressions et savoir les démontrer.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Montrer que le déplacement élémentaire en coordonnées cylindriques s’écrit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-8ef2990e-b780-4abf-9e43-56dc08b78b0f">
+<span class="eqno">(58)<a class="headerlink" href="#equation-8ef2990e-b780-4abf-9e43-56dc08b78b0f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}
+\end{equation}\]</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On fait varier chaque coordonnées de manière élémentaire. On passe donc du point <span class="math notranslate nohighlight">\(M(r, \theta, z)\)</span> au point M’ <span class="math notranslate nohighlight">\((r+ dr, \theta + d\theta, z + dz)\)</span>.</p>
+<p class="card-text">On va décomposer le déplacement élémentaire siuvant trois directions: suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}, \overrightarrow{e_r}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>. Il faut noter que le déplacement “courbe” se fait suivant sa tangente (donc suivant <span class="math notranslate nohighlight">\(e_{\theta}\)</span> puisqu’il s’agit d’une variation infinitésimale, donc tendant vers 0.</p>
+<p class="card-text">Les successifs sont déplacements sont <span class="math notranslate nohighlight">\(r d\theta \overrightarrow{e_{\theta}}, dr \overrightarrow{e_r}\)</span> et <span class="math notranslate nohighlight">\(dz \overrightarrow{e_z}\)</span>.</p>
+<div class="figure align-center" id="fig-350">
+<img alt="../_images/mecanique_depl_elem_cylindrique.png" src="../_images/mecanique_depl_elem_cylindrique.png" />
+</div>
+<p class="card-text">Il vient un déplacement élémentaire:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-46059bca-bb4a-456a-aff5-d6419731762e">
+<span class="eqno">(59)<a class="headerlink" href="#equation-46059bca-bb4a-456a-aff5-d6419731762e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}
+\end{equation}\]</div>
+</div>
+</details><div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Montrer que le déplacement élémentaire en coordonnées sphériques s’écrit:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-50314d93-336e-49a4-86a4-b9d5d7700273">
+<span class="eqno">(60)<a class="headerlink" href="#equation-50314d93-336e-49a4-86a4-b9d5d7700273" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
+\end{equation}\]</div>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On fait varier chaque coordonnées de manière élémentaire. On passe donc du point <span class="math notranslate nohighlight">\(M(r, \theta, \varphi)\)</span> au point M’ <span class="math notranslate nohighlight">\((r+ dr, \theta + d\theta, \varphi + d\varphi)\)</span>.</p>
+<p class="card-text">On va décomposer le déplacement élémentaire siuvant trois directions: suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}, \overrightarrow{e_{\varphi}}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span>. Il faut noter que les déplacements “courbe” se fait suivant les tangentes au méridien (quand <span class="math notranslate nohighlight">\(\theta\)</span> varie) soit suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> et au parallèle (quand <span class="math notranslate nohighlight">\(\varphi\)</span> varie) soit suivant <span class="math notranslate nohighlight">\(\overrightarrow{e_{\varphi}}\)</span>.</p>
+<p class="card-text">Les successifs sont déplacements sont <span class="math notranslate nohighlight">\(r d\theta \overrightarrow{e_{\theta}}, r \sin \theta d\varphi \overrightarrow{e_{\varphi}}\)</span> et <span class="math notranslate nohighlight">\(dr \overrightarrow{e_r}\)</span>.</p>
+<div class="figure align-center" id="fig-351">
+<img alt="../_images/mecanique_depl_elem_spherique.png" src="../_images/mecanique_depl_elem_spherique.png" />
+</div>
+<p class="card-text">Il vient un déplacement élémentaire:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-938fd896-0fcd-4e06-8bbd-a04c389b1351">
+<span class="eqno">(61)<a class="headerlink" href="#equation-938fd896-0fcd-4e06-8bbd-a04c389b1351" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
+\end{equation}\]</div>
+</div>
+</details></div>
+<div class="section" id="differentielle">
+<h3>Différentielle<a class="headerlink" href="#differentielle" title="Permalink to this headline">¶</a></h3>
+<p>Attention, il ne s’agit pas d’une définition mathématique mais d’une description physique permettant de raisonner.</p>
+<p><strong>Différentielle</strong><br />
+Considérons un point M de l’espace et un déplacement infinitésimal quelconque <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
+<p>La différentielle df du champ scalaire f autour du point M est la variation infinitésimale de f du point M vers un point M’ tel que <span class="math notranslate nohighlight">\(\overrightarrow{MM'} = \overrightarrow{dOM}\)</span>.</p>
+<p><strong>Expression générale de la différentielle. (Admis)</strong><br />
+La différentielle du champ f en un point M de coordonnées <span class="math notranslate nohighlight">\((\xi,\zeta,\eta)\)</span> est:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b20c4d39-f5c9-4914-b4bd-b193bcd31805">
+<span class="eqno">(62)<a class="headerlink" href="#equation-b20c4d39-f5c9-4914-b4bd-b193bcd31805" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+df = \frac{\partial f}{\partial \xi} d\xi + \frac{\partial f}{\partial \zeta} d\zeta + \frac{\partial f}{\partial \eta} d\eta
+\end{equation}\]</div>
+<p>où <span class="math notranslate nohighlight">\((\xi,\zeta,\eta)\)</span> représentent les 3 coordonnées du point M dans un système de coordonnées.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On peut comprendre qu’on commence à s’approcher d’une notion permettant de généraliser la dérivée. Mais cette dernière n’est pas une variation mais un taux de variation (donc divisé par la variation de l’abscisse). Ici une telle division n’a pas de sens. Nous pouvons néanmoins voir que la donnée des trois dérivées partielles en fonction de chaque coordonnées permet de prévoir la variation du champ scalaire dans toutes les directions. C’est ce qui va motiver l’introduction du gradient par la suite.</p>
+<p class="card-text">Il faut noter que l’expression donnée ici de la différentielle peut se généraliser à des fonctions de plusieurs variables qui ne sont pas des coordonnées d’espace.</p>
+<p class="card-text">Exemple: pour un gaz la pression P(T,V) où T et V sont la température et le volume.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="gradient">
+<h2>Gradient<a class="headerlink" href="#gradient" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>Gradient<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p><strong>Observation</strong><br />
+On désire généraliser le concept de dérivée. Si l’on se base sur la notion du taux de variation, on peut dire que lorsqu’on se déplace de <span class="math notranslate nohighlight">\(dx \)</span>, la dérivée <span class="math notranslate nohighlight">\(f'(x)\)</span> permet de connaître la variation df de la fonction f: <span class="math notranslate nohighlight">\(df = f'(x) dx\)</span> (on rappelle que c’est une égalité car le passage à la limite est implicite avec la notation différentielle).</p>
+<p>Ici on veut connaître la différentielle df de la fonction f en un point M pour un déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Gradient</p>
+<p>On définit le gradient de la fonction f en en un point M comme le vecteur noté <span class="math notranslate nohighlight">\(\overrightarrow{grad}f\)</span> tel que:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-677d0a48-9ddc-4e18-9a7b-14daafdc1c15">
+<span class="eqno">(63)<a class="headerlink" href="#equation-677d0a48-9ddc-4e18-9a7b-14daafdc1c15" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+df = \overrightarrow{grad}f \cdot \overrightarrow{dOM}
+\end{equation}\]</div>
+<p>où df est la variation infinitésimale de f à partir du point M en suivant le déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
+</div>
+<p>Comme nous allons le voir, il existe des expressions du gradient en fonctions des dérivées partielles suivant le type de coordonnées choisi.</p>
+</div>
+<div class="section" id="proprietes-du-gradient">
+<h3>Propriétés du gradient<a class="headerlink" href="#proprietes-du-gradient" title="Permalink to this headline">¶</a></h3>
+<p>Avant d’établir les expressions du gradient dans chaque système de coordonnées, on va déjà établir certaines propriétés intéressantes du gradient.</p>
+<p><strong>Intégration du gradient</strong>
+A l’image de la dérivée, on peut “intégrer” le gradient pour trouver une variation de la fonction f:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-e1d2d02c-d229-47eb-b181-172d13bbd29b">
+<span class="eqno">(64)<a class="headerlink" href="#equation-e1d2d02c-d229-47eb-b181-172d13bbd29b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\Delta f = f(B) -f(A) = \int_{\Gamma(A \to B)} \overrightarrow{grad}f \cdot \overrightarrow{dl}
+\end{equation}\]</div>
+<p>L’intégrale proposée ici est appelée “intégrale de chemin” car on va intégrer le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{grad}f \cdot \overrightarrow{dl}\)</span> sur un chemin allant de A vers B. Dans ce cas, le déplacement élémentaire doit être tangent au chemin, ce qui conditionne a priori son expression (les déplacements élémentaires sont dépendants les uns des autres). Le calcul d’une intégrale de chemin sera explicitée en cours de physique (pour des calculs de travail d’une force).</p>
+<p><strong>Ici</strong> le chemin pour l’intégrale n’a pas d’importance: l’intégrale d’un gradient <strong>ne dépend pas du chemin parcouru</strong>. Elle se résume toujours à la différence des valeurs de la fonction f aux points A et B. C’est une caractéristique fondamentale qu’on réutilisera lorsqu’on parlera des forces dérivant d’une énergie potentielle.</p>
+<p><strong>Analogie topographique</strong><br />
+Il est conseillé pour mieux visualiser les caractéristiques suivantes d’imaginer un champ scalaire z(x,y) qui donnerait l’altitude z en un point de coordonnées (x,y) sur une carte topographique.</p>
+<p><strong>Orientation et sens du gradient</strong><br />
+Le gradient est toujours orienté dans la direction où le champ f varie le plus fortement et dans le sens croissant de f (suivant la droite de plus grande pente).</p>
+<p><em>Démonstration: la variation df est maximale quand <span class="math notranslate nohighlight">\(\overrightarrow{grad}f \cdot \overrightarrow{dOM}\)</span> est maximal soit quand le gradient est colinéaire (et dans le même sens) au déplacement élémentaire.</em></p>
+<p><strong>Courbe iso-f</strong>
+Le gradient est toujours perpendiculaire aux courbes/surfaces où la fonction f est uniforme (f(x,y,z) = cste - les courbes iso-altitude sur une carte topographique).</p>
+<p><em>Démonstration: Pour un déplacement élémentaire le long de la courbe iso-f (ou contenu dans la surface iso-f), la différentielle df est nulle. Il vient que le gradient est perpendicualaire à ce déplacement élémentaire donc à la courbe/surface.</em></p>
+<p><strong>Nullité du gradient</strong><br />
+Un gradient nul implique que chaque dérivée partielles est nulle, c’est-à-dire que la fonction f atteint un extremum suivant chaque coordonnées. On distingue alors plusieurs cas:</p>
+<ul class="simple">
+<li><p>c’est un minimum local pour chaque coordonnées: c’est un minimum local du champ.</p></li>
+<li><p>c’est un maximum local pour chaque coordonnées: c’est un maximum local du champ.</p></li>
+<li><p>c’est un minimum pour une coordonnées et un maximum pour l’autre: c’est un point “col” (comme un col de montagne).</p></li>
+</ul>
+<p>Pour visualiser ces situations, on a représenté une surface topographique z(x,y) pour chaque cas (minimum, maximum, point col).</p>
+<div class="figure align-center" id="fig-352">
+<img alt="../_images/math_gradient_min.jpg" src="../_images/math_gradient_min.jpg" />
+</div>
+<div class="figure align-center" id="fig-353">
+<img alt="../_images/math_gradient_max.jpg" src="../_images/math_gradient_max.jpg" />
+</div>
+<div class="figure align-center" id="fig-354">
+<img alt="../_images/math_gradient_col.jpg" src="../_images/math_gradient_col.jpg" />
+</div>
+</div>
+<div class="section" id="expressions-du-gradient">
+<h3>Expressions du gradient<a class="headerlink" href="#expressions-du-gradient" title="Permalink to this headline">¶</a></h3>
+<p>On rappelle que la différentielle s’écrit suivant le système de coordonnées choisi (précisons qu’a priori, l’expression de f dépend des coordonneés choisies):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	df(x,y,z) = \frac{\partial f}{\partial x} dx + \frac{\partial f}{\partial y} dy + \frac{\partial f}{\partial z} dz \\
+	df(r,\theta,z) = \frac{\partial f}{\partial r} dr + \frac{\partial f}{\partial \theta} d\theta + \frac{\partial f}{\partial z} dz \\
+	df(r,\theta,\varphi) = \frac{\partial f}{\partial r} dr + \frac{\partial f}{\partial \theta} d\theta + \frac{\partial f}{\partial \varphi} d\varphi
+\end{align*}\]</div>
+<p>On veut pouvoir déterminer l’expression du gradient qui sera le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{grad}f\)</span> tel que <span class="math notranslate nohighlight">\(df = \overrightarrow{grad}f \cdot \overrightarrow{dOM}\)</span>. On va donc utiliser les expressions du déplacement élémentaire dans les différents systèmes de coordonneés: <span class="math notranslate nohighlight">\(\overrightarrow{dOM} = dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}\)</span>, <span class="math notranslate nohighlight">\(\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}\)</span>.</p>
+<p><strong>Expression du gradient dans les systèmes de coordonnées</strong><br />
+En identifiant chaque terme du produit scalaire, il vient directement que:</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\overrightarrow{grad} f (x,y,z) = \frac{\partial f}{\partial x} \overrightarrow{e_x} + \frac{\partial f}{\partial y} \overrightarrow{e_y} + \frac{\partial f}{\partial z} \overrightarrow{e_z}\\
+	\overrightarrow{grad} f (r,\theta,z) = \frac{\partial f}{\partial r} \overrightarrow{e_r} + \frac{1}{r}\frac{\partial f}{\partial \theta} \overrightarrow{e_\theta} + \frac{\partial f}{\partial z} \overrightarrow{e_z}\\
+	\overrightarrow{grad} f (r,\theta,\varphi) = \frac{\partial f}{\partial r} \overrightarrow{e_r} + \frac{1}{r}\frac{\partial f}{\partial \theta} \overrightarrow{e_\theta} +\frac{1}{r \sin \theta} \frac{\partial f}{\partial \varphi} \overrightarrow{e_\varphi}
+\end{align*}\]</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Ces formules peuvent être directement utilisées.</p>
+</div>
+</details></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="geom_derivation.html" title="previous page">Dérivation d’un vecteur</a>
+    <a class='right-next' id="next-link" href="td_geom.html" title="next page">TD Géométrie vectorielle</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

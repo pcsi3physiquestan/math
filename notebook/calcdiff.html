@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcul différentiel &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/calcdiff.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Equations différentielles" href="eq_diff.html" />
+    <link rel="prev" title="TD Approfondissement" href="td_appro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/calcdiff.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/calcdiff.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/calcdiff.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#notation-differentielle">
+   Notation différentielle
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#interpretation-geometrique-de-la-derivee-et-de-l-integration">
+   Interprétation géométrique de la dérivée et de l’intégration
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpretation-de-la-derivee">
+     Interprétation de la dérivée
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interpretation-de-l-integrale">
+     Interprétation de l’intégrale
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#separation-des-variables">
+   Séparation des variables
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#separation-des-variables-generalites">
+     Séparation des variables: Généralités
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-separation-des-variables">
+     Méthode: Séparation des variables
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="calcul-differentiel">
+<h1>Calcul différentiel<a class="headerlink" href="#calcul-differentiel" title="Permalink to this headline">¶</a></h1>
+<div class="hint admonition">
+<p class="admonition-title">Objectifs</p>
+<ul class="simple">
+<li><p>Interpréter l’intégrale comme une somme de contributions infinitésimales, en lien avec la méthode des rectangles en mathématiques.</p></li>
+<li><p>Interpréter graphiquement la notion de dérivée.</p></li>
+<li><p>Séparer les variables d’une équation du premier ordre à variables séparables.</p></li>
+</ul>
+</div>
+<div class="section" id="notation-differentielle">
+<h2>Notation différentielle<a class="headerlink" href="#notation-differentielle" title="Permalink to this headline">¶</a></h2>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Les “définitions” données ici ne sont pas les définitions complètes mathématiques. Il s’agit d’une interprétation physique de ces grandeurs permettant de leur donner du sens et de les utiliser ne physique.</p>
+</div>
+</details><div class="dropdown info admonition">
+<p class="admonition-title">Différentielle</p>
+<p>La grandeur dx est appelée différentielle de x et représente une variation infinitésimale de x. Il est sous entendu que cette variation se fait autour d’une valeur <span class="math notranslate nohighlight">\(x_0\)</span> appartenant à un ensemble plus ou moins contraint suivant le système étudié.</p>
+<p>D’un point de vue strict, on dit que <strong>infinitésimale</strong> signifie “qui tend vers 0” à la différence de <strong>fini</strong> qui signifie que la variation reste à une valeur non nulle.</p>
+</div>
+<div class="dropdown info admonition">
+<p class="admonition-title">Utilisation de la différentielle</p>
+<p>Nous verrons des exemples en cours mais l’intérêt de la notation différentielle est de permettre de faire des raisonnements géométriques sur des grandeurs finies qu’on fera implicitement tendre vers 0 pour faire apparaître des dérivées ou des intégrales.</p>
+</div>
+</div>
+<div class="section" id="interpretation-geometrique-de-la-derivee-et-de-l-integration">
+<h2>Interprétation géométrique de la dérivée et de l’intégration<a class="headerlink" href="#interpretation-geometrique-de-la-derivee-et-de-l-integration" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="interpretation-de-la-derivee">
+<h3>Interprétation de la dérivée<a class="headerlink" href="#interpretation-de-la-derivee" title="Permalink to this headline">¶</a></h3>
+<div class="dropdown info admonition">
+<p class="admonition-title">Interprétation de la dérivée: tangente</p>
+<p>Si y est une fonction de x, alors le rapport <span class="math notranslate nohighlight">\(\frac{\Delta y}{\Delta x}\)</span> représente le taux de variation de la fonction y pour une variation de x égale à <span class="math notranslate nohighlight">\(\Delta x\)</span> (autour d’un point <span class="math notranslate nohighlight">\(x_0\)</span>). En faisant tendre vers 0 cette variation, ce taux de variation tend vers la pente de la tangente de la fonction en <span class="math notranslate nohighlight">\(x_0\)</span>. La notation <span class="math notranslate nohighlight">\(dy/dx\)</span> inclut déjà le fait qu’on prend la limite vers 0.</p>
+<div class="figure align-center" id="fig-336">
+<img alt="../_images/mathematiques_derivee_tangente.jpg" src="../_images/mathematiques_derivee_tangente.jpg" />
+</div>
+</div>
+</div>
+<div class="section" id="interpretation-de-l-integrale">
+<h3>Interprétation de l’intégrale<a class="headerlink" href="#interpretation-de-l-integrale" title="Permalink to this headline">¶</a></h3>
+<p>On rappelle que l’intégration de y(x) entre a et b peut être aussi vu comme une limite, celle d’une somme de Riemann. On somme une série de N “bâtons” de hauteur y(x) et de largeur <span class="math notranslate nohighlight">\(\frac{b-a}{N}\)</span>. On augmente alors le nombre d’intervalle dans la somme en augmentant le nombre N. La limite quand N tend vers l’infini est l’intégrale de y(x) entre a et b.</p>
+<p>On peut aussi avoir une approche différentielle en considérant des bâtons de largeur dx. L’aire d’un bâton est alors f(x)dx. Il suffit de sommer chaque bâton pour obtenir l’aire sous la courbe (puisque la notation différentielle implique que l’on fait tendre leur largeur vers 0). Sauf que la notation <span class="math notranslate nohighlight">\(\sum\)</span> n’est valable que pour une somme discrète. On la remplace donc par la notation <span class="math notranslate nohighlight">\(\int\)</span>.</p>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Généralisation<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">L’intérêt d’une telle vision est qu’elle peut se généraliser à des cas plus complexes où l’on ne somme pas des fonctions de x comme le cas de la transformée de Fourier (non présentée ici).</p>
+<p class="card-text">On peut aussi procéder par analogie comme nous le verrons en cours de mécanique entre une situation discrète et une situation continue.</p>
+</div>
+</details></div>
+</div>
+<div class="section" id="separation-des-variables">
+<h2>Séparation des variables<a class="headerlink" href="#separation-des-variables" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="separation-des-variables-generalites">
+<h3>Séparation des variables: Généralités<a class="headerlink" href="#separation-des-variables-generalites" title="Permalink to this headline">¶</a></h3>
+<p>On suppose qu’on doit résoudre une équation du type: <span class="math notranslate nohighlight">\(\frac{\rm{d}y}{\rm{dx}} = f(x,y)\)</span> où f est une fonction à variables séparables, c’est-à-dire qu’on peut la mettre sous la forme <span class="math notranslate nohighlight">\(f_1(x) \times f_2(x)\)</span></p>
+<div class="amsmath math notranslate nohighlight" id="equation-91599919-4878-4e36-bdca-aeaa70980213">
+<span class="eqno">(23)<a class="headerlink" href="#equation-91599919-4878-4e36-bdca-aeaa70980213" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\frac{\rm{d}y}{\rm{dx}} = f_1(x) \times f_2(y)
+\end{equation}\]</div>
+<p>En assimilant les différentielles à des variations infinitésimales, on peut réécrire l’équation précédente en séparation la partie en x de la partie en y puis intégrer l’ensemble.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bf277daf-a47b-4475-860b-551cd14b0ed0">
+<span class="eqno">(24)<a class="headerlink" href="#equation-bf277daf-a47b-4475-860b-551cd14b0ed0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\frac{\rm{d}y}{f_2(y)} = \rm{d}x f_1(x) \Longrightarrow \int_{y(x_1)}^{y(x_2)}\frac{\rm{d}y}{f_2(y)} = \int_{x_1}^{x_2} f_1(x) \rm{d}x
+\end{equation}\]</div>
+</div>
+<div class="section" id="methode-separation-des-variables">
+<h3>Méthode: Séparation des variables<a class="headerlink" href="#methode-separation-des-variables" title="Permalink to this headline">¶</a></h3>
+<p>Nous allons voir ici comment utiliser la séparation des variables pour résoudre une équation.</p>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Résoudre l’équation <span class="math notranslate nohighlight">\(\frac{dy}{dx} = a y x^2\)</span> avec <span class="math notranslate nohighlight">\(a \in \mathbb{R}^{+*}\)</span> et <span class="math notranslate nohighlight">\(y(x=0) = y_0\)</span>.</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">Séparons les variables en mettant toutes les fonction en x d’un côté et toutes les fonctions en y de l’autre:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f1a48007-37d7-418c-ba6c-87e1944f4520">
+<span class="eqno">(25)<a class="headerlink" href="#equation-f1a48007-37d7-418c-ba6c-87e1944f4520" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\frac{dy}{y} = ax^2dx
+\end{equation}\]</div>
+<p class="card-text">On intègre en faisant <strong>attention à ce que les bornes des deux intégrales soient cohérentes</strong>. Ici, on a choisit les bornes de l’intégrale en x (0 et <span class="math notranslate nohighlight">\(x_0\)</span>), les bornes de l’intégrale en y doivent correspondre (<span class="math notranslate nohighlight">\(y(x=0)\)</span> et <span class="math notranslate nohighlight">\(y(x=x_0)\)</span>)</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1c0a2f9c-e4ee-4e78-8924-68e4c0fc6d25">
+<span class="eqno">(26)<a class="headerlink" href="#equation-1c0a2f9c-e4ee-4e78-8924-68e4c0fc6d25" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\int_{y(x=0)}^{y(x=x_0)} \frac{dy}{y} = \int_{x=0}^{x=x_0}ax^2dx \Longrightarrow \ln\left(\frac{y(x_0)}{y_0}\right) = \frac{a}{3}x_0^3
+\end{equation}\]</div>
+<p class="card-text">Il reste à isoler y(x) (on a remplacé <span class="math notranslate nohighlight">\(x_0\)</span> par x car l’expression est vraie pour tout <span class="math notranslate nohighlight">\(x_0\)</span>):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1d7018ad-79a8-4c15-822f-f3ff252dc6d6">
+<span class="eqno">(27)<a class="headerlink" href="#equation-1d7018ad-79a8-4c15-822f-f3ff252dc6d6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(x) = y_0 \exp^{\frac{a}{3}x^3}
+\end{equation}\]</div>
+</div>
+</details><details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Remarque<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">On peut aussi procéder par changement de variables. On commence par isoler les fonctions de y avec la dérivée y’(x) puis on intègre (suivant x):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-799d15da-4c16-4c74-8e77-f385138ab8f0">
+<span class="eqno">(28)<a class="headerlink" href="#equation-799d15da-4c16-4c74-8e77-f385138ab8f0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\frac{1}{y}\frac{\rm{d}y}{\rm{dx}} = ax^2 \Longrightarrow \int_{x=0}^{x=x_0}\frac{1}{y(x)}\frac{\rm{d}y}{\rm{dx}} dx = \int_{x=0}^{x_{0}} ax^2 dx
+\end{equation}\]</div>
+<p class="card-text">On réalise alors un changement de variables x vers u = y(x) dans la première intégrale. Les bornes deviennent <span class="math notranslate nohighlight">\(y(x=0)\)</span> et <span class="math notranslate nohighlight">\(y(x=x_0)\)</span> et <span class="math notranslate nohighlight">\(du = y'(x)dx= \frac{\rm{d}y}{\rm{dx}} dx\)</span>. L’intégrale devient donc:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a95fd8a3-ea2e-4bb7-8852-0f1a47ecd156">
+<span class="eqno">(29)<a class="headerlink" href="#equation-a95fd8a3-ea2e-4bb7-8852-0f1a47ecd156" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\int_{y(x=0)}^{y(x=x_0)}\frac{1}{u}du = \int_{x=0}^{x_{0}} ax^2 dx
+\end{equation}\]</div>
+<p class="card-text">La suite du calcul est identique au cas précédent.</p>
+</div>
+</details></div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="td_appro.html" title="previous page">TD Approfondissement</a>
+    <a class='right-next' id="next-link" href="eq_diff.html" title="next page">Equations différentielles</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>

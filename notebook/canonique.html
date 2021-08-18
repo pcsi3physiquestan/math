@@ -1,0 +1,607 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equations différentielles: forme canonique et solution &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/canonique.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exercice d’application: Équations différentielles" href="td_ed.html" />
+    <link rel="prev" title="Equations différentielles" href="eq_diff.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="equations.html">
+     Equations et inéquations
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="td_math_1.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_bases.html">
+       TD Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_litteral.html">
+       TD Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="td_appro.html">
+       TD Approfondissement
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="calcdiff.html">
+   Calcul différentiel
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_ed.html">
+     Exercice d’application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  <a href="https://www.cedriclacpatia.fr">Site de la classe</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/canonique.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/canonique.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/canonique.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Equations différentielles: forme canonique et solution
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equation-d-ordre-1">
+     Equation d’ordre 1
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#equation-d-ordre-2">
+     Equation d’ordre 2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#equations-differentielles-methodes-de-resolution">
+   Equations différentielles: méthodes de résolution
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-de-resolution">
+     Méthode de résolution
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-resolution-d-une-equation-d-ordre-1s">
+     Méthode: Résolution d’une équation d’ordre 1s
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#methode-equation-d-ordre-2">
+     Méthode: Equation d’ordre 2
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="equations-differentielles-forme-canonique-et-solution">
+<h1>Equations différentielles: forme canonique et solution<a class="headerlink" href="#equations-differentielles-forme-canonique-et-solution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="equation-d-ordre-1">
+<h2>Equation d’ordre 1<a class="headerlink" href="#equation-d-ordre-1" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Forme canonique d’une équation d’ordre 1.</p>
+<p>Une équation d’ordre 1 peut se mettre sous la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-108652e6-ea4a-4089-a202-90f4dab6aad0">
+<span class="eqno">(31)<a class="headerlink" href="#equation-108652e6-ea4a-4089-a202-90f4dab6aad0" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	\frac{\rm{d}y}{\rm{dt}} + \frac{1}{\tau} y(t) &amp;= f(t) \textrm{ équation avec second membre}\\
+	\frac{\rm{d}y}{\rm{dt}} + \frac{1}{\tau} y(t) &amp;= 0 \textrm{ équation sans second membre}
+\end{align}\]</div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Solution de l’équation sans second membre</p>
+<p>Toutes les solutions de l’équation <strong>homogène</strong>, c’est-à-dire sans second membre sont de la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-74955cec-4512-40bd-bb78-b296d93ec808">
+<span class="eqno">(32)<a class="headerlink" href="#equation-74955cec-4512-40bd-bb78-b296d93ec808" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+y(t) = A e^{-\frac{t}{\tau}}
+\end{equation}\]</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Attention : Traitement du second membre</p>
+<p>Attention, s’il y a un second membre il faut aussi le traiter. Nous verrons la méthode générale par la suite.</p>
+</div>
+</div>
+<div class="section" id="equation-d-ordre-2">
+<h2>Equation d’ordre 2<a class="headerlink" href="#equation-d-ordre-2" title="Permalink to this headline">¶</a></h2>
+<div class="tip admonition">
+<p class="admonition-title">Définition : Forme canonique d’une équation d’ordre 2.</p>
+<p>Une équation d’ordre 2 peut se mettre sous la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-55112098-ff20-4c85-9011-671c3361d42e">
+<span class="eqno">(33)<a class="headerlink" href="#equation-55112098-ff20-4c85-9011-671c3361d42e" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	a \frac{\rm{d^2}y}{\rm{dt^2}} + b \frac{\rm{d}y}{\rm{dt}} + c y(t) &amp;= f(t) \textrm{ équation avec second membre}\\
+	a \frac{\rm{d^2}y}{\rm{dt^2}} + b \frac{\rm{d}y}{\rm{dt}} + c y(t) &amp;= 0 \textrm{ équation sans second membre}
+\end{align}\]</div>
+<p>On mettra en général l’équation sous la forme canonique:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-dfcf941b-82f6-47f9-8ef8-044e00fed7db">
+<span class="eqno">(34)<a class="headerlink" href="#equation-dfcf941b-82f6-47f9-8ef8-044e00fed7db" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	\frac{\rm{d^2}y}{\rm{dt^2}} + \frac{\omega_0}{Q} \frac{\rm{d}y}{\rm{dt}} + \omega_0^2 y(t) = f(t)\\
+	\frac{\rm{d^2}y}{\rm{dt^2}} + 2 \xi \omega_0 \frac{\rm{d}y}{\rm{dt}} + \omega_0^2 y(t) = f(t)
+\end{align}\]</div>
+<p>On donnera des interprétations aux grandeurs <span class="math notranslate nohighlight">\(\omega_0, \xi\)</span> et Q dans le cours d’électrocinétique.</p>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Equation caractéristique</p>
+<p>La détermination de la solution générale passe par la résolution de l’équation caractéristique:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-781cfd71-0329-4a3e-aee4-7d898b4a4a1e">
+<span class="eqno">(35)<a class="headerlink" href="#equation-781cfd71-0329-4a3e-aee4-7d898b4a4a1e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+a r^2 + b r + c = 0
+\end{equation}\]</div>
+<p>dont les solutions sont:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-84e385bf-7922-4f2f-8d0c-fb07637f1889">
+<span class="eqno">(36)<a class="headerlink" href="#equation-84e385bf-7922-4f2f-8d0c-fb07637f1889" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+r_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a} \textrm{ avec } \Delta = b^2 - 4ac
+\end{equation}\]</div>
+</div>
+<div class="important admonition">
+<p class="admonition-title">Fondamental : Solution de l’équation sans second membre</p>
+<p>Les solutions de l’équation <strong>homogène</strong>, c’est-à-dire sans second membre ont une forme différente suivant la nature des solutions de l’équation caractéristique.</p>
+<ul class="simple">
+<li><p>Cas 1: <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span>, les racines <span class="math notranslate nohighlight">\(r_{1,2}\)</span> sont réelles. La solution générale de l’équation homogène s’écrit:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-d62bd3ee-c47f-436e-ae24-dd4a141e5d24">
+<span class="eqno">(37)<a class="headerlink" href="#equation-d62bd3ee-c47f-436e-ae24-dd4a141e5d24" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f_1(t) = A e^{r_1 t} + B e^{r_2 t}
+\end{equation}\]</div>
+<ul class="simple">
+<li><p>Cas 2: <span class="math notranslate nohighlight">\(\Delta = 0\)</span>, il y a une racine double notée <span class="math notranslate nohighlight">\(r_0 = \frac{-b}{2a}\)</span> et réelle. La solution générale de l’équation homogène s’écrit:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-5db4e2dd-d484-4f44-886c-0f908a21b92c">
+<span class="eqno">(38)<a class="headerlink" href="#equation-5db4e2dd-d484-4f44-886c-0f908a21b92c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f_1(t) = (A + Bt) e^{r_0 t}
+\end{equation}\]</div>
+<ul class="simple">
+<li><p>Cas 3: <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span>, les racines <span class="math notranslate nohighlight">\(r_{1,2}\)</span> sont complexes et conjuguées, on peut les écrire sous la forme <span class="math notranslate nohighlight">\(r_{1,2} = \lambda \pm j \Omega\)</span>. La solution générale de l’équation homogène est à valeur réelle et il est important d’en donner une expression qui fait apparaître ce caractère et qui permet de l’analyser physiquement. On l’écrit donc sous les formes:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-c454a3fb-f39d-4a7d-94bc-6e353451fc8f">
+<span class="eqno">(39)<a class="headerlink" href="#equation-c454a3fb-f39d-4a7d-94bc-6e353451fc8f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f_1(t) = (A \cos \Omega t + B \sin \Omega t) e^{\lambda t} =C \cos(\Omega t + \phi) e^{\lambda t}
+\end{equation}\]</div>
+</div>
+<div class="note admonition">
+<p class="admonition-title">Attention : Traitement du second membre</p>
+<p>Attention, s’il y a un second membre il faut aussi le traiter. Nous verrons la méthode générale par la suite.</p>
+</div>
+</div>
+</div>
+<div class="section" id="equations-differentielles-methodes-de-resolution">
+<h1>Equations différentielles: méthodes de résolution<a class="headerlink" href="#equations-differentielles-methodes-de-resolution" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="methode-de-resolution">
+<h2>Méthode de résolution<a class="headerlink" href="#methode-de-resolution" title="Permalink to this headline">¶</a></h2>
+<div class="important admonition">
+<p class="admonition-title">Méthode de résolution</p>
+<p>Pour résoudre une équation différentielle, il faut suivre <strong>scrupuleusement l’ordre de résolution</strong> suivant:</p>
+<ul class="simple">
+<li><p>Mettre en équation le problème et mettre l’équation sous forme canonique en reconnaissant l’ordre de l’équation.</p></li>
+<li><p>Déterminer la solution générale (notée ici <span class="math notranslate nohighlight">\(f_1(t)\)</span>) de l’équation homogène (ESSM) soit directement (ordre 1), soit par analyse du discriminant de l’équation différentielle. <strong>Ne pas chercher à déterminer les constantes d’intégration.</strong></p></li>
+<li><p>Déterminer une solution particulière  (notée ici <span class="math notranslate nohighlight">\(f_2(t)\)</span>) de l’équation avec second membre si il est non nul. Le seul cas où la méthode est à connaître est le cas d’un second membre constant. On cherche alors une solution particulière constante. <strong>On ne fait pas de méthode de la variation de la constante en physique</strong>. On verra aussi le cas d’un second membre sinusoïdal mais la méthode à connaître sera présentée dans un chapitre entier d’électrocinétique.</p></li>
+<li><p>L’ensemble des solutions est alors de la forme <span class="math notranslate nohighlight">\(f(t) = f_1(t) + f_2(t)\)</span></p></li>
+<li><p>Déterminer les constantes d’intégration grâce aux conditions initiales.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="methode-resolution-d-une-equation-d-ordre-1s">
+<h2>Méthode: Résolution d’une équation d’ordre 1s<a class="headerlink" href="#methode-resolution-d-une-equation-d-ordre-1s" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>Résoudre l’équation différentielle suivante:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6a1058e9-92a0-443b-9a93-b5ccc83dea56">
+<span class="eqno">(40)<a class="headerlink" href="#equation-6a1058e9-92a0-443b-9a93-b5ccc83dea56" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\frac{\rm{d}f}{\rm{dt}}(t) + \frac{1}{\tau} f(t) = E
+\end{equation}\]</div>
+<p>avec f(0) = 0</p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">L’équation est déjà sous forme canonique, la solution ESSM est <span class="math notranslate nohighlight">\(f_1(t) = A e^{-\frac{t}{\tau}}\)</span></p>
+<p class="card-text">Le second membre étant constant, on cherche une solution constante sous la forme <span class="math notranslate nohighlight">\(f_2(t) = K\)</span>. L’équation devient <span class="math notranslate nohighlight">\(0 + K/\tau = E\)</span> soit <span class="math notranslate nohighlight">\(K = \tau E\)</span>.</p>
+<p class="card-text">La solution générale de l’équation avec second membre :</p>
+<div class="amsmath math notranslate nohighlight" id="equation-29e6ef24-df11-4a15-999f-a1d559e9c973">
+<span class="eqno">(41)<a class="headerlink" href="#equation-29e6ef24-df11-4a15-999f-a1d559e9c973" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f(t) = A e^{-\frac{t}{\tau}} + \tau E
+\end{equation}\]</div>
+<p class="card-text">On cherche maintenant la constante d’intégration grâce à la condition initiale <span class="math notranslate nohighlight">\(f(0) = 0\)</span>. Il vient <span class="math notranslate nohighlight">\(A + \tau E = 0 \Longrightarrow A = - \tau E\)</span>. La solution est donc:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-15fa1859-b146-4e29-bf37-2d287bb5870f">
+<span class="eqno">(42)<a class="headerlink" href="#equation-15fa1859-b146-4e29-bf37-2d287bb5870f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
+\end{equation}\]</div>
+</div>
+</details></div>
+<div class="section" id="methode-equation-d-ordre-2">
+<h2>Méthode: Equation d’ordre 2<a class="headerlink" href="#methode-equation-d-ordre-2" title="Permalink to this headline">¶</a></h2>
+<div class="attention admonition">
+<p class="admonition-title">Exercice</p>
+<p>On considère l’équation suivante avec R et C positifs:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-25be1b0e-abc0-47de-be7b-6cc7635b36a9">
+<span class="eqno">(43)<a class="headerlink" href="#equation-25be1b0e-abc0-47de-be7b-6cc7635b36a9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+R^{2}C^{2} \frac{\rm{d^2}u}{\rm{dt^2}} + 3RC \frac{\rm{d}u}{\rm{dt}} + u = E
+\end{equation}\]</div>
+<p>avec u(0) = 0 et <span class="math notranslate nohighlight">\(\frac{\rm{d}u}{\rm{dt}}(0) = 0\)</span></p>
+</div>
+<details class="sphinx-bs dropdown card mb-3">
+<summary class="summary-title card-header">
+Correction<div class="summary-down docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="summary-up docutils">
+<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="summary-content card-body docutils">
+<p class="card-text">En cours de physique, on introduira les grandeurs <span class="math notranslate nohighlight">\(\omega_0\)</span> et Q. Ici, on va résoudre directement l’équation sans ces grandeurs. L’équation caractéristique est donc: <span class="math notranslate nohighlight">\({(RC)}^2 r^2 + 3RC r + 1 = 0\)</span> dont le discriminant est: <span class="math notranslate nohighlight">\(\Delta = 5 {(RC)}^2&gt; 0\)</span>. Les solutions sont réelles et valent:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-bd5bb6af-a2f3-401a-8353-eb2a89e46349">
+<span class="eqno">(44)<a class="headerlink" href="#equation-bd5bb6af-a2f3-401a-8353-eb2a89e46349" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+r_{1,2} = \frac{1}{2RC} \left(3 \pm \sqrt{5}\right)
+\end{equation}\]</div>
+<p class="card-text">La solution générale ESSM est donc de la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-21f2c6b6-9915-4e50-8392-87bec7233dff">
+<span class="eqno">(45)<a class="headerlink" href="#equation-21f2c6b6-9915-4e50-8392-87bec7233dff" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+u_1(t) = A e^{r_1 t} + B e^{r_2 t}
+\end{equation}\]</div>
+<p class="card-text">On cherche une solution particulière sous une forme constante <span class="math notranslate nohighlight">\(u_2(t) = K\)</span> ce qui donne l’équation <span class="math notranslate nohighlight">\(0 + 0 + K = E\)</span> soit une solution générale EASM:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-ce6e5b1e-c2aa-4281-ade9-251278544e46">
+<span class="eqno">(46)<a class="headerlink" href="#equation-ce6e5b1e-c2aa-4281-ade9-251278544e46" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+u(t) = A e^{r_1 t} + B e^{r_2 t} + E
+\end{equation}\]</div>
+<p class="card-text">On détermine maintenant les constantes d’intégration à partir des conditions initiales. On obtient le système:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-707a34a7-94fc-4bc3-9133-cdeb418406b2">
+<span class="eqno">(47)<a class="headerlink" href="#equation-707a34a7-94fc-4bc3-9133-cdeb418406b2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\begin{cases}
+	A + B + E &amp;= 0\\
+	r_1 A + r_2 B &amp;= 0
+\end{cases}
+\Longrightarrow
+\begin{cases}
+	A &amp;= \frac{r_2 E}{r_1 - r_2}\\
+	B &amp;= \frac{r_1 E}{r_2 - r_1}
+\end{cases}	
+\end{equation}\]</div>
+</div>
+</details></div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="eq_diff.html" title="previous page">Equations différentielles</a>
+    <a class='right-next' id="next-link" href="td_ed.html" title="next page">Exercice d’application: Équations différentielles</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
