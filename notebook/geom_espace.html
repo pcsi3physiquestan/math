@@ -103,11 +103,6 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -429,8 +429,8 @@ Permutation des vecteurs<div class="summary-down docutils">
 <p class="card-text">Si l’on permute deux vecteurs d’une base directe, elle devient indirecte (c’est-à-dire non directe).</p>
 <p class="card-text">De la même manière, le symétrique d’une base directe par rapport à un plan est une base indirecte. On pourra faire le lien avec la notion de chiralité en chimie.</p>
 </div>
-</details><div class="note admonition">
-<p class="admonition-title">Attention :</p>
+</details><div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>En physique, on travaillera toujours avec des <strong>bases orthonormées directes.</strong></p>
 </div>
 </div>
@@ -463,8 +463,8 @@ Expression vectorielle<div class="summary-down docutils">
 <div class="section" id="produit-vectoriel-vecteur-d-une-base-orthonormee-direct">
 <h3>Produit vectoriel: vecteur d’une base orthonormée direct<a class="headerlink" href="#produit-vectoriel-vecteur-d-une-base-orthonormee-direct" title="Permalink to this headline">¶</a></h3>
 <p>Considérons <span class="math notranslate nohighlight">\((\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> une base orthonormée directe. On a:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8dc38207-ba7b-4294-93ea-0b0a31872dd6">
-<span class="eqno">(54)<a class="headerlink" href="#equation-8dc38207-ba7b-4294-93ea-0b0a31872dd6" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-dbe23991-1b90-42d4-9ed5-b4f579b0f8a9">
+<span class="eqno">(51)<a class="headerlink" href="#equation-dbe23991-1b90-42d4-9ed5-b4f579b0f8a9" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \overrightarrow{e_x} \wedge \overrightarrow{e_y} &amp;= \overrightarrow{e_z}\\
     \overrightarrow{e_z} \wedge \overrightarrow{e_x} &amp;= \overrightarrow{e_y}\\
     \overrightarrow{e_y} \wedge \overrightarrow{e_z} &amp;= \overrightarrow{e_x}\\
@@ -529,8 +529,8 @@ On définit la base <strong>locale</strong> cylindrique (cf. figure précédente
 <li><p>vecteur radiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est défini tel que <span class="math notranslate nohighlight">\(\overrightarrow{OH} = r \overrightarrow{e_r}\)</span>.</p></li>
 <li><p>vecteur orthoradiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> tel que la base <span class="math notranslate nohighlight">\(( \overrightarrow{e_r}, \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> soit une base orthonormée directe soit: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}= \overrightarrow{e_z} \wedge \overrightarrow{e_r}\)</span></p></li>
 </ul>
-<div class="note admonition">
-<p class="admonition-title">Attention :</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> pointe toujours dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p>
 <p>C’est une base locale, cela veut dire que les vecteurs dépendant du points M. Autrement dit, si l’on suit un point M mobile, les vecteurs de la base varieront au cours du temps.</p>
 </div>
@@ -562,9 +562,11 @@ Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \ove
 <div class="figure align-center" id="fig-346">
 <img alt="../_images/mathematiques_coord_spheriques.png" src="../_images/mathematiques_coord_spheriques.png" />
 </div>
-<div class="note dropdown admonition">
-<p class="admonition-title">Attention : Définition des angles</p>
-<p>Il faut noter la différence de domaine de définition de <span class="math notranslate nohighlight">\(\theta\)</span> et <span class="math notranslate nohighlight">\(\phi\)</span>. Elle est cruciale pour que chaque point possède un jeu de coordonnées uniques.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p><strong>Définition des angles</strong>
+, dropdown
+Il faut noter la différence de domaine de définition de <span class="math notranslate nohighlight">\(\theta\)</span> et <span class="math notranslate nohighlight">\(\phi\)</span>. Elle est cruciale pour que chaque point possède un jeu de coordonnées uniques.</p>
 </div>
 <p><strong>Parallèle et méridien</strong><br />
 On définit le parallèle au point M comme le plan passant par M est parallèle au plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> (donc perpendiculaire à <span class="math notranslate nohighlight">\(Oz\)</span>).</p>

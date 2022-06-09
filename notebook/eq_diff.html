@@ -103,11 +103,6 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -334,7 +334,7 @@
                 
   <div class="section" id="equations-differentielles">
 <h1>Equations différentielles<a class="headerlink" href="#equations-differentielles" title="Permalink to this headline">¶</a></h1>
-<div class="hint admonition">
+<div class="tip admonition">
 <p class="admonition-title">Objectifs</p>
 <ul class="simple">
 <li><p>Identifier l’ordre d’une équation différentielle</p></li>
@@ -347,16 +347,18 @@
 </div>
 <div class="section" id="equation-differentielles-lineaire-et-ordre">
 <h2>Equation différentielles linéaire et ordre<a class="headerlink" href="#equation-differentielles-lineaire-et-ordre" title="Permalink to this headline">¶</a></h2>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Equation différentielle et ordre.</p>
-<p>Une équation différentielle est une équation qui relie une fonction à ses dérivées.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Equation différentielle et ordre.</strong>
+Une équation différentielle est une équation qui relie une fonction à ses dérivées.</p>
 <p>On appelle ordre d’une équation différentielle, le degré le plus haut de la dérivée intervenant dans l’équation différentielle. En physique, on n’apprendra à résoudre analytiquement  des équations linéaires d’ordre 1 ou 2.</p>
 </div>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Equation différentielle linéaire</p>
-<p>Une équation différentielle est linéaire si elle peut se mettre sous la forme (y(t) est la fonction inconnue) :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a01f0bea-af78-4fea-a0f3-94b828fa887e">
-<span class="eqno">(30)<a class="headerlink" href="#equation-a01f0bea-af78-4fea-a0f3-94b828fa887e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Equation différentielle linéaire</strong>
+Une équation différentielle est linéaire si elle peut se mettre sous la forme (y(t) est la fonction inconnue) :</p>
+<div class="amsmath math notranslate nohighlight" id="equation-124e77a4-2fd5-4c8f-955d-b0ae28b5286e">
+<span class="eqno">(27)<a class="headerlink" href="#equation-124e77a4-2fd5-4c8f-955d-b0ae28b5286e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 a_n \frac{\rm{d^n}y}{\rm{dt^n}} (t) + a_{n-1 } \frac{\rm{d^{n-1}}y}{\rm{dt^{n-1}}}(t)  + ... +  a_{1 } \frac{\rm{d^{1}}y}{\rm{dt^{1}}} (t) + a_0 y(t) = f(t)
 \end{equation}\]</div>
 <p>Remarque:f(t) peut être une fonction quelconque. n est l’ordre de l’équation.</p>

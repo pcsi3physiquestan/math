@@ -103,11 +103,6 @@
   </label>
   <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -325,18 +325,6 @@
   <a class="reference internal nav-link" href="#cercle-trigonometrique">
    Cercle trigonométrique
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#cercle-trigonometrique-definition">
-     Cercle trigonométrique: Définition
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#methode-resoudre-une-equation-trigonometrique">
-     Méthode: Résoudre une équation trigonométrique
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
@@ -353,17 +341,21 @@
 <h1>Géométrie et trigonométrie<a class="headerlink" href="#geometrie-et-trigonometrie" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="generalites">
 <h2>Généralités<a class="headerlink" href="#generalites" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title">Théorèmes utiles</p>
 <p>On rappelle ici le nom des théorèmes utiles:</p>
 <ul class="simple">
 <li><p>le théorème de Pythagore</p></li>
 <li><p>le théorème de Thales: on peut aussi le voir comme un rapport de grandeur lors d’une homothétie. Cette vision, développée en optique sera alors très utile.</p></li>
-<li><p>le théorème d’Al-Kashi: en réalité, ce théorème n’est pas utile à connaître. Il peut servir tant qu’on utilise pas de géométrie vectorielle mais il est préférable de calculer la norme d’une somme de vecteur pour aboutir à une telle formule.</p></li>
+<li><p>le théorème d’Al-Kashi: en fait non, il est préférable de calculer la norme d’une somme de vecteur pour aboutir à une telle formule.</p></li>
 </ul>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Fonctions trigonométriques et triangle rectangle</p>
-<p>On rappelle que dans un triangle <strong>rectangle</strong>:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-d79f6a6c-470e-4ca9-a7de-bc429c0604e7">
-<span class="eqno">(13)<a class="headerlink" href="#equation-d79f6a6c-470e-4ca9-a7de-bc429c0604e7" title="Permalink to this equation">¶</a></span>\[\begin{align}
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fonctions trigonométriques et triangle rectangle</strong>
+On rappelle que dans un triangle <strong>rectangle</strong>:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3a3a6460-d103-42a0-8264-b46ebb248dc9">
+<span class="eqno">(3)<a class="headerlink" href="#equation-3a3a6460-d103-42a0-8264-b46ebb248dc9" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \cos \alpha &amp;= \frac{\textrm{Côté adjacent}}{\textrm{Hypothénuse}} &amp;=&amp; \frac{BA}{AC}&amp; &amp;\\
     \sin \alpha &amp;= \frac{\textrm{Côté opposé}}{\textrm{Hypothénuse}} &amp;=&amp; \frac{BC}{AC}&amp; &amp;\\
     \tan \alpha &amp;= \frac{\textrm{Côté opposé}}{\textrm{Côté adjacent}} &amp;=&amp; \frac{BC}{BA}&amp; &amp;
@@ -375,79 +367,20 @@
 </div>
 <div class="section" id="cercle-trigonometrique">
 <h2>Cercle trigonométrique<a class="headerlink" href="#cercle-trigonometrique" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="cercle-trigonometrique-definition">
-<h3>Cercle trigonométrique: Définition<a class="headerlink" href="#cercle-trigonometrique-definition" title="Permalink to this headline">¶</a></h3>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Cercle trigonométrique</p>
-<p>Le cercle trigonométrique est un cercle de rayon 1. L’axe Ox représente l’origine des angles parcourus sur le cercle. Ce cercle est orienté, c’est-à-dire que les angles orientés dans le sens dit trigonométrique (sens inverse du sens horaire) sont comptés positifs.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Cercle trigonométrique</strong>
+Le cercle trigonométrique est un cercle de rayon 1. L’axe Ox représente l’origine des angles parcourus sur le cercle. Ce cercle est orienté, c’est-à-dire que les angles orientés dans le sens dit trigonométrique (sens inverse du sens horaire) sont comptés positifs.</p>
 <p>Soit un angle <span class="math notranslate nohighlight">\(\alpha\)</span> orienté, la longueur de l’arc associé à l’angle <span class="math notranslate nohighlight">\(\alpha\)</span> (arc AM) sur le cercle trigonométrique est égale à l’angle <span class="math notranslate nohighlight">\(\alpha\)</span> multiplié par la longueur unité. Sur un cercle de rayon R, la longueur de l’arc associé à <span class="math notranslate nohighlight">\(\alpha\)</span> est égale à <span class="math notranslate nohighlight">\(R \alpha\)</span>.</p>
 <div class="figure align-center" id="cercle-trigo">
 <img alt="../_images/mathematique_cercle_trigo.jpg" src="../_images/mathematique_cercle_trigo.jpg" />
 </div>
-</div>
-<div class="important admonition">
-<p class="admonition-title">Fondamental : Fonctions trigonométriques et cercle</p>
 <p>Soit M un point du cercle trigonométrique et <span class="math notranslate nohighlight">\(\alpha\)</span> l’angle orienté entre OM et l’axe Ox. On note N le projeté de M sur l’axe Ox et P le projeté de M sur l’axe Oy. Les distances <strong>algébriques</strong> <span class="math notranslate nohighlight">\(\overline{ON}\)</span> et <span class="math notranslate nohighlight">\(\overline{OP}\)</span> sont respectivement égales à <span class="math notranslate nohighlight">\(\cos(\alpha)\)</span> et <span class="math notranslate nohighlight">\(\sin(\alpha)\)</span>.</p>
 <p>On peut tracer les deux tangentes au cercle perpendiculaires à l’axe Ox orienté (vers le haut du côté des x positifs et vers le bas du côté des x négatifs). Soit T l’intersection de OM et de la tangente la plus proche. La distance de T à l’axe Ox est égale à<span class="math notranslate nohighlight">\( \tan(\alpha)\)</span> (distance <strong>algébrique</strong> AT).</p>
 <div class="figure align-center" id="fig-330">
 <img alt="../_images/mathematique_cercle_trigo_sincos.jpg" src="../_images/mathematique_cercle_trigo_sincos.jpg" />
 </div>
 </div>
-</div>
-<div class="section" id="methode-resoudre-une-equation-trigonometrique">
-<h3>Méthode: Résoudre une équation trigonométrique<a class="headerlink" href="#methode-resoudre-une-equation-trigonometrique" title="Permalink to this headline">¶</a></h3>
-<p>Une équation du type <span class="math notranslate nohighlight">\(\sin(x) = k\)</span> possède soit 0 solution (si k est plus grand que 1 en valeur absolue) soit une infinité de solution sur l’ensemble des réels. Néanmoins, on est souvent amené à chercher les solutions dans l’intervalle <span class="math notranslate nohighlight">\(]-\pi;\pi]\)</span> (ou <span class="math notranslate nohighlight">\([0;2\pi[\)</span>). Il y a alors 2 solutions.</p>
-<p>Il arrive aussi qu’on soit amené à chercher un angle unique dans cet intervalle donné par deux équations au lieu d’une. On se propose d’étudier ici quelques exemples.</p>
-<p>On rappelle que la fonction arccos est à valeur dans <span class="math notranslate nohighlight">\([0;\pi]\)</span>, les fonctions arcsin et arctan sont à valeur dans <span class="math notranslate nohighlight">\([-\pi/2;\pi/2]\)</span>. Mais il existe en général une deuxième solution dans le reste de l’intervalle et c’est elle qu’il faut savoir déterminer en plus.</p>
-<p>Essayer de trouver la solution a ces équations avant de trouver la réponse.</p>
-<div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>Déterminer dans l’intervalle <span class="math notranslate nohighlight">\(]-\pi;\pi]\)</span> les solutions des équations suivantes:</p>
-<ol class="simple">
-<li><p>sin(x) = k</p></li>
-<li><p>cos(x) = k</p></li>
-<li><p>tan(x) = k</p></li>
-</ol>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Correction<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<blockquote>
-<div><ol class="simple">
-<li><p class="card-text">Soit une équation en du type <span class="math notranslate nohighlight">\(\sin(x) = k\)</span> avec <span class="math notranslate nohighlight">\(x \in [-\pi; +\pi ]\)</span>. Elle possède des solutions uniquement si <span class="math notranslate nohighlight">\(-1 \leq k \leq 1\)</span>. Les solutions sont alors <span class="math notranslate nohighlight">\(x = \theta_1 = \arcsin(k)\)</span> et <span class="math notranslate nohighlight">\(x = \theta_2 = \pi - \arcsin(k)\)</span>.</p></li>
-<li><p class="card-text">Soit une équation en du type <span class="math notranslate nohighlight">\(\cos(x) = k\)</span> avec <span class="math notranslate nohighlight">\(x \in [-\pi; +\pi ]\)</span>. Elle possède des solutions uniquement si <span class="math notranslate nohighlight">\(-1 \leq k \leq 1\)</span>. Les solutions sont alors <span class="math notranslate nohighlight">\(x = \theta_1 = \arccos(k)\)</span> et <span class="math notranslate nohighlight">\(x = \theta_2 = - \arccos(k)\)</span>.</p></li>
-<li><p class="card-text">Soit une équation en du type <span class="math notranslate nohighlight">\(\tan(x) = k\)</span> avec <span class="math notranslate nohighlight">\(x \in [0; 2\pi ]\)</span>. Les solutions sont alors <span class="math notranslate nohighlight">\(x = \theta_1 = \arctan(k)\)</span> et <span class="math notranslate nohighlight">\(x = \theta_2 = \pi + \arctan(k)\)</span>.</p></li>
-</ol>
-</div></blockquote>
-<div class="figure align-center" id="fig-331">
-<img alt="../_images/mathematiques_eqn_trigo.jpg" src="../_images/mathematiques_eqn_trigo.jpg" />
-</div>
-</div>
-</details><div class="attention admonition">
-<p class="admonition-title">Exercice</p>
-<p>On considère un angle <span class="math notranslate nohighlight">\(\theta\)</span> qui vérifie les équations suivantes: <span class="math notranslate nohighlight">\(\cos \theta &lt; 0\)</span> et <span class="math notranslate nohighlight">\(\tan \theta = k\)</span> avec k &lt; 0.</p>
-<ol class="simple">
-<li><p>Déterminer le quadran dans lequel se trouve l’angle <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
-<li><p>Déterminer une expression de l’angle <span class="math notranslate nohighlight">\(\theta\)</span></p></li>
-</ol>
-</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Correction<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<ol class="simple">
-<li><p class="card-text">Les signes des fonctions trigonométriques permettent de déterminer le quadran dans lequel se trouve l’angle. Ici le cosinus et négatif donc <span class="math notranslate nohighlight">\(\theta \in ]-\pi;\pi/2[ \cup ]\pi/2;\pi[\)</span>. La tangente est négative donc <span class="math notranslate nohighlight">\(\theta \in ]-\pi/2;0[ \cup ]\pi/2;\pi[\)</span>. La conjonction des deux équations donne <span class="math notranslate nohighlight">\(]\pi/2;\pi[\)</span>.</p></li>
-<li><p class="card-text">Nous sommes dans une zone hors de l’intervalle image de arctan. La solution n’est donc pas arctan k mais <span class="math notranslate nohighlight">\(\boxed{\arctan k + \pi}\)</span></p></li>
-</ol>
-</div>
-</details></div>
 </div>
 </div>
 

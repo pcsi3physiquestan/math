@@ -103,11 +103,6 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -362,14 +362,14 @@
 	\overrightarrow{u}(\xi) &amp;= u_r(\xi) \overrightarrow{e_r}(\xi) + u_{\theta}(\xi) \overrightarrow{e_{\theta}}(\xi) + u_z(\xi) \overrightarrow{e_z}(\xi)\\
 	\overrightarrow{u}(\xi) &amp;= u_r(\xi) \overrightarrow{e_r}(\xi) + u_{\theta}(\xi) \overrightarrow{e_{\theta}}(\xi) + u_{\varphi}(\xi) \overrightarrow{e_{\varphi}}(\xi)
 \end{align*}\]</div>
-<div class="note admonition">
-<p class="admonition-title">Attention :</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>Dans la plupart des cas, la dépendance des vecteurs en <span class="math notranslate nohighlight">\(\xi\)</span> est <strong>implicite</strong>. En effet, celà vient du fait que ces vecteurs dépendant implicitement des coordonnées du point M qui dépendent de <span class="math notranslate nohighlight">\(\xi\)</span>. Il est donc rare de voir le <span class="math notranslate nohighlight">\((\xi)\)</span> derrière ces vecteurs. Il ne faut pourtant pas oublier qu’ils varient.</p>
 </div>
 <p><strong>Dérivée d’une composante.</strong><br />
 On peut dérivée une composante <span class="math notranslate nohighlight">\(u_1(\xi) \overrightarrow{e_1}(\xi)\)</span> comme on dérive un produit. Ainsi:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-570778fe-2122-4a0b-8d70-80666d4f5c85">
-<span class="eqno">(55)<a class="headerlink" href="#equation-570778fe-2122-4a0b-8d70-80666d4f5c85" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f87fbb31-406c-4d9b-9cc7-42380df1f7e2">
+<span class="eqno">(52)<a class="headerlink" href="#equation-f87fbb31-406c-4d9b-9cc7-42380df1f7e2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\rm{d}}{\rm{d\xi}}\left(u_1(\xi) \overrightarrow{e_1}(\xi)\right) = \frac{\rm{d}u_1}{\rm{d\xi}}(\xi) \overrightarrow{e_1}(\xi) + u_1(\xi) \frac{\rm{d}\overrightarrow{e_1}}{\rm{d\xi}}(\xi)
 \end{equation}\]</div>
 <p><strong>Position du problème.</strong><br />
@@ -406,8 +406,8 @@ Le cas des coordonneés sphériques est une peu particulier car les vecteurs <sp
 </details><p><strong>Cas des coordonnées cartésiennes.</strong><br />
 Pour les coordonnées cartésiennes, la base étant global, elle ne dépend pas du point M et les vecteurs de la base ne vont donc pas dépendre de <span class="math notranslate nohighlight">\(\xi\)</span> (sauf si le repère est mobile, mais cette configuration ne sera pas vue en première année).</p>
 <p>Il vient que la dérivée dans un système de coordonnées cartésien (fixe) est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cc6cd618-a8e9-4818-9520-6e499f9c2c0a">
-<span class="eqno">(56)<a class="headerlink" href="#equation-cc6cd618-a8e9-4818-9520-6e499f9c2c0a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d54e5d72-ebe4-42f0-b323-41ccd72b9c82">
+<span class="eqno">(53)<a class="headerlink" href="#equation-d54e5d72-ebe4-42f0-b323-41ccd72b9c82" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\rm{d}\overrightarrow{u}}{\rm{d\xi}} = \frac{\rm{d}u_x}{\rm{d\xi}} \overrightarrow{e_x} +\frac{\rm{d}u_y}{\rm{d\xi}} \overrightarrow{e_y} +\frac{\rm{d}u_z}{\rm{d\xi}} \overrightarrow{e_z}
 \end{equation}\]</div>
 </div>

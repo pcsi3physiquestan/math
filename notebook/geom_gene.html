@@ -103,11 +103,6 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -392,9 +392,10 @@ Cas utilisé en physique<div class="summary-down docutils">
 <p class="card-text">On peut associer aux vecteurs des espaces nommés précédemment une direction, un sens et une longueur (cf.suite). Ces caractéristiques, utiles pour visualiser les problèmes physiques ont leur limite lorsqu’on manipule les grandeurs vectorielles (notamment les sommes). C’est pourquoi, nous allons introduire des caractéristiques générales des espaces vectoriels pour préparer à la manipulation mathématiques des objets comme les forces, vecteur vitesse, vecteur position… )</p>
 <p class="card-text">Au contraire des mathématiques, <strong>on conservera la notation fléchée</strong> pour désigner les vecteurs (élément de l’espace vectoriel) de manière à bien les différencier des grandeurs scalaires (réels).</p>
 </div>
-</details><div class="important admonition">
-<p class="admonition-title">Combinaison linéaire</p>
-<p>Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span class="math notranslate nohighlight">\(\overrightarrow{v} = \sum\limits_{i} \lambda_i \overrightarrow{u_i}\)</span>.</p>
+</details><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Combinaison linéaire
+Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span class="math notranslate nohighlight">\(\overrightarrow{v} = \sum\limits_{i} \lambda_i \overrightarrow{u_i}\)</span>.</p>
 </div>
 </div>
 <div class="section" id="famille-et-base">
@@ -407,8 +408,8 @@ Famille libre<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Une famille libre (ou linéairement indépendants) de vecteurs est une ensemble de vecteurs dont aucun ne peut être écrit comme une combinaison linéaire des autres. Cela revient à imposé la condition:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-17bba343-74bb-4c68-a251-25dd3826f144">
-<span class="eqno">(52)<a class="headerlink" href="#equation-17bba343-74bb-4c68-a251-25dd3826f144" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5c0ae98e-f40c-404a-8d13-9e608b636161">
+<span class="eqno">(49)<a class="headerlink" href="#equation-5c0ae98e-f40c-404a-8d13-9e608b636161" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  \forall (a_1, a_2, ..., a_n) \in \mathbb{R}^n \left(\sum\limits_{k = 1}^{n} a_k \overrightarrow{v_k} = 0 \Longrightarrow \left(\forall k \in [\![1;n]\!] a_k = 0\right)\right)
 \end{equation}\]</div>
 <p class="card-text">c’est-à-dire que toute combinaison linéaire nulle des vecteurs d’une famille libre implique que tous les coefficients sont nuls.</p>
@@ -466,8 +467,8 @@ Nombre de base<div class="summary-down docutils">
 <li><p>Elle est positive si <span class="math notranslate nohighlight">\(\overrightarrow{u} \cdot \overrightarrow{u} &gt; 0\)</span> quelque soit <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span></p></li>
 <li><p>Elle est définie si (Si <span class="math notranslate nohighlight">\(\overrightarrow{u} \cdot \overrightarrow{u} = 0\)</span> alors <span class="math notranslate nohighlight">\(\overrightarrow{u} = \overrightarrow{0}\)</span>)</p></li>
 </ul>
-<div class="note admonition">
-<p class="admonition-title">Attention :</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
 <p>Le produit scalaire est à valeur dans K (pour nous dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>), c’est-à-dire qu’<strong>il renvoie un scalaire et non un vecteur</strong>.</p>
 </div>
 <details class="sphinx-bs dropdown card mb-3">
@@ -500,8 +501,8 @@ Norme euclidienne<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Soit un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>, on définit la norme euclidienne de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a29e7de5-ec68-4ea7-a7a9-358ef204db61">
-<span class="eqno">(53)<a class="headerlink" href="#equation-a29e7de5-ec68-4ea7-a7a9-358ef204db61" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-45f79cea-807f-44ef-a524-087189f376f2">
+<span class="eqno">(50)<a class="headerlink" href="#equation-45f79cea-807f-44ef-a524-087189f376f2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left \| \overrightarrow{u}	\right \| = \sqrt{\overrightarrow{u} \cdot \overrightarrow{u}}
 \end{equation}\]</div>
 </div>

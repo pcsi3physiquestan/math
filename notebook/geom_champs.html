@@ -103,11 +103,6 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="equations.html">
-     Equations et inéquations
-    </a>
-   </li>
-   <li class="toctree-l2">
     <a class="reference internal" href="fonctions.html">
      Fonctions mathématiques
     </a>
@@ -122,6 +117,11 @@
      Nombres complexes
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="methodes.html">
+     Méthodes
+    </a>
+   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="td_math_1.html">
      Exercices
@@ -134,17 +134,17 @@
     <ul>
      <li class="toctree-l3">
       <a class="reference internal" href="td_bases.html">
-       TD Bases
+       Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_litteral.html">
-       TD Calcul littéral
+       Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
       <a class="reference internal" href="td_appro.html">
-       TD Approfondissement
+       Entrainement : Nouveautés
       </a>
      </li>
     </ul>
@@ -467,11 +467,12 @@ Correction<div class="summary-down docutils">
 <ul class="simple">
 <li><p>on utilise un déplacement infinitésimal dans une direction particulière. C’est en général le cas quand on suit une courbe (une trajectoire par exemple). On peut alors utiliser l’expression du déplacement élémentaire général en préciser des expressions pour les variations élémentaires.</p></li>
 </ul>
-<div class="important admonition">
-<p class="admonition-title">Fondamental : Déplacement infinitésimal en coordonnées cartésiennes.</p>
-<p>On rappelle qu’on passe d’un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> à un point <span class="math notranslate nohighlight">\(M'(x+dx, y+dy, z+dz)\)</span>. Il vient que le déplacement élémentaire est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f58bfdf0-4ec3-49d3-a3f9-39a521cd3947">
-<span class="eqno">(57)<a class="headerlink" href="#equation-f58bfdf0-4ec3-49d3-a3f9-39a521cd3947" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Fondamental : Déplacement infinitésimal en coordonnées cartésiennes.</strong>
+On rappelle qu’on passe d’un point <span class="math notranslate nohighlight">\(M(x,y,z)\)</span> à un point <span class="math notranslate nohighlight">\(M'(x+dx, y+dy, z+dz)\)</span>. Il vient que le déplacement élémentaire est:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b5d4affa-275b-481a-9917-743fb3a17313">
+<span class="eqno">(54)<a class="headerlink" href="#equation-b5d4affa-275b-481a-9917-743fb3a17313" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dOM} = dx \overrightarrow{e_x} + dy \overrightarrow{e_y} + dz \overrightarrow{e_z}
 \end{equation}\]</div>
 <p>En effet, on observe sur le schéma suivant que l’on peut décomposer le vecteur en une somme de trois vecteurs dans chaque direction Ox, Oy et Oz de distance respectives dx, dy et dz.</p>
@@ -487,8 +488,8 @@ Correction<div class="summary-down docutils">
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Montrer que le déplacement élémentaire en coordonnées cylindriques s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-8ef2990e-b780-4abf-9e43-56dc08b78b0f">
-<span class="eqno">(58)<a class="headerlink" href="#equation-8ef2990e-b780-4abf-9e43-56dc08b78b0f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-270ebc0a-2226-440f-8898-1241b5c31a78">
+<span class="eqno">(55)<a class="headerlink" href="#equation-270ebc0a-2226-440f-8898-1241b5c31a78" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}
 \end{equation}\]</div>
 </div>
@@ -506,16 +507,16 @@ Correction<div class="summary-down docutils">
 <img alt="../_images/mecanique_depl_elem_cylindrique.png" src="../_images/mecanique_depl_elem_cylindrique.png" />
 </div>
 <p class="card-text">Il vient un déplacement élémentaire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-46059bca-bb4a-456a-aff5-d6419731762e">
-<span class="eqno">(59)<a class="headerlink" href="#equation-46059bca-bb4a-456a-aff5-d6419731762e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7759a401-23e5-478c-a8e4-b703d9a8f5f4">
+<span class="eqno">(56)<a class="headerlink" href="#equation-7759a401-23e5-478c-a8e4-b703d9a8f5f4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + dz \overrightarrow{e_z}
 \end{equation}\]</div>
 </div>
 </details><div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Montrer que le déplacement élémentaire en coordonnées sphériques s’écrit:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-50314d93-336e-49a4-86a4-b9d5d7700273">
-<span class="eqno">(60)<a class="headerlink" href="#equation-50314d93-336e-49a4-86a4-b9d5d7700273" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5dbeed16-a2cb-4424-9486-5ec66e5ac32e">
+<span class="eqno">(57)<a class="headerlink" href="#equation-5dbeed16-a2cb-4424-9486-5ec66e5ac32e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
 \end{equation}\]</div>
 </div>
@@ -533,8 +534,8 @@ Correction<div class="summary-down docutils">
 <img alt="../_images/mecanique_depl_elem_spherique.png" src="../_images/mecanique_depl_elem_spherique.png" />
 </div>
 <p class="card-text">Il vient un déplacement élémentaire:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-938fd896-0fcd-4e06-8bbd-a04c389b1351">
-<span class="eqno">(61)<a class="headerlink" href="#equation-938fd896-0fcd-4e06-8bbd-a04c389b1351" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5d346fbf-8824-4335-9275-33c6eac4c272">
+<span class="eqno">(58)<a class="headerlink" href="#equation-5d346fbf-8824-4335-9275-33c6eac4c272" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \overrightarrow{dOM} = dr \overrightarrow{e_r} + r d \theta \overrightarrow{e_{\theta}} + r \sin \theta d\varphi \overrightarrow{e_{\varphi}}
 \end{equation}\]</div>
 </div>
@@ -547,8 +548,8 @@ Considérons un point M de l’espace et un déplacement infinitésimal quelconq
 <p>La différentielle df du champ scalaire f autour du point M est la variation infinitésimale de f du point M vers un point M’ tel que <span class="math notranslate nohighlight">\(\overrightarrow{MM'} = \overrightarrow{dOM}\)</span>.</p>
 <p><strong>Expression générale de la différentielle. (Admis)</strong><br />
 La différentielle du champ f en un point M de coordonnées <span class="math notranslate nohighlight">\((\xi,\zeta,\eta)\)</span> est:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b20c4d39-f5c9-4914-b4bd-b193bcd31805">
-<span class="eqno">(62)<a class="headerlink" href="#equation-b20c4d39-f5c9-4914-b4bd-b193bcd31805" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-877681f4-2ca8-4177-aa0f-b01573def26b">
+<span class="eqno">(59)<a class="headerlink" href="#equation-877681f4-2ca8-4177-aa0f-b01573def26b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 df = \frac{\partial f}{\partial \xi} d\xi + \frac{\partial f}{\partial \zeta} d\zeta + \frac{\partial f}{\partial \eta} d\eta
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\((\xi,\zeta,\eta)\)</span> représentent les 3 coordonnées du point M dans un système de coordonnées.</p>
@@ -572,11 +573,12 @@ Remarque<div class="summary-down docutils">
 <p><strong>Observation</strong><br />
 On désire généraliser le concept de dérivée. Si l’on se base sur la notion du taux de variation, on peut dire que lorsqu’on se déplace de <span class="math notranslate nohighlight">\(dx \)</span>, la dérivée <span class="math notranslate nohighlight">\(f'(x)\)</span> permet de connaître la variation df de la fonction f: <span class="math notranslate nohighlight">\(df = f'(x) dx\)</span> (on rappelle que c’est une égalité car le passage à la limite est implicite avec la notation différentielle).</p>
 <p>Ici on veut connaître la différentielle df de la fonction f en un point M pour un déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
-<div class="tip admonition">
-<p class="admonition-title">Définition : Gradient</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Définition : Gradient</strong></p>
 <p>On définit le gradient de la fonction f en en un point M comme le vecteur noté <span class="math notranslate nohighlight">\(\overrightarrow{grad}f\)</span> tel que:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-677d0a48-9ddc-4e18-9a7b-14daafdc1c15">
-<span class="eqno">(63)<a class="headerlink" href="#equation-677d0a48-9ddc-4e18-9a7b-14daafdc1c15" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9c1ab729-5b7a-4bc1-aed3-c1410632e4f3">
+<span class="eqno">(60)<a class="headerlink" href="#equation-9c1ab729-5b7a-4bc1-aed3-c1410632e4f3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 df = \overrightarrow{grad}f \cdot \overrightarrow{dOM}
 \end{equation}\]</div>
 <p>où df est la variation infinitésimale de f à partir du point M en suivant le déplacement élémentaire <span class="math notranslate nohighlight">\(\overrightarrow{dOM}\)</span>.</p>
@@ -588,8 +590,8 @@ df = \overrightarrow{grad}f \cdot \overrightarrow{dOM}
 <p>Avant d’établir les expressions du gradient dans chaque système de coordonnées, on va déjà établir certaines propriétés intéressantes du gradient.</p>
 <p><strong>Intégration du gradient</strong>
 A l’image de la dérivée, on peut “intégrer” le gradient pour trouver une variation de la fonction f:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e1d2d02c-d229-47eb-b181-172d13bbd29b">
-<span class="eqno">(64)<a class="headerlink" href="#equation-e1d2d02c-d229-47eb-b181-172d13bbd29b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-dac47512-9564-496a-ad67-a38080671e56">
+<span class="eqno">(61)<a class="headerlink" href="#equation-dac47512-9564-496a-ad67-a38080671e56" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \Delta f = f(B) -f(A) = \int_{\Gamma(A \to B)} \overrightarrow{grad}f \cdot \overrightarrow{dl}
 \end{equation}\]</div>
 <p>L’intégrale proposée ici est appelée “intégrale de chemin” car on va intégrer le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{grad}f \cdot \overrightarrow{dl}\)</span> sur un chemin allant de A vers B. Dans ce cas, le déplacement élémentaire doit être tangent au chemin, ce qui conditionne a priori son expression (les déplacements élémentaires sont dépendants les uns des autres). Le calcul d’une intégrale de chemin sera explicitée en cours de physique (pour des calculs de travail d’une force).</p>
