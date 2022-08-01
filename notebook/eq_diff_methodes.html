@@ -361,10 +361,10 @@ Pour résoudre une équation différentielle, il faut suivre <strong>scrupuleuse
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Résoudre l’équation différentielle suivante:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9e6361ce-1fe0-4315-a8fb-8efec2cc01c0">
-<span class="eqno">(30)<a class="headerlink" href="#equation-9e6361ce-1fe0-4315-a8fb-8efec2cc01c0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 \frac{\rm{d}f}{\rm{dt}}(t) + \frac{1}{\tau} f(t) = E
-\end{equation}\]</div>
+\]</div>
 <p>avec f(0) = 0</p>
 </div>
 <div class="topic">
@@ -373,13 +373,13 @@ Pour résoudre une équation différentielle, il faut suivre <strong>scrupuleuse
 <div><p>L’équation est déjà sous forme canonique, la solution ESSM est <span class="math notranslate nohighlight">\(f_1(t) = A e^{-\frac{t}{\tau}}\)</span></p>
 <p>Le second membre étant constant, on cherche une solution constante sous la forme <span class="math notranslate nohighlight">\(f_2(t) = K\)</span>. L’équation devient <span class="math notranslate nohighlight">\(0 + K/\tau = E\)</span> soit <span class="math notranslate nohighlight">\(K = \tau E\)</span>.</p>
 <p>La solution générale de l’équation avec second membre :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-153cef32-f382-41f8-a896-385589d0c7d3">
-<span class="eqno">(31)<a class="headerlink" href="#equation-153cef32-f382-41f8-a896-385589d0c7d3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8175a431-90cf-4bce-9eea-a4f5be683f38">
+<span class="eqno">(12)<a class="headerlink" href="#equation-8175a431-90cf-4bce-9eea-a4f5be683f38" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(t) = A e^{-\frac{t}{\tau}} + \tau E
 \end{equation}\]</div>
 <p>On cherche maintenant la constante d’intégration grâce à la condition initiale <span class="math notranslate nohighlight">\(f(0) = 0\)</span>. Il vient <span class="math notranslate nohighlight">\(A + \tau E = 0 \Longrightarrow A = - \tau E\)</span>. La solution est donc:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-41d1e73e-c0fc-4c74-89ba-9c6aefdc0f7d">
-<span class="eqno">(32)<a class="headerlink" href="#equation-41d1e73e-c0fc-4c74-89ba-9c6aefdc0f7d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-17170986-f054-4643-a95a-99dbb5e2b5ed">
+<span class="eqno">(13)<a class="headerlink" href="#equation-17170986-f054-4643-a95a-99dbb5e2b5ed" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
 \end{equation}\]</div>
 </div></blockquote>
@@ -390,33 +390,33 @@ f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On considère l’équation suivante avec R et C positifs:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-0799ec73-9395-4bf6-a6e8-9827246dd1f2">
-<span class="eqno">(33)<a class="headerlink" href="#equation-0799ec73-9395-4bf6-a6e8-9827246dd1f2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="math notranslate nohighlight">
+\[
 R^{2}C^{2} \frac{\rm{d^2}u}{\rm{dt^2}} + 3RC \frac{\rm{d}u}{\rm{dt}} + u = E
-\end{equation}\]</div>
+\]</div>
 <p>avec u(0) = 0 et <span class="math notranslate nohighlight">\(\frac{\rm{d}u}{\rm{dt}}(0) = 0\)</span></p>
 </div>
 <div class="topic">
 <p class="topic-title first">Correction</p>
 <blockquote>
 <div><p>En cours de physique, on introduira les grandeurs <span class="math notranslate nohighlight">\(\omega_0\)</span> et Q. Ici, on va résoudre directement l’équation sans ces grandeurs. L’équation caractéristique est donc: <span class="math notranslate nohighlight">\({(RC)}^2 r^2 + 3RC r + 1 = 0\)</span> dont le discriminant est: <span class="math notranslate nohighlight">\(\Delta = 5 {(RC)}^2&gt; 0\)</span>. Les solutions sont réelles et valent:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec23694a-7c3e-4165-b463-d21f43013be5">
-<span class="eqno">(34)<a class="headerlink" href="#equation-ec23694a-7c3e-4165-b463-d21f43013be5" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-17cb37d6-c10f-4e86-bfd1-30d3a354e6b0">
+<span class="eqno">(14)<a class="headerlink" href="#equation-17cb37d6-c10f-4e86-bfd1-30d3a354e6b0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 r_{1,2} = \frac{1}{2RC} \left(3 \pm \sqrt{5}\right)
 \end{equation}\]</div>
 <p>La solution générale ESSM est donc de la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5b31fcbb-21a7-472e-8a06-c9fb5c1cf476">
-<span class="eqno">(35)<a class="headerlink" href="#equation-5b31fcbb-21a7-472e-8a06-c9fb5c1cf476" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c976d0f7-e3b1-442b-9610-05a1d4683c70">
+<span class="eqno">(15)<a class="headerlink" href="#equation-c976d0f7-e3b1-442b-9610-05a1d4683c70" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 u_1(t) = A e^{r_1 t} + B e^{r_2 t}
 \end{equation}\]</div>
 <p>On cherche une solution particulière sous une forme constante <span class="math notranslate nohighlight">\(u_2(t) = K\)</span> ce qui donne l’équation <span class="math notranslate nohighlight">\(0 + 0 + K = E\)</span> soit une solution générale EASM:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-cc257f2e-f75c-467c-a352-7e812511cfa1">
-<span class="eqno">(36)<a class="headerlink" href="#equation-cc257f2e-f75c-467c-a352-7e812511cfa1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-61714fa6-14c4-4e98-82fd-070f122b37cc">
+<span class="eqno">(16)<a class="headerlink" href="#equation-61714fa6-14c4-4e98-82fd-070f122b37cc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 u(t) = A e^{r_1 t} + B e^{r_2 t} + E
 \end{equation}\]</div>
 <p>On détermine maintenant les constantes d’intégration à partir des conditions initiales. On obtient le système:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-34941fb6-6c34-40fb-9493-136008573029">
-<span class="eqno">(37)<a class="headerlink" href="#equation-34941fb6-6c34-40fb-9493-136008573029" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-bb439a87-0802-4860-a6f5-71d4ad6a5e29">
+<span class="eqno">(17)<a class="headerlink" href="#equation-bb439a87-0802-4860-a6f5-71d4ad6a5e29" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \begin{cases}
 	A + B + E &amp;= 0\\
 	r_1 A + r_2 B &amp;= 0

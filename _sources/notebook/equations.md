@@ -22,9 +22,9 @@ On rappelle que vous devez pouvoir résoudre des équations simples utilisant de
 ### Equation du second degré
 Un équation du second degré peut se mettre sous la forme:
 
-\begin{equation}
+$$
 a x^2 + b x + c = 0
-\end{equation}
+$$
 
 On ne redonne pas ici la méthode mais il faut pouvoir trouver les solutions d'une telle équation et savoir reconnaître le cas de solutions complexes lorsque le discriminant est négatif.
 
@@ -41,9 +41,9 @@ On ne peut pas toujours résoudre analytiquement une équation. On peut par cont
 
 Déterminer graphiquement les conditions d'existence de solutions non nulles pour l'équation:
 
-\begin{equation}
+$$
 x = \frac{mg}{k} \sin(x)
-\end{equation}
+$$
 
 avec k, m et g strictement positifs.
 ````
@@ -62,9 +62,9 @@ On remarque que si la pente est trop pentue, la seule intersection est le point 
 
 Cette condition s'écrit:
 
-\begin{equation}
+$$
 \boxed{\frac{k}{mg} < 1}
-\end{equation}
+$$
 
 ````{dropdown} Remarque
 

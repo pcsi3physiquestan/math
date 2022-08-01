@@ -29,9 +29,9 @@ Une équation d'ordre 1 peut se mettre sous la forme:
 ````{important} __Fondamental : Solution de l'équation sans second membre__
 Toutes les solutions de l'équation __homogène__, c'est-à-dire sans second membre sont de la forme:
 
-\begin{equation}
+$$
 y(t) = A e^{-\frac{t}{\tau}}
-\end{equation}
+$$
 ````
 
 ````{attention}
@@ -63,15 +63,15 @@ On donnera des interprétations aux grandeurs $\omega_0, \xi$ et Q dans le cours
 ````{important} __Fondamental : Equation caractéristique__
 La détermination de la solution générale passe par la résolution de l'équation caractéristique:
 
-\begin{equation}
+$$
 a r^2 + b r + c = 0
-\end{equation}
+$$
 
 dont les solutions sont:
 
-\begin{equation}
+$$
 r_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a} \textrm{ avec } \Delta = b^2 - 4ac
-\end{equation}
+$$
 ````
 
 ````{important} __Fondamental : Solution de l'équation sans second membre__
@@ -79,21 +79,21 @@ Les solutions de l'équation __homogène__, c'est-à-dire sans second membre ont
 
 * Cas 1: $\Delta > 0$, les racines $r_{1,2}$ sont réelles. La solution générale de l'équation homogène s'écrit:
 
-\begin{equation}
+$$
 f_1(t) = A e^{r_1 t} + B e^{r_2 t}
-\end{equation}
+$$
 
 * Cas 2: $\Delta = 0$, il y a une racine double notée $r_0 = \frac{-b}{2a}$ et réelle. La solution générale de l'équation homogène s'écrit:
 
-\begin{equation}
+$$
 f_1(t) = (A + Bt) e^{r_0 t}
-\end{equation}
+$$
 
 * Cas 3: $\Delta < 0$, les racines $r_{1,2}$ sont complexes et conjuguées, on peut les écrire sous la forme $r_{1,2} = \lambda \pm j \Omega$. La solution générale de l'équation homogène est à valeur réelle et il est important d'en donner une expression qui fait apparaître ce caractère et qui permet de l'analyser physiquement. On l'écrit donc sous les formes:
 
-\begin{equation}
+$$
 f_1(t) = (A \cos \Omega t + B \sin \Omega t) e^{\lambda t} =C \cos(\Omega t + \phi) e^{\lambda t}
-\end{equation}
+$$
 ````
 
 ````{attention}
@@ -121,9 +121,9 @@ Pour résoudre une équation différentielle, il faut suivre __scrupuleusement l
 :class: attention
 Résoudre l'équation différentielle suivante:
 
-\begin{equation}
+$$
 \frac{\rm{d}f}{\rm{dt}}(t) + \frac{1}{\tau} f(t) = E
-\end{equation}
+$$
 
 avec f(0) = 0
 ````
@@ -135,15 +135,15 @@ Le second membre étant constant, on cherche une solution constante sous la form
 
 La solution générale de l'équation avec second membre :
 
-\begin{equation}
+$$
 f(t) = A e^{-\frac{t}{\tau}} + \tau E
-\end{equation}
+$$
 
 On cherche maintenant la constante d'intégration grâce à la condition initiale $f(0) = 0$. Il vient $A + \tau E = 0 \Longrightarrow A = - \tau E$. La solution est donc:
 
-\begin{equation}
+$$
 f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
-\end{equation}
+$$
 ````
 
 ## Méthode: Equation d'ordre 2
@@ -153,9 +153,9 @@ f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
 
 On considère l'équation suivante avec R et C positifs:
 
-\begin{equation}
+$$
 R^{2}C^{2} \frac{\rm{d^2}u}{\rm{dt^2}} + 3RC \frac{\rm{d}u}{\rm{dt}} + u = E
-\end{equation}
+$$
 
 avec u(0) = 0 et $\frac{\rm{d}u}{\rm{dt}}(0) = 0$
 ````
@@ -163,21 +163,21 @@ avec u(0) = 0 et $\frac{\rm{d}u}{\rm{dt}}(0) = 0$
 ````{dropdown} Correction
 En cours de physique, on introduira les grandeurs $\omega_0$ et Q. Ici, on va résoudre directement l'équation sans ces grandeurs. L'équation caractéristique est donc: ${(RC)}^2 r^2 + 3RC r + 1 = 0$ dont le discriminant est: $\Delta = 5 {(RC)}^2> 0$. Les solutions sont réelles et valent: 
 
-\begin{equation}
+$$
 r_{1,2} = \frac{1}{2RC} \left(3 \pm \sqrt{5}\right)
-\end{equation}
+$$
 
 La solution générale ESSM est donc de la forme:
 
-\begin{equation}
+$$
 u_1(t) = A e^{r_1 t} + B e^{r_2 t}
-\end{equation}
+$$
 
 On cherche une solution particulière sous une forme constante $u_2(t) = K$ ce qui donne l'équation $0 + 0 + K = E$ soit une solution générale EASM:
 
-\begin{equation}
+$$
 u(t) = A e^{r_1 t} + B e^{r_2 t} + E
-\end{equation}
+$$
 
 On détermine maintenant les constantes d'intégration à partir des conditions initiales. On obtient le système:
 
