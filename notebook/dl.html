@@ -223,8 +223,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_geom.html">
-     TD Géométrie vectorielle
+    <a class="reference internal" href="geom_ex.html">
+     Applcations : Géométrie vectorielle
     </a>
    </li>
   </ul>
@@ -373,8 +373,8 @@
 <p class="admonition-title">Important</p>
 <p><strong>Développements limités</strong>
 Soit une fonction <span class="math notranslate nohighlight">\(f\)</span> définie et <span class="math notranslate nohighlight">\(n\)</span> fois dérivable au voisinage d’un point <span class="math notranslate nohighlight">\(x_0\)</span>. Soit un point <span class="math notranslate nohighlight">\(x\)</span> situé dans ce voisinage, alors on a:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5ab759c4-c763-409b-9120-0cc77a1bf7d4">
-<span class="eqno">(38)<a class="headerlink" href="#equation-5ab759c4-c763-409b-9120-0cc77a1bf7d4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1bb1fd2a-e39e-4264-8651-179efdf8ec94">
+<span class="eqno">(38)<a class="headerlink" href="#equation-1bb1fd2a-e39e-4264-8651-179efdf8ec94" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(x) = \sum\limits_{k=0}^{n} \frac{f^{(k)}(x_0)}{k !}{(x-x_0)}^k + \epsilon(x) {(x-x_0)}^n
 \end{equation}\]</div>
 <p>où <span class="math notranslate nohighlight">\(f^{(k)}\)</span> désigne la k-ième dérivée de la fonction f et <span class="math notranslate nohighlight">\(\epsilon(x)\)</span> est une fonction tendant vers 0 quand x tend vers <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
@@ -413,8 +413,8 @@ f(x) = \sum\limits_{k=0}^{n} \frac{f^{(k)}(x_0)}{k !}{(x-x_0)}^k + \epsilon(x) {
 <p class="admonition-title">Important</p>
 <p><strong>Développements limités usuels</strong>
 Si la fonction est inconnue, on doit utiliser la formule ci-dessus. On utilise néanmoins souvent les mêmes formules en physique, il est donc bon de connaître leur développement (qu’on peut utiliser directement). Ils s’agit de fonctions usuelles prises autour du point <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9c83f7f2-5f7e-40b6-8b85-e8f1806e79b6">
-<span class="eqno">(39)<a class="headerlink" href="#equation-9c83f7f2-5f7e-40b6-8b85-e8f1806e79b6" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-9e6dca06-1ce3-4896-bf30-6359974c663f">
+<span class="eqno">(39)<a class="headerlink" href="#equation-9e6dca06-1ce3-4896-bf30-6359974c663f" title="Permalink to this equation">¶</a></span>\[\begin{align}
 	{(1+x)}^{a} &amp;=_{0} 1 +  ax + \frac{a(a+1)}{2}x^2 + \cdots &amp;= &amp;1+ \sum\limits_{k=1}^{n} \frac{1}{k !}(\prod\limits_{j=0}^{j=k-1}(a-j))x^k + o(x^n)\\
 	\frac{1}{1+x} &amp;=_{0} 1 -  x + x^2 - x^3 + \cdots &amp;=&amp; \sum\limits_{k=0}^{n} {(-x)}^k + o(x^n)\\
 	\ln(1+x) &amp;= x -  \frac{x^2}{2} + \frac{x^3}{3} + \cdots &amp;=&amp; \sum\limits_{k=1}^{n} \frac{{(-1)}^(k-1)}{k} x^k + o(x^n)\\
@@ -457,8 +457,8 @@ Règle générale: si l’on fait un développements limités à l’ordre N, al
 <div class="topic">
 <p class="topic-title first">Correction</p>
 <p>On commence par factoriser par r pour faire apparaître la grandeur <span class="math notranslate nohighlight">\(a/r \ll 1\)</span></p>
-<div class="amsmath math notranslate nohighlight" id="equation-5f5ef159-6989-40fa-994d-45de5cd26004">
-<span class="eqno">(40)<a class="headerlink" href="#equation-5f5ef159-6989-40fa-994d-45de5cd26004" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-bbc56555-c6ca-41a6-ad05-68e8ce051e96">
+<span class="eqno">(40)<a class="headerlink" href="#equation-bbc56555-c6ca-41a6-ad05-68e8ce051e96" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 PM = r \sqrt{1 + 2 cos \theta\frac{a}{r} + \frac{a^2}{r^2}}
 \end{equation}\]</div>
 <ul class="simple">
@@ -470,8 +470,8 @@ PM = r \sqrt{1 + 2 cos \theta\frac{a}{r} + \frac{a^2}{r^2}}
 </ul>
 </li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-828a013f-6cba-4f4b-9ae5-803b852c5375">
-<span class="eqno">(41)<a class="headerlink" href="#equation-828a013f-6cba-4f4b-9ae5-803b852c5375" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-fd64baf4-4c77-40f9-ae22-87071e64f44a">
+<span class="eqno">(41)<a class="headerlink" href="#equation-fd64baf4-4c77-40f9-ae22-87071e64f44a" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 PM \approx r (1 + \cos \theta \frac{a}{r}) = r + \cos \theta a
 \end{equation}\]</div>
 </div>
