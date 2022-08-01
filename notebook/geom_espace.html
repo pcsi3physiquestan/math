@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Géométrie dans l’espace &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_espace.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Dérivation d’un vecteur" href="geom_derivation.html" />
     <link rel="prev" title="Géométrie dans le plan" href="geom_plan.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -103,27 +107,22 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="fonctions.html">
+    <a class="reference internal" href="bases_fonctions.html">
      Fonctions mathématiques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="trigonometrie.html">
+    <a class="reference internal" href="bases_trigonometrie.html">
      Géométrie et trigonométrie
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="complexes.html">
+    <a class="reference internal" href="bases_complexes.html">
      Nombres complexes
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="methodes.html">
-     Méthodes
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="td_math_1.html">
+    <a class="reference internal" href="bases_ex.html">
      Exercices
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -133,28 +132,28 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_bases.html">
+      <a class="reference internal" href="bases_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
        Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_litteral.html">
+      <a class="reference internal" href="bases_ex_litteral.html">
        Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_appro.html">
+      <a class="reference internal" href="bases_ex_appro.html">
        Entrainement : Nouveautés
       </a>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="calcdiff.html">
-   Calcul différentiel
-  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="eq_diff.html">
@@ -167,13 +166,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="canonique.html">
+    <a class="reference internal" href="eq_diff_canonique.html">
      Equations différentielles: forme canonique et solution
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_ed.html">
-     Exercice d’application: Équations différentielles
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
     </a>
    </li>
   </ul>
@@ -219,8 +223,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_geom.html">
-     TD Géométrie vectorielle
+    <a class="reference internal" href="geom_ex.html">
+     Applcations : Géométrie vectorielle
     </a>
    </li>
   </ul>
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#angle-oriente">
@@ -334,11 +338,6 @@
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#produit-vectoriel">
      Produit vectoriel
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#produit-vectoriel-vecteur-d-une-base-orthonormee-direct">
-     Produit vectoriel: vecteur d’une base orthonormée direct
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -364,8 +363,8 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#coordonnees-spheriques-definition">
-     Coordonnées sphériques: Définition
+    <a class="reference internal nav-link" href="#definition">
+     Définition
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -386,13 +385,14 @@
         
               <div>
                 
-  <div class="section" id="geometrie-dans-l-espace">
+  <div class="tex2jax_ignore mathjax_ignore section" id="geometrie-dans-l-espace">
 <h1>Géométrie dans l’espace<a class="headerlink" href="#geometrie-dans-l-espace" title="Permalink to this headline">¶</a></h1>
-<p>Tout ce qui a été dit en introduction reste vrai et nous allons voir que de nombreuses propriétés du plan restent vraies. On pourra ainsi redéfinir les coordonnées cartésiennes en rajoutant simplement la troisième coordonnée (z suivant un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>).</p>
-<p>Nous allons par contre voir que la notion d’angle orienté doit être précisée et les systèmes de coordonées “locaux” seront de deux types: cylindriques et sphériques.</p>
+<p><em>Tout ce qui a été dit en introduction reste vrai et nous allons voir que de nombreuses propriétés du plan restent vraies. On pourra ainsi redéfinir les coordonnées cartésiennes en rajoutant simplement la troisième coordonnée (z suivant un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span>).</em></p>
 <div class="section" id="angle-oriente">
 <h2>Angle orienté<a class="headerlink" href="#angle-oriente" title="Permalink to this headline">¶</a></h2>
-<p>Lorsqu’on s’intéresse à l’orientation des angles, on ne peut plus définir de “sens trigonométrique” (tout dépend de quel coté on regarde le plan!).</p>
+<p><em>Lorsqu’on s’intéresse à l’orientation des angles, on ne peut plus définir de “sens trigonométrique” (tout dépend de quel coté on regarde le plan!).</em></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Orientation d’un plan</strong><br />
 Soit un plan <span class="math notranslate nohighlight">\((\Pi)\)</span> de l’espace, on oriente le plan par un vecteur normal au plan <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span>. Les angles sont alors orientés en cohérence avec le vecteur normal <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span>, c’est-à-dire:</p>
 <ul class="simple">
@@ -403,10 +403,18 @@ Soit un plan <span class="math notranslate nohighlight">\((\Pi)\)</span> de l’
 <img alt="../_images/mathematiques_orientation_angle.jpg" src="../_images/mathematiques_orientation_angle.jpg" />
 </div>
 </div>
+</div>
 <div class="section" id="base-directe-et-produit-vectoriel">
 <h2>Base directe et produit vectoriel<a class="headerlink" href="#base-directe-et-produit-vectoriel" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="base-directe">
 <h3>Base directe<a class="headerlink" href="#base-directe" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title">Permutation des vecteurs</p>
+<p>Si l’on permute deux vecteurs d’une base directe, elle devient indirecte (c’est-à-dire non directe).</p>
+<p>De la même manière, le symétrique d’une base directe par rapport à un plan est une base indirecte. On pourra faire le lien avec la notion de chiralité en chimie.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Trièdre directe</strong><br />
 Soit trois vecteurs de l’espace <span class="math notranslate nohighlight">\((\overrightarrow{i}, \overrightarrow{j}, \overrightarrow{k})\)</span> de sorte qu’aucun ne soit colinéaire à un autre vecteur du triplet, on dit qu’ils forme un trièdre directe si:</p>
 <ul class="simple">
@@ -419,18 +427,6 @@ Soit trois vecteurs de l’espace <span class="math notranslate nohighlight">\((
 <div class="figure align-center" id="fig-342">
 <img alt="../_images/mathematiques_tire_bouchon_triedre.jpg" src="../_images/mathematiques_tire_bouchon_triedre.jpg" />
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Permutation des vecteurs<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Si l’on permute deux vecteurs d’une base directe, elle devient indirecte (c’est-à-dire non directe).</p>
-<p class="card-text">De la même manière, le symétrique d’une base directe par rapport à un plan est une base indirecte. On pourra faire le lien avec la notion de chiralité en chimie.</p>
-</div>
-</details><div class="admonition attention">
-<p class="admonition-title">Attention</p>
 <p>En physique, on travaillera toujours avec des <strong>bases orthonormées directes.</strong></p>
 </div>
 </div>
@@ -443,6 +439,8 @@ Soit deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{
 <li><p>Le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{w}\)</span> est perpendiculaire au plan <span class="math notranslate nohighlight">\((\Pi)\)</span> formé par les vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u_1}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_2}\)</span>.</p></li>
 <li><p>Le sens de <span class="math notranslate nohighlight">\(\overrightarrow{w}\)</span> est tel que le trièdre <span class="math notranslate nohighlight">\((\overrightarrow{u_1}; \overrightarrow{u_2}; \overrightarrow{w})\)</span> est direct.</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Propriété d’un produit vectoriel</strong></p>
 <ul class="simple">
 <li><p>Bilinéarité du produit vectoriel</p></li>
@@ -450,21 +448,13 @@ Soit deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{
 <li><p>Si <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> sont deux vecteurs colinéaires, leur produit vectoriel est nul. En particulier, le produit vectoriel d’un vecteur par lui-même est nul.</p></li>
 </ul>
 <p>Ces propriétés sont fondamentales pour le calcul d’un produit vectoriel.</p>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Expression vectorielle<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On peut simplifier l’expression du produit vectoriel en remarquant qu’il s’écrit: <span class="math notranslate nohighlight">\(\overrightarrow{w} = \pm \left \| u_1 \right \| \left \| u_2 \right \| \sin \theta \overrightarrow{n}\)</span> où <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est un vecteur unitaire orthogonal à <span class="math notranslate nohighlight">\(\overrightarrow{u_1}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{u_2}\)</span> et tel que le trièdre <span class="math notranslate nohighlight">\((\overrightarrow{u_1},\overrightarrow{u_2},\overrightarrow{n})\)</span> soit directe. Le signe de la composante du vecteur suivant le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{n}\)</span> est inclus dans le signe de l’angle <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 </div>
-</details></div>
-<div class="section" id="produit-vectoriel-vecteur-d-une-base-orthonormee-direct">
-<h3>Produit vectoriel: vecteur d’une base orthonormée direct<a class="headerlink" href="#produit-vectoriel-vecteur-d-une-base-orthonormee-direct" title="Permalink to this headline">¶</a></h3>
-<p>Considérons <span class="math notranslate nohighlight">\((\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> une base orthonormée directe. On a:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dbe23991-1b90-42d4-9ed5-b4f579b0f8a9">
-<span class="eqno">(51)<a class="headerlink" href="#equation-dbe23991-1b90-42d4-9ed5-b4f579b0f8a9" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Vecteur d’une base orthonormée direct
+Considérons <span class="math notranslate nohighlight">\((\overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span> une base orthonormée directe. On a:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-988bae45-eca0-4f21-b985-09005436644c">
+<span class="eqno">(44)<a class="headerlink" href="#equation-988bae45-eca0-4f21-b985-09005436644c" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \overrightarrow{e_x} \wedge \overrightarrow{e_y} &amp;= \overrightarrow{e_z}\\
     \overrightarrow{e_z} \wedge \overrightarrow{e_x} &amp;= \overrightarrow{e_y}\\
     \overrightarrow{e_y} \wedge \overrightarrow{e_z} &amp;= \overrightarrow{e_x}\\
@@ -472,8 +462,7 @@ Expression vectorielle<div class="summary-down docutils">
     \overrightarrow{e_x} \wedge \overrightarrow{e_z} &amp;= -\overrightarrow{e_y}\\
     \overrightarrow{e_z} \wedge \overrightarrow{e_y} &amp;= -\overrightarrow{e_x}
 \end{align}\]</div>
-<p><strong>Démonstration</strong><br />
-La démonstration est triviale en remarquant que les vecteurs sont orthogonaux et que leur norme est 1.</p>
+</div>
 </div>
 <div class="section" id="methode-calculer-un-produit-vectoriel">
 <h3>Méthode: Calculer un produit vectoriel<a class="headerlink" href="#methode-calculer-un-produit-vectoriel" title="Permalink to this headline">¶</a></h3>
@@ -482,14 +471,9 @@ La démonstration est triviale en remarquant que les vecteurs sont orthogonaux e
 <p class="admonition-title">Exercice</p>
 <p>Soit une base orthonormée direct <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>. On considère deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u} = u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v} = v_x \overrightarrow{e_x} + v_z \overrightarrow{e_z}\)</span>. Calculer le produit vectoriel <span class="math notranslate nohighlight">\(\overrightarrow{u} \wedge \overrightarrow{v}\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Calcul<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On va utiliser succissement la bilinéarité puis les expressions des produits vectoriels des vecteurs de la base.</p>
+<div class="topic">
+<p class="topic-title first">Calcul</p>
+<p>On va utiliser succissement la bilinéarité puis les expressions des produits vectoriels des vecteurs de la base.</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	\overrightarrow{u} \wedge \underline{v} &amp;= \left(u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\right) \wedge \left(v_x \overrightarrow{e_x} + v_z \overrightarrow{e_z}\right)\\
@@ -498,7 +482,7 @@ Calcul<div class="summary-down docutils">
 	&amp;= - u_x v_z - u_y v_x + u_y v_z
 \end{align*}\]</div>
 </div>
-</details></div>
+</div>
 </div>
 <div class="section" id="coordonnees-cartesiennes">
 <h2>Coordonnées cartésiennes<a class="headerlink" href="#coordonnees-cartesiennes" title="Permalink to this headline">¶</a></h2>
@@ -511,6 +495,12 @@ Calcul<div class="summary-down docutils">
 <div class="section" id="coordonnees-cylindriques">
 <h2>Coordonnées cylindriques<a class="headerlink" href="#coordonnees-cylindriques" title="Permalink to this headline">¶</a></h2>
 <p>Le système de coordonnées cylindriques revient à repérer le point M sur les bords d’un cylindre. Il faut alors le rayon et la hauteur du cylindre et l’angle de rotation par rapport à une référence.</p>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>On remarquera que M est repéré sur un cylindre.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Coordonnées cylindriques.</strong><br />
 Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>, soit un point M quelconque de l’espace et H son projeté orthogonal dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span>. On définit les coordonnées cylindriques (d’axe Oz) de M notées <span class="math notranslate nohighlight">\((r , \theta, z)\)</span> par:</p>
 <ul class="simple">
@@ -522,38 +512,39 @@ Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \ove
 <div class="figure align-center" id="fig-344">
 <img alt="../_images/mathematiques_coord_cylindriques.png" src="../_images/mathematiques_coord_cylindriques.png" />
 </div>
-<p><strong>Base cylindrique</strong><br />
-On définit la base <strong>locale</strong> cylindrique (cf. figure précédente) associée au point M par la famille <span class="math notranslate nohighlight">\((\overrightarrow{e_r} ; \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> tel que:</p>
+</div>
+<div class="admonition-base-cylindrique admonition">
+<p class="admonition-title"><strong>Base cylindrique</strong>  </p>
+<p>On définit la base <strong>locale</strong> cylindrique (cf. figure précédente) associée au point M par la famille <span class="math notranslate nohighlight">\((\overrightarrow{e_r} ; \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> tel que:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(\overrightarrow{e_z}\)</span> est le vecteur de la base cartésienne.</p></li>
 <li><p>vecteur radiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> est défini tel que <span class="math notranslate nohighlight">\(\overrightarrow{OH} = r \overrightarrow{e_r}\)</span>.</p></li>
 <li><p>vecteur orthoradiale: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> tel que la base <span class="math notranslate nohighlight">\(( \overrightarrow{e_r}, \overrightarrow{e_{\theta}}, \overrightarrow{e_z})\)</span> soit une base orthonormée directe soit: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}= \overrightarrow{e_z} \wedge \overrightarrow{e_r}\)</span></p></li>
 </ul>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> pointe toujours dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p>
-<p>C’est une base locale, cela veut dire que les vecteurs dépendant du points M. Autrement dit, si l’on suit un point M mobile, les vecteurs de la base varieront au cours du temps.</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}}\)</span> pointe toujours dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p></li>
+<li><p>C’est une base locale, cela veut dire que les vecteurs dépendant du points M. Autrement dit, si l’on suit un point M mobile, les vecteurs de la base varieront au cours du temps.</p></li>
+</ul>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Rappel<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Les relations entre <span class="math notranslate nohighlight">\((r, \theta)\)</span> et (x,y) ainsi qu’entre les vecteurs de la base cylindriques et les vecteurs de la base cartésiennes sont les mêmes que les relations entre la base polaire et la base cartésienne dans le plan. On pourra s’en convaincre avec la représentation du plan perpendiculaire à l’axe Oz et passant par le point M (attention, le centre du plan n’est pas nécessairement le point O):</p>
+<div class="topic">
+<p class="topic-title first">Rappel</p>
+<p>Les relations entre <span class="math notranslate nohighlight">\((r, \theta)\)</span> et (x,y) ainsi qu’entre les vecteurs de la base cylindriques et les vecteurs de la base cartésiennes sont les mêmes que les relations entre la base polaire et la base cartésienne dans le plan. On pourra s’en convaincre avec la représentation du plan perpendiculaire à l’axe Oz et passant par le point M (attention, le centre du plan n’est pas nécessairement le point O):</p>
 <div class="figure align-center" id="fig-345">
 <img alt="../_images/mathematiques_proj_cylindrique.png" src="../_images/mathematiques_proj_cylindrique.png" />
 </div>
 </div>
-</details></div>
+</div>
 <div class="section" id="coordonnees-spheriques">
 <h2>Coordonnées sphériques<a class="headerlink" href="#coordonnees-spheriques" title="Permalink to this headline">¶</a></h2>
-<p>Les coordonnées cylindriques revient à placer le point M sur une sphère et repérer ses coordonnées. Il faut ainsi le rayon de la sphère et deux coordonnées angulaires pour le placer sur la sphère. A l’image du repérage sur le globe terrestre, on utilisera un axe de référence (l’âxe des pôles) pour définir la <strong>colatitude</strong> (on ne travaille pas avec la latitude pour des raisons mathématiques non développées ici) et un méridien de référence pour définir la longitude (ou azimuth).</p>
-<div class="section" id="coordonnees-spheriques-definition">
-<h3>Coordonnées sphériques: Définition<a class="headerlink" href="#coordonnees-spheriques-definition" title="Permalink to this headline">¶</a></h3>
-<p><strong>Coordonnéees sphériques</strong><br />
-Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>, soit un point M quelconque de l’espace et H son projeté orthogonal dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span>. On définit les coordonnées sphériques (d’axe Oz) de M notées <span class="math notranslate nohighlight">\((r , \theta, \phi)\)</span> par:</p>
+<p>Les coordonnées sphériques reviennent à placer le point M sur une sphère et repérer ses coordonnées. Il faut ainsi le rayon de la sphère et deux coordonnées angulaires pour le placer sur la sphère. A l’image du repérage sur le globe terrestre, on utilisera un axe de référence (l’âxe des pôles) pour définir la <strong>colatitude</strong> (on ne travaille pas avec la latitude pour des raisons mathématiques non développées ici) et un méridien de référence pour définir la longitude (ou azimuth).</p>
+<div class="section" id="definition">
+<h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
+<div class="admonition-coordonneees-spheriques admonition">
+<p class="admonition-title"><strong>Coordonnéees sphériques</strong>  </p>
+<p>Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y}, \overrightarrow{e_z})\)</span>, soit un point M quelconque de l’espace et H son projeté orthogonal dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span>. On définit les coordonnées sphériques (d’axe Oz) de M notées <span class="math notranslate nohighlight">\((r , \theta, \phi)\)</span> par:</p>
 <ul class="simple">
 <li><p><span class="math notranslate nohighlight">\(r = OM\)</span></p></li>
 <li><p>Colatitude: <span class="math notranslate nohighlight">\(\theta=(\overrightarrow{e_z} ,\overrightarrow{OM})\)</span> avec <span class="math notranslate nohighlight">\(\theta \in [0; \pi]\)</span></p></li>
@@ -562,15 +553,23 @@ Soit un repère cartésien <span class="math notranslate nohighlight">\((O, \ove
 <div class="figure align-center" id="fig-346">
 <img alt="../_images/mathematiques_coord_spheriques.png" src="../_images/mathematiques_coord_spheriques.png" />
 </div>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p><strong>Définition des angles</strong>
-, dropdown
 Il faut noter la différence de domaine de définition de <span class="math notranslate nohighlight">\(\theta\)</span> et <span class="math notranslate nohighlight">\(\phi\)</span>. Elle est cruciale pour que chaque point possède un jeu de coordonnées uniques.</p>
 </div>
-<p><strong>Parallèle et méridien</strong><br />
-On définit le parallèle au point M comme le plan passant par M est parallèle au plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> (donc perpendiculaire à <span class="math notranslate nohighlight">\(Oz\)</span>).</p>
+<div class="topic">
+<p class="topic-title first"><strong>Parallèle et méridien</strong>  </p>
+<p>On définit le parallèle au point M comme le plan passant par M est parallèle au plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> (donc perpendiculaire à <span class="math notranslate nohighlight">\(Oz\)</span>).</p>
 <p>On définit le méridien au point M comme le plan passant par M et contenant <span class="math notranslate nohighlight">\(Oz\)</span>. <span class="math notranslate nohighlight">\(\phi\)</span> est l’angle entre le plan <span class="math notranslate nohighlight">\(xOz\)</span> et le méridien.</p>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>C’est une base locale: les vecteurs dépendent donc du point M. Plus précisément, il dépendant des coordonnées angulaires.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Base sphérique</strong><br />
 On définit la base <strong>locale</strong> sphérique (cf. figure précédente) associée au point M par la famille <span class="math notranslate nohighlight">\((\overrightarrow{e_r} ; \overrightarrow{e_{\theta}}, \overrightarrow{e_{\phi}})\)</span> tel que:</p>
 <ul class="simple">
@@ -578,28 +577,20 @@ On définit la base <strong>locale</strong> sphérique (cf. figure précédente)
 <li><p>vecteur azimutal: <span class="math notranslate nohighlight">\(\overrightarrow{e_{\phi}} = \overrightarrow{e_z} \wedge \frac{\overrightarrow{OH}}{OH}\)</span>: il est dans le plan <span class="math notranslate nohighlight">\((O , \overrightarrow{e_x} , \overrightarrow{e_y})\)</span> perpendiculaire à (OH) dans le sens des <span class="math notranslate nohighlight">\(\phi\)</span> croissants.</p></li>
 <li><p><span class="math notranslate nohighlight">\(\overrightarrow{e_{\theta}} = \overrightarrow{e_{\phi}} \wedge \overrightarrow{e_r}\)</span>: il est dans le plan du méridien, orthogonal à <span class="math notranslate nohighlight">\(\overrightarrow{e_r}\)</span> et dans le sens des <span class="math notranslate nohighlight">\(\theta\)</span> croissants.</p></li>
 </ul>
-<div class="note dropdown admonition attention">
-<p class="admonition-title">Attention</p>
-<p>C’est une base locale: les vecteurs dépendent donc du point M. Plus précisément, il dépendant des coordonnées angulaires.</p>
 </div>
 </div>
 <div class="section" id="relation-spherique-cartesien">
 <h3>Relation sphérique-cartésien<a class="headerlink" href="#relation-spherique-cartesien" title="Permalink to this headline">¶</a></h3>
-<p>Il est extrêment important de savoir passer des coordonnées sphériques aux coordonnées cartésiennes et réciproquement.</p>
+<p>Il est extrêmement important de savoir passer des coordonnées sphériques aux coordonnées cartésiennes et réciproquement.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Exprimer la coordonnées radiale r en fonction de x, y et z et les coordonées x,y et z en fonction des coordonnées sphériques.</p>
 <p>Exprimer les vecteurs de la base sphérique dans la base cartésiennes en faisant intervenir les coordonnées angulaires du point M.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Méthode<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">La méthode la plus simple est de passer par le parallèle et le méridien pour réaliser les projections et les calculs trigonométriques. On utilise notamment le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>  qui porte la droite PM (P est le centre du cercle parallèle) car il présente l’intérêt d’être présent dans les deux plans: celui du méridien (cf. schéma) et celui du parallèle.</p>
-<p class="card-text"><strong>Coordonnées</strong><br />
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p>La méthode la plus simple est de passer par le parallèle et le méridien pour réaliser les projections et les calculs trigonométriques. On utilise notamment le vecteur unitaire <span class="math notranslate nohighlight">\(\overrightarrow{u_{\Delta}}\)</span>  qui porte la droite PM (P est le centre du cercle parallèle) car il présente l’intérêt d’être présent dans les deux plans: celui du méridien (cf. schéma) et celui du parallèle.</p>
+<p><strong>Coordonnées</strong><br />
 Il vient (utiliser les schémas de coupe du parallèle et du méridien - <strong>s’entraîner à le prouver</strong>):</p>
 <div class="figure align-center" id="fig-347">
 <img alt="../_images/mathematiques_parallele_spherique.jpg" src="../_images/mathematiques_parallele_spherique.jpg" />
@@ -621,7 +612,7 @@ Il vient (utiliser les schémas de coupe du parallèle et du méridien - <strong
 	\overrightarrow{e_{\varphi}} = - \sin \varphi \overrightarrow{e_x} + \cos \varphi \overrightarrow{e_y}
 \end{align*}\]</div>
 </div>
-</details></div>
+</div>
 </div>
 </div>
 
@@ -648,16 +639,27 @@ Il vient (utiliser les schémas de coupe du parallèle et du méridien - <strong
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="geom_plan.html" title="previous page">Géométrie dans le plan</a>
-    <a class='right-next' id="next-link" href="geom_derivation.html" title="next page">Dérivation d’un vecteur</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="geom_plan.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Géométrie dans le plan</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="geom_derivation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dérivation d’un vecteur</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -673,8 +675,7 @@ Il vient (utiliser les schémas de coupe du parallèle et du méridien - <strong
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

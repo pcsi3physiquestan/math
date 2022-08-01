@@ -1,0 +1,507 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombres complexes &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/bases_complexes.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Exercices" href="bases_ex.html" />
+    <link rel="prev" title="Géométrie et trigonométrie" href="bases_trigonometrie.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="bases_ex.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
+       Applications : Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_litteral.html">
+       Entrainement : Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_appro.html">
+       Entrainement : Nouveautés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/bases_complexes.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/bases_complexes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/bases_complexes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ecriture-des-complexes">
+   Ecriture des complexes
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#representation-graphique">
+   Représentation graphique
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#operations-sur-les-complexes">
+   Opérations sur les complexes
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="nombres-complexes">
+<h1>Nombres complexes<a class="headerlink" href="#nombres-complexes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ecriture-des-complexes">
+<h2>Ecriture des complexes<a class="headerlink" href="#ecriture-des-complexes" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p><strong>En physique, il arrive très souvent que ce nombre soit noté j</strong> (en électronique surtout, pour ne pas confondre avec l’intensité).</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Ecriture complexe</strong></p>
+<ul class="simple">
+<li><p>On définit le nombre complexe <span class="math notranslate nohighlight">\(i\)</span> tel que <span class="math notranslate nohighlight">\(i^2 = -1\)</span>. Ce nnombre ne fait pas partie du corps des réels.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(z\)</span> un nombre complexe. On peut toujours écrire <span class="math notranslate nohighlight">\(z\)</span> sous la forme: <span class="math notranslate nohighlight">\(z = a + i b\)</span> où a et b sont des réelles.</p>
+<ul>
+<li><p>a est appelée partie réelle: <span class="math notranslate nohighlight">\(a = \Re(z)\)</span></p></li>
+<li><p>b est appelée partie imaginaire: <span class="math notranslate nohighlight">\(b = \Im(z)\)</span></p></li>
+</ul>
+</li>
+</ul>
+<div class="margin sidebar">
+<p class="sidebar-title">Equivalence</p>
+<p>L’équivalence avec l’écriture cartésienne passe par l’utilisation de la formule: <span class="math notranslate nohighlight">\(e^{i\theta} = \cos \theta + i \sin \theta\)</span>.</p>
+</div>
+<ul class="simple">
+<li><p>Un nombre de complexe peutse mettre sous la forme: <span class="math notranslate nohighlight">\(z = r e^{i \theta}\)</span> où</p>
+<ul>
+<li><p>r est le module <span class="math notranslate nohighlight">\(\left\vert z \right\vert\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(\theta\)</span> l’argument arg(z) du nombre complexe z.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Relation entre les écritures</strong>
+<strong>Ces relations sont fondamentales en physique et doivent être sues par coeur.</strong></p>
+<div class="amsmath math notranslate nohighlight" id="equation-f5128de2-0bb3-4b76-bc9e-8b7e5bfad0b4">
+<span class="eqno">(4)<a class="headerlink" href="#equation-f5128de2-0bb3-4b76-bc9e-8b7e5bfad0b4" title="Permalink to this equation">¶</a></span>\[\begin{align}
+	\vert z\vert &amp;= \sqrt{{\Re(z)}^2 + {\Im(z)}^2}\\
+	\cos \theta &amp;= \frac{\Re(z)}{\vert z \vert}\\
+	\sin \theta &amp;= \frac{\Im(z)}{\vert z \vert}\\
+	\tan \theta &amp;= \frac{\Im(z)}{\Re(z)}
+\end{align}\]</div>
+</div>
+<div class="topic">
+<p class="topic-title first">Cas particuliers</p>
+<p>Cas d’un réel: <span class="math notranslate nohighlight">\(\Im(z) = 0\)</span> et <span class="math notranslate nohighlight">\(arg(z) = 0 \textrm{ ou }\pi\)</span> suivant le signe du réel.</p>
+<p>Cas d’un imaginaire pur: <span class="math notranslate nohighlight">\(\Re(z) = 0\)</span> et <span class="math notranslate nohighlight">\(arg(z) = \pm\pi/2\)</span> suivant le signe de la partie imaginaire.</p>
+</div>
+</div>
+<div class="section" id="representation-graphique">
+<h2>Représentation graphique<a class="headerlink" href="#representation-graphique" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Plan complexe</strong>
+Le plan complexe est un plan muni d’un repère orthonormé <span class="math notranslate nohighlight">\(\left (O, \overrightarrow{u}, \overrightarrow{v} \right )\)</span> tel que l’image d’un nombre complexe z est le point M de coordonnées <span class="math notranslate nohighlight">\(\left ( \Re(z), \Im(z)\right )\)</span>. L’image vectorielle de z est le vecteur <span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> et z est appelée affixe du point M.</p>
+<div class="figure align-center" id="fig-332">
+<img alt="../_images/mathematiques_complexes_ecritures.jpg" src="../_images/mathematiques_complexes_ecritures.jpg" />
+</div>
+<p>Le module de z est la longueur du vecteur<span class="math notranslate nohighlight">\(\overrightarrow{OM}\)</span> et l’argument de z est l’angle entre ce vecteur et l’axe des abscisses (ou axe des réels).</p>
+</div>
+</div>
+<div class="section" id="operations-sur-les-complexes">
+<h2>Opérations sur les complexes<a class="headerlink" href="#operations-sur-les-complexes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Conjugaison</strong></p>
+<p>Soit un complexe z, on définit le complexe conjugué <span class="math notranslate nohighlight">\(\overline{z} \)</span> comme le complexe possédant le même module mais un argument opposé. On peut aussi le définir comme celui ayant la même partie réelle et une partie imaginaire opposée.</p>
+<div class="amsmath math notranslate nohighlight" id="equation-80b05a50-80d2-48bc-b17d-f2cc21679730">
+<span class="eqno">(5)<a class="headerlink" href="#equation-80b05a50-80d2-48bc-b17d-f2cc21679730" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+z = r e^{i \theta} = a + i b \Longrightarrow \overline{z} = r e^{-i \theta} = a - i b
+\end{equation}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Formulaire
+<strong>Ces relations sont fondamentales en physique et doivent être sues par coeur.</strong></p>
+<div class="amsmath math notranslate nohighlight" id="equation-97e2f07d-15cc-469d-956c-3cfb63f352a3">
+<span class="eqno">(6)<a class="headerlink" href="#equation-97e2f07d-15cc-469d-956c-3cfb63f352a3" title="Permalink to this equation">¶</a></span>\[\begin{align}
+    \Re(z_1 + z_2) &amp;= \Re(z_1) + \Re(z_2)\\
+    \Im(z_1 + z_2) &amp;= \Im(z_1) + \Im(z_2)\\
+    \vert z_1 z_2 \vert &amp;= \vert z_1 \vert \vert z_2 \vert \\
+    \arg(z_1z_2) &amp;= \arg(z_1) + \arg(z_2)\\
+    \vert \frac{z_1}{z_2} \vert &amp;= \frac{\vert z_1 \vert}{\vert z_2 \vert}\\
+    \arg(\frac{z_1}{z_2}) &amp;= \arg(z_1) - \arg(z_2)\\
+    \overline{z_1+z_2} &amp;= \overline{z_1}+\overline{z_2}\\
+    \overline{z_1 z_2} &amp;= \overline{z_1} \overline{z_2}\\
+    \overline{\frac{z_1}{z_2}} &amp;= \frac{\overline{z_1}}{\overline{z_2}}\\
+    \left\vert \frac{1}{z} \right\vert &amp;= \frac{1}{\left\vert z \right\vert}\\
+    \arg\left(\frac{1}{z}\right) &amp;= - \arg(z)
+\end{align}\]</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="bases_trigonometrie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Géométrie et trigonométrie</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="bases_ex.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exercices</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

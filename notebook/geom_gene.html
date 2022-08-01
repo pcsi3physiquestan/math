@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Géométrie vectorielle: Généralités &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_gene.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Géométrie dans le plan" href="geom_plan.html" />
     <link rel="prev" title="Géométrie vectorielle" href="geometrie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -103,27 +107,22 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="fonctions.html">
+    <a class="reference internal" href="bases_fonctions.html">
      Fonctions mathématiques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="trigonometrie.html">
+    <a class="reference internal" href="bases_trigonometrie.html">
      Géométrie et trigonométrie
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="complexes.html">
+    <a class="reference internal" href="bases_complexes.html">
      Nombres complexes
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="methodes.html">
-     Méthodes
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="td_math_1.html">
+    <a class="reference internal" href="bases_ex.html">
      Exercices
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -133,28 +132,28 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_bases.html">
+      <a class="reference internal" href="bases_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
        Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_litteral.html">
+      <a class="reference internal" href="bases_ex_litteral.html">
        Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_appro.html">
+      <a class="reference internal" href="bases_ex_appro.html">
        Entrainement : Nouveautés
       </a>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="calcdiff.html">
-   Calcul différentiel
-  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="eq_diff.html">
@@ -167,13 +166,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="canonique.html">
+    <a class="reference internal" href="eq_diff_canonique.html">
      Equations différentielles: forme canonique et solution
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_ed.html">
-     Exercice d’application: Équations différentielles
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
     </a>
    </li>
   </ul>
@@ -219,8 +223,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_geom.html">
-     TD Géométrie vectorielle
+    <a class="reference internal" href="geom_ex.html">
+     Applcations : Géométrie vectorielle
     </a>
    </li>
   </ul>
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#espace-vectoriel-definition">
@@ -322,8 +326,8 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#famille-et-base">
-   Famille et base
+  <a class="reference internal nav-link" href="#famille-et-base-en-ligne">
+   Famille et base (en ligne)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -332,18 +336,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#norme-euclidienne">
-   Norme euclidienne
+  <a class="reference internal nav-link" href="#norme-euclidienne-en-ligne">
+   Norme euclidienne (en ligne)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#base-orthonormee">
-   Base orthonormée
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#projection-orthogonale">
-   Projection orthogonale
+  <a class="reference internal nav-link" href="#base-orthonormee-en-ligne">
+   Base orthonormée (en ligne)
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -362,100 +361,69 @@
         
               <div>
                 
-  <div class="section" id="geometrie-vectorielle-generalites">
+  <div class="tex2jax_ignore mathjax_ignore section" id="geometrie-vectorielle-generalites">
 <h1>Géométrie vectorielle: Généralités<a class="headerlink" href="#geometrie-vectorielle-generalites" title="Permalink to this headline">¶</a></h1>
 <p>Les définitions données ici ne sont pas à apprendre pour la physique. Elles sont là pour cadrer correctement le cours de physique. On utilisera leur version “opératoire” basée sur la vision des vecteurs introduits au lycée.</p>
 <div class="section" id="espace-vectoriel-definition">
 <h2>Espace vectoriel: Définition<a class="headerlink" href="#espace-vectoriel-definition" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Définition: Espace vetoriel (pas à apprendre)<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Soit un corps K commutatif. Un K-espace vectoriel est un ensemble E muni d’une loi interne (+, on l’appellera somme vectorielle) et d’une loi externe (*, on l’appellera multiplication par un scalaire) tel que:</p>
+<div class="topic">
+<p class="topic-title first">Espace vetoriel (pas à apprendre)</p>
+<p>Soit un corps K commutatif. Un K-espace vectoriel est un ensemble E muni d’une loi interne (+, on l’appellera somme vectorielle) et d’une loi externe (*, on l’appellera multiplication par un scalaire) tel que:</p>
 <ul class="simple">
-<li><p class="card-text">la somme vectorielle est commutative, associative, possède un élément neutre (vecteur nul) et tel que tout élément v possède un “opposé” (noté -v) tel que <span class="math notranslate nohighlight">\(\overrightarrow{v} + \overrightarrow{-v} = \overrightarrow{0}\)</span>.</p></li>
-<li><p class="card-text">la loi externe est distributive sur la somme vectorielle (c’est-à-dire quie <span class="math notranslate nohighlight">\((\lambda + \mu)*(\overrightarrow{v} + \overrightarrow{u}) = \lambda \overrightarrow{v} + \mu \overrightarrow{v} + \lambda \overrightarrow{u} + \mu\overrightarrow{u}\)</span>), associative mixte (c’est-à-dire <span class="math notranslate nohighlight">\((\lambda \times \mu) * \overrightarrow{u} = \lambda * (\mu * \overrightarrow{u})\)</span> et possède un élément neutre noté 1 (c’est-à-dire que <span class="math notranslate nohighlight">\(1 * \overrightarrow{u} = \overrightarrow{u}\)</span>).</p></li>
+<li><p>la somme vectorielle est commutative, associative, possède un élément neutre (vecteur nul) et tel que tout élément v possède un “opposé” (noté -v) tel que <span class="math notranslate nohighlight">\(\overrightarrow{v} + \overrightarrow{-v} = \overrightarrow{0}\)</span>.</p></li>
+<li><p>la loi externe est distributive sur la somme vectorielle (c’est-à-dire quie <span class="math notranslate nohighlight">\((\lambda + \mu)*(\overrightarrow{v} + \overrightarrow{u}) = \lambda \overrightarrow{v} + \mu \overrightarrow{v} + \lambda \overrightarrow{u} + \mu\overrightarrow{u}\)</span>), associative mixte (c’est-à-dire <span class="math notranslate nohighlight">\((\lambda \times \mu) * \overrightarrow{u} = \lambda * (\mu * \overrightarrow{u})\)</span> et possède un élément neutre noté 1 (c’est-à-dire que <span class="math notranslate nohighlight">\(1 * \overrightarrow{u} = \overrightarrow{u}\)</span>).</p></li>
 </ul>
+<div class="admonition-cas-utilise-en-physique admonition">
+<p class="admonition-title">Cas utilisé en physique</p>
+<p>Cette définition très générale peut s’appliquer à de nombreux cas (comme des ensembles de fonctions) avec des conséquences très intéressantes. Dans le cadre du programme en physique, on considèrera des R-espaces vectoriels, c’est-à-dire que le corps de “scalaires” sur lequel s’appuie sera le corps des réels.</p>
+<p>Les espaces vectoriels que nous utiliserons principalement sont les ensembles <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> et <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>. La somme vectorielle représente la somme vectorielle usuelle (qu’on peut associer à la somme graphique de deux vecteurs) et la multiplication par un scalaire aussi. A noter que cette dernière est en général notée de manière implicite.</p>
+<p>On peut associer aux vecteurs des espaces nommés précédemment une direction, un sens et une longueur (cf.suite). Ces caractéristiques, utiles pour visualiser les problèmes physiques ont leur limite lorsqu’on manipule les grandeurs vectorielles (notamment les sommes). C’est pourquoi, nous allons introduire des caractéristiques générales des espaces vectoriels pour préparer à la manipulation mathématiques des objets comme les forces, vecteur vitesse, vecteur position… )</p>
+<p>Au contraire des mathématiques, <strong>on conservera la notation fléchée</strong> pour désigner les vecteurs (élément de l’espace vectoriel) de manière à bien les différencier des grandeurs scalaires (réels).</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Cas utilisé en physique<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Cette définition très générale peut s’appliquer à de nombreux cas (comme des ensembles de fonctions) avec des conséquences très intéressantes. Dans le cadre du programme en physique, on considèrera des R-espaces vectoriels, c’est-à-dire que le corps de “scalaires” sur lequel s’appuie sera le corps des réels.</p>
-<p class="card-text">Les espaces vectoriels que nous utiliserons principalement sont les ensembles <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> et <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span>. La somme vectorielle représente la somme vectorielle usuelle (qu’on peut associer à la somme graphique de deux vecteurs) et la multiplication par un scalaire aussi. A noter que cette dernière est en général notée de manière implicite.</p>
-<p class="card-text">On peut associer aux vecteurs des espaces nommés précédemment une direction, un sens et une longueur (cf.suite). Ces caractéristiques, utiles pour visualiser les problèmes physiques ont leur limite lorsqu’on manipule les grandeurs vectorielles (notamment les sommes). C’est pourquoi, nous allons introduire des caractéristiques générales des espaces vectoriels pour préparer à la manipulation mathématiques des objets comme les forces, vecteur vitesse, vecteur position… )</p>
-<p class="card-text">Au contraire des mathématiques, <strong>on conservera la notation fléchée</strong> pour désigner les vecteurs (élément de l’espace vectoriel) de manière à bien les différencier des grandeurs scalaires (réels).</p>
 </div>
-</details><div class="admonition important">
+<div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Combinaison linéaire
 Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span class="math notranslate nohighlight">\(\overrightarrow{v} = \sum\limits_{i} \lambda_i \overrightarrow{u_i}\)</span>.</p>
 </div>
 </div>
-<div class="section" id="famille-et-base">
-<h2>Famille et base<a class="headerlink" href="#famille-et-base" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Famille libre<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Une famille libre (ou linéairement indépendants) de vecteurs est une ensemble de vecteurs dont aucun ne peut être écrit comme une combinaison linéaire des autres. Cela revient à imposé la condition:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5c0ae98e-f40c-404a-8d13-9e608b636161">
-<span class="eqno">(49)<a class="headerlink" href="#equation-5c0ae98e-f40c-404a-8d13-9e608b636161" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="section" id="famille-et-base-en-ligne">
+<h2>Famille et base (en ligne)<a class="headerlink" href="#famille-et-base-en-ligne" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Famille libre</p>
+<p>Une famille libre (ou linéairement indépendants) de vecteurs est une ensemble de vecteurs dont aucun ne peut être écrit comme une combinaison linéaire des autres. Cela revient à imposé la condition:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-3ac1e391-ce27-4f0b-a7d1-433801cd688b">
+<span class="eqno">(42)<a class="headerlink" href="#equation-3ac1e391-ce27-4f0b-a7d1-433801cd688b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
  \forall (a_1, a_2, ..., a_n) \in \mathbb{R}^n \left(\sum\limits_{k = 1}^{n} a_k \overrightarrow{v_k} = 0 \Longrightarrow \left(\forall k \in [\![1;n]\!] a_k = 0\right)\right)
 \end{equation}\]</div>
-<p class="card-text">c’est-à-dire que toute combinaison linéaire nulle des vecteurs d’une famille libre implique que tous les coefficients sont nuls.</p>
+<p>c’est-à-dire que toute combinaison linéaire nulle des vecteurs d’une famille libre implique que tous les coefficients sont nuls.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Famille génératrice<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Une famille génératrice est une famille de vecteurs tels que tout vecteur de l’espace vectoriel E peut s’écrire comme une combinaison linéaire des vecteurs de la famille.</p>
+<div class="topic">
+<p class="topic-title first">Famille génératrice</p>
+<p>Une famille génératrice est une famille de vecteurs tels que tout vecteur de l’espace vectoriel E peut s’écrire comme une combinaison linéaire des vecteurs de la famille.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Base<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Une famille de vecteur est une base s’il s’agit d’une famille linéairement indépendante et génératrice.</p>
-<p class="card-text">Tous les vecteurs d’une base sont donc indépendants et tout vecteur de E peuvent s’écrire comme une combinaison linéaire des vecteurs d’une base.</p>
+<div class="topic">
+<p class="topic-title first">Base</p>
+<p>Une famille de vecteur est une base s’il s’agit d’une famille linéairement indépendante et génératrice.</p>
+<p>Tous les vecteurs d’une base sont donc indépendants et tout vecteur de E peuvent s’écrire comme une combinaison linéaire des vecteurs d’une base.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Dimension d’un espace vectoriel (Admis)<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Toutes les bases d’un même espaces vectoriel ont la même cardinalité (le même nombre d’élements). Ce cardinal définit la dimension de l’espace vectoriel.</p>
-<p class="card-text">Ainsi <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> est de dimension 2 et <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> est de dimension 3. Remarque: il peut exister des espaces vectoriels de dimension infinie mais nous n’en rencontrerons pas en physique.</p>
+<div class="topic">
+<p class="topic-title first">Dimension d’un espace vectoriel (Admis)</p>
+<p>Toutes les bases d’un même espaces vectoriel ont la même cardinalité (le même nombre d’élements). Ce cardinal définit la dimension de l’espace vectoriel.</p>
+<p>Ainsi <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> est de dimension 2 et <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> est de dimension 3. Remarque: il peut exister des espaces vectoriels de dimension infinie mais nous n’en rencontrerons pas en physique.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Nombre de base<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Si la dimension d’un espace vectoriel sera en général fini en physique, le nombre de base possibles est infini.</p>
+<div class="topic">
+<p class="topic-title first">Nombre de base</p>
+<p>Si la dimension d’un espace vectoriel sera en général fini en physique, le nombre de base possibles est infini.</p>
 </div>
-</details></div>
+</div>
 <div class="section" id="produit-scalaire">
 <h2>Produit scalaire<a class="headerlink" href="#produit-scalaire" title="Permalink to this headline">¶</a></h2>
 <p>Un produit scalaire (noté <span class="math notranslate nohighlight">\(\cdot\)</span>) de E est une forme bilinéaire définie positive symétrique. C’est-à-dire:</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Remarque</p>
+<p>Plus qu’une définition, il s’agit en physique de propriétés opératoires pour manipuler et calculer les produits scalaires (cf. exemple ci-après).</p>
+</div>
 <ul class="simple">
 <li><p>Un forme bilinéaire est une application de <span class="math notranslate nohighlight">\(E^2\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> (En toute rigueur, elle a ses images dans le corps <span class="math notranslate nohighlight">\(\mathbb{K}\)</span> associé à l’espace vectoriel. Pour nous, c’est toujours <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>.) linéaire à gauche est à droite:</p>
 <ul>
@@ -471,105 +439,53 @@ Nombre de base<div class="summary-down docutils">
 <p class="admonition-title">Attention</p>
 <p>Le produit scalaire est à valeur dans K (pour nous dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>), c’est-à-dire qu’<strong>il renvoie un scalaire et non un vecteur</strong>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Plus qu’une définition, il s’agit en physique de propriétés opératoires pour manipuler et calculer les produits scalaires (cf. exemple ci-après).</p>
+<div class="topic">
+<p class="topic-title first">Vecteurs orthogonaux</p>
+<p>Deux vecteurs sont sont dits orthogonaux si et seulement si leur produit scalaire est nul.</p>
+<p>Dans le cas plan ou de l’espace en physique, celà correspond à la notion d’angle droit usuel.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Vecteurs orthogonaux<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Deux vecteurs sont sont dits orthogonaux si et seulement si leur produit scalaire est nul.</p>
-<p class="card-text">Dans le cas plan ou de l’espace en physique, celà correspond à la notion d’angle droit usuel.</p>
 </div>
-</details></div>
-<div class="section" id="norme-euclidienne">
-<h2>Norme euclidienne<a class="headerlink" href="#norme-euclidienne" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Norme euclidienne<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Soit un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>, on définit la norme euclidienne de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> par:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-45f79cea-807f-44ef-a524-087189f376f2">
-<span class="eqno">(50)<a class="headerlink" href="#equation-45f79cea-807f-44ef-a524-087189f376f2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="section" id="norme-euclidienne-en-ligne">
+<h2>Norme euclidienne (en ligne)<a class="headerlink" href="#norme-euclidienne-en-ligne" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Attention à ne pas confondre norme et composante d’un vecteur.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Norme euclidienne</p>
+<p>Soit un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>, on définit la norme euclidienne de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> par:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-031ed976-b174-4c44-978c-fea1208c8782">
+<span class="eqno">(43)<a class="headerlink" href="#equation-031ed976-b174-4c44-978c-fea1208c8782" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \left \| \overrightarrow{u}	\right \| = \sqrt{\overrightarrow{u} \cdot \overrightarrow{u}}
 \end{equation}\]</div>
+<ul class="simple">
+<li><p>En physique, on notera souvent (pas toujours) <span class="math notranslate nohighlight">\(u\)</span> la norme du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>. C’est possible en physique car on rappelle que tous les vecteurs doivent être notés avec des flèches.</p></li>
+<li><p>Un vecteur de norme 1 est appelé vecteur normé ou vecteur unitaire.</p></li>
+</ul>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Notation<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">En physique, on notera souvent <span class="math notranslate nohighlight">\(u\)</span> la norme du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>. C’est possible en physique car on rappelle que tous les vecteurs doivent être notés avec des flèches.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Vecteur normé<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Un vecteur de norme 1 est appelé vecteur normé ou vecteur unitaire.</p>
+<div class="section" id="base-orthonormee-en-ligne">
+<h2>Base orthonormée (en ligne)<a class="headerlink" href="#base-orthonormee-en-ligne" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Base orthonormée</p>
+<p>Une base orthonormée est une base dont tous les vecteurs sont normés et orthogonaux deux à deux.</p>
+<p>En physique, on travaillera <strong>toujours</strong> avec des base orthonormées.</p>
 </div>
-</details></div>
-<div class="section" id="base-orthonormee">
-<h2>Base orthonormée<a class="headerlink" href="#base-orthonormee" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Base orthonormée<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Une base orthonormée est une base dont tous les vecteurs sont normés et orthogonaux deux à deux.</p>
-<p class="card-text">En physique, on travaillera <strong>toujours</strong> avec des base orthonormées.</p>
+<div class="margin sidebar">
+<p class="sidebar-title">Remarque</p>
+<p>En mathématiques, la projection est un scalaire mais pour des raisons pratiques, on considérera en physique qu’il s’agit du vecteur associé et on parlera de composante (cf. suite)</p>
 </div>
-</details></div>
-<div class="section" id="projection-orthogonale">
-<h2>Projection orthogonale<a class="headerlink" href="#projection-orthogonale" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Projection orthogonale sur une droite vectorielle<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Soit un vecteur non nul <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. Le projeté orthogonal (en physique) d’un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est le vecteur <span class="math notranslate nohighlight">\(\frac{\overrightarrow{u} \cdot \overrightarrow{v}}{\left \| v\right \|} \overrightarrow{v}\)</span>.</p>
-<p class="card-text">Si <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est un vecteur unitaire (noté <span class="math notranslate nohighlight">\(\overrightarrow{e_m}\)</span>, alors le projecté orthogonal de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> se réécrit: <span class="math notranslate nohighlight">\((\overrightarrow{u} \cdot \overrightarrow{e_m}) \overrightarrow{e_m}\)</span></p>
-<p class="card-text">Cette écriture du projeté orthogonal sur un vecteur normé est très utile en physique pour donner un sens à une composante d’un vecteur.</p>
+<div class="topic">
+<p class="topic-title first">Projection orthogonale sur une droite vectorielle</p>
+<p>Soit un vecteur non nul <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. Le projeté orthogonal (en physique) d’un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est le vecteur <span class="math notranslate nohighlight">\(\frac{\overrightarrow{u} \cdot \overrightarrow{v}}{\left \| v\right \|} \overrightarrow{v}\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est un vecteur unitaire (noté <span class="math notranslate nohighlight">\(\overrightarrow{e_m}\)</span>, alors le projecté orthogonal de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> se réécrit: <span class="math notranslate nohighlight">\((\overrightarrow{u} \cdot \overrightarrow{e_m}) \overrightarrow{e_m}\)</span></p>
+<p>Cette écriture du projeté orthogonal sur un vecteur normé est très utile en physique pour donner un sens à une composante d’un vecteur.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Remarque<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">En mathématiques, la projection est un scalaire mais pour des raisons pratiques, on considérera en physique qu’il s’agit du vecteur associé et on parlera de composante (cf. suite)</p>
+<div class="topic">
+<p class="topic-title first">Projection dans une base orthonormée</p>
+<p>Soit une base orthonormée <span class="math notranslate nohighlight">\((\overrightarrow{e_k})\ k\in [\![1;n]\!]\)</span> et un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dont la décomposition dans la base est <span class="math notranslate nohighlight">\(\overrightarrow{u} = \sum\limits_{k=1}^{n} u_k \overrightarrow{e_k}\)</span>. On appelle cette décomposition la projection de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dans la base et chaque <strong>composante</strong> <span class="math notranslate nohighlight">\(u_k \overrightarrow{e_k}\)</span> correspond à la projection du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{u_k}\)</span>.</p>
 </div>
-</details><details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Projection dans une base orthonormée<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Soit une base orthonormée <span class="math notranslate nohighlight">\((\overrightarrow{e_k})\ k\in [\![1;n]\!]\)</span> et un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dont la décomposition dans la base est <span class="math notranslate nohighlight">\(\overrightarrow{u} = \sum\limits_{k=1}^{n} u_k \overrightarrow{e_k}\)</span>. On appelle cette décomposition la projection de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dans la base et chaque __composante __ <span class="math notranslate nohighlight">\(u_k \overrightarrow{e_k}\)</span> correspond à la projection du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{u_k}\)</span>.</p>
 </div>
-</details></div>
 <div class="section" id="methode-calcul-d-un-produit-scalaire">
 <h2>Méthode: Calcul d’un produit scalaire<a class="headerlink" href="#methode-calcul-d-un-produit-scalaire" title="Permalink to this headline">¶</a></h2>
 <p>Comme nous allons le voir à travers un exemple, on utilise rarement les angles pour calculer les produits scalaires mais plutôt la décomposition des vecteurs dans une base orthonormée.</p>
@@ -583,14 +499,9 @@ Projection dans une base orthonormée<div class="summary-down docutils">
 \end{align*}\]</div>
 <p>Déterminer le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{u} \cdot \overrightarrow{v}\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Correction<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On va utiliser successivement la bilinéarité du produit scalaire et le caratère orthonormé de la base</p>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p>On va utiliser successivement la bilinéarité du produit scalaire et le caratère orthonormé de la base</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	\overrightarrow{u} \cdot \overrightarrow{v} =&amp; \left(v_1 \overrightarrow{e_1} + v_2 \overrightarrow{e_2}\right) \\
@@ -601,7 +512,7 @@ Correction<div class="summary-down docutils">
 	=&amp; v_1 u_1 + v_2 u_2
 \end{align*}\]</div>
 </div>
-</details></div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -627,16 +538,27 @@ Correction<div class="summary-down docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="geometrie.html" title="previous page">Géométrie vectorielle</a>
-    <a class='right-next' id="next-link" href="geom_plan.html" title="next page">Géométrie dans le plan</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="geometrie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Géométrie vectorielle</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="geom_plan.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Géométrie dans le plan</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -652,8 +574,7 @@ Correction<div class="summary-down docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

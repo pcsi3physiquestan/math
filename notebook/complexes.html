@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nombres complexes &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/complexes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Méthodes" href="methodes.html" />
     <link rel="prev" title="Géométrie et trigonométrie" href="trigonometrie.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ecriture-des-complexes">
@@ -342,7 +346,7 @@
         
               <div>
                 
-  <div class="section" id="nombres-complexes">
+  <div class="tex2jax_ignore mathjax_ignore section" id="nombres-complexes">
 <h1>Nombres complexes<a class="headerlink" href="#nombres-complexes" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="ecriture-des-complexes">
 <h2>Ecriture des complexes<a class="headerlink" href="#ecriture-des-complexes" title="Permalink to this headline">¶</a></h2>
@@ -379,8 +383,8 @@
 <p class="admonition-title">Important</p>
 <p><strong>Relation entre les écritures</strong>
 <strong>Ces relations sont fondamentales en physique et doivent être sues par coeur.</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-ec597a36-dcf3-4529-bdd6-cfa774fb7674">
-<span class="eqno">(4)<a class="headerlink" href="#equation-ec597a36-dcf3-4529-bdd6-cfa774fb7674" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7dcf4fea-9123-4ab4-9c1b-7342a7f78071">
+<span class="eqno">(4)<a class="headerlink" href="#equation-7dcf4fea-9123-4ab4-9c1b-7342a7f78071" title="Permalink to this equation">¶</a></span>\[\begin{align}
 	\vert z\vert &amp;= \sqrt{{\Re(z)}^2 + {\Im(z)}^2}\\
 	\cos \theta &amp;= \frac{\Re(z)}{\vert z \vert}\\
 	\sin \theta &amp;= \frac{\Im(z)}{\vert z \vert}\\
@@ -388,7 +392,7 @@
 \end{align}\]</div>
 </div>
 <div class="topic">
-<p class="topic-title">Cas particuliers</p>
+<p class="topic-title first">Cas particuliers</p>
 <p>Cas d’un réel: <span class="math notranslate nohighlight">\(\Im(z) = 0\)</span> et <span class="math notranslate nohighlight">\(arg(z) = 0 \textrm{ ou }\pi\)</span> suivant le signe du réel.</p>
 <p>Cas d’un imaginaire pur: <span class="math notranslate nohighlight">\(\Re(z) = 0\)</span> et <span class="math notranslate nohighlight">\(arg(z) = \pm\pi/2\)</span> suivant le signe de la partie imaginaire.</p>
 </div>
@@ -411,8 +415,8 @@ Le plan complexe est un plan muni d’un repère orthonormé <span class="math n
 <p class="admonition-title">Important</p>
 <p><strong>Conjugaison</strong></p>
 <p>Soit un complexe z, on définit le complexe conjugué <span class="math notranslate nohighlight">\(\overline{z} \)</span> comme le complexe possédant le même module mais un argument opposé. On peut aussi le définir comme celui ayant la même partie réelle et une partie imaginaire opposée.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-96e74fd8-18fa-4124-a411-42d496f8dcc4">
-<span class="eqno">(5)<a class="headerlink" href="#equation-96e74fd8-18fa-4124-a411-42d496f8dcc4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a9e2018a-3164-4ad4-bd34-71d57c59a73c">
+<span class="eqno">(5)<a class="headerlink" href="#equation-a9e2018a-3164-4ad4-bd34-71d57c59a73c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 z = r e^{i \theta} = a + i b \Longrightarrow \overline{z} = r e^{-i \theta} = a - i b
 \end{equation}\]</div>
 </div>
@@ -420,8 +424,8 @@ z = r e^{i \theta} = a + i b \Longrightarrow \overline{z} = r e^{-i \theta} = a 
 <p class="admonition-title">Important</p>
 <p>Formulaire
 <strong>Ces relations sont fondamentales en physique et doivent être sues par coeur.</strong></p>
-<div class="amsmath math notranslate nohighlight" id="equation-0b81c58c-c6c7-4c1c-a8b4-7770d63e2883">
-<span class="eqno">(6)<a class="headerlink" href="#equation-0b81c58c-c6c7-4c1c-a8b4-7770d63e2883" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-b2a66c54-2b79-441a-a495-eb6dda5ba3a0">
+<span class="eqno">(6)<a class="headerlink" href="#equation-b2a66c54-2b79-441a-a495-eb6dda5ba3a0" title="Permalink to this equation">¶</a></span>\[\begin{align}
     \Re(z_1 + z_2) &amp;= \Re(z_1) + \Re(z_2)\\
     \Im(z_1 + z_2) &amp;= \Im(z_1) + \Im(z_2)\\
     \vert z_1 z_2 \vert &amp;= \vert z_1 \vert \vert z_2 \vert \\
@@ -461,16 +465,27 @@ z = r e^{i \theta} = a + i b \Longrightarrow \overline{z} = r e^{-i \theta} = a 
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="trigonometrie.html" title="previous page">Géométrie et trigonométrie</a>
-    <a class='right-next' id="next-link" href="methodes.html" title="next page">Méthodes</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="trigonometrie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Géométrie et trigonométrie</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="methodes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Méthodes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -486,8 +501,7 @@ z = r e^{i \theta} = a + i b \Longrightarrow \overline{z} = r e^{-i \theta} = a 
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

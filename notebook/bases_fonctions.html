@@ -1,0 +1,626 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fonctions mathématiques &#8212; Mathématiques</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/bases_fonctions.html" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Géométrie et trigonométrie" href="bases_trigonometrie.html" />
+    <link rel="prev" title="Bases de mathématiques pour la physique" href="bases.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../mathematiques.html">
+   Mathématiques pour la physique
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="bases_ex.html">
+     Exercices
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
+       Applications : Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_litteral.html">
+       Entrainement : Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_appro.html">
+       Entrainement : Nouveautés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="td_geom.html">
+     TD Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        <a class="dropdown-buttons"
+            href="../_sources/notebook/bases_fonctions.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/notebook/bases_fonctions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/bases_fonctions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#etude-generale">
+   Etude générale
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions-usuelles">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#transformations-usuelles">
+   Transformations usuelles
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformations-suivant-l-axe-vertical">
+     Transformations suivant l’axe vertical
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformations-suivant-l-axe-horizontal">
+     Transformations suivant l’axe horizontal
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="fonctions-mathematiques">
+<h1>Fonctions mathématiques<a class="headerlink" href="#fonctions-mathematiques" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="etude-generale">
+<h2>Etude générale<a class="headerlink" href="#etude-generale" title="Permalink to this headline">¶</a></h2>
+<div class="margin sidebar">
+<p class="sidebar-title">Généralités</p>
+<p>On rappelle les caractéristiques générales : domaines de définition, limites…</p>
+</div>
+<div class="sidebar">
+<p class="sidebar-title"><strong>Interprétation de la dérivée première</strong></p>
+<p>La dérivée première donne la pente de la tangente de la fonction au point <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+<p>Le signe de la dérivée donne la monotonie de la fonction (croissante ou décroissante). Lorsque la dérivée s’annule, on a un extremum local (maximum ou minimum).</p>
+<div class="figure align-center" id="deriv-tangente">
+<img alt="../_images/mathematiques_derivee_tangente.jpg" src="../_images/mathematiques_derivee_tangente.jpg" />
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Nombre dérivé et fonction dérivée</strong></p>
+<p>Le nombre dérivé de la fonction f en <span class="math notranslate nohighlight">\(x = x_0\)</span> est définie comme la limite du taux de variation de la fonction en ce point (on présuppose ici son existence):</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f4638219-72b6-4dac-80ca-5ec90279e2a0">
+<span class="eqno">(1)<a class="headerlink" href="#equation-f4638219-72b6-4dac-80ca-5ec90279e2a0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+f'(x_0) = \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}= \lim\limits_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
+\end{equation}\]</div>
+<p>La (fonction) dérivée de f est la fonction qui associe à tout x de l’intervalle de dérivabilité le nombre dérivé de f en x.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Formulaire de dérivation</strong></p>
+<ul class="simple">
+<li><p>Dérivée du produit: <span class="math notranslate nohighlight">\(\left (u \times v \right)' = u'v + uv'\)</span></p></li>
+<li><p>Dérivée d’une composé: <span class="math notranslate nohighlight">\(\left (u \circ v \right)' = \left ( u' \circ v\right )\times v'\)</span></p></li>
+<li><p>Il est bon aussi d’une dérivée usuelle: puissance réelle, trigonométrique, exponentielle et sa réciproque…</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="fonctions-usuelles">
+<h2>Fonctions usuelles<a class="headerlink" href="#fonctions-usuelles" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Polynôme</strong></p>
+<p>Ils sont sous la forme:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-99e63f2c-93e7-43bd-a3d2-ab5bae39b67b">
+<span class="eqno">(2)<a class="headerlink" href="#equation-99e63f2c-93e7-43bd-a3d2-ab5bae39b67b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+\sum\limits_{k=0}^{N}a_k x^k
+\end{equation}\]</div>
+<p>La puissance maximale donne le degré du polynôme.</p>
+<p>Le cas du polynôme de degré 2 doit être parfaitement maîtrisé.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Exponentielle et Logarithme</strong></p>
+<p>La fonction exponentielle <span class="math notranslate nohighlight">\(e^x\)</span> est définie sur <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. Elle est strictement croissante de 0 vers <span class="math notranslate nohighlight">\(+\infty\)</span> (plus rapidement qu’un polynôme).</p>
+<p>Elle ne s’annule jamais et vaut 1 en 0 (où sa pente est 1). Sa dérivée est <span class="math notranslate nohighlight">\(e^x\)</span>. Sa réciproque est le logarithme népérien.</p>
+<p>La fonction logarithme népérien <span class="math notranslate nohighlight">\(\ln\)</span> est définie sur <span class="math notranslate nohighlight">\(\mathbb{R}_{+}^{*}\)</span>. Elle est strictement croissante et tend vers <span class="math notranslate nohighlight">\(-\infty\)</span> en <span class="math notranslate nohighlight">\(0^{+}\)</span> et vers <span class="math notranslate nohighlight">\(+\infty\)</span> en <span class="math notranslate nohighlight">\(+\infty\)</span> (plus lentement qu’un polynôme). Elle s’annule en <span class="math notranslate nohighlight">\(x=1\)</span> (sa pente est alors de <span class="math notranslate nohighlight">\(1\)</span>). Sa dérivée est <span class="math notranslate nohighlight">\(1/x\)</span>.</p>
+<p>La fonction réciproque est la fonction exponentielle. Le tracé des deux fonctions est donc symétrique par rapport à la première diagonale d’équation <span class="math notranslate nohighlight">\(y=x\)</span>.</p>
+<div class="figure align-center" id="exp-ln">
+<img alt="../_images/mathematiques_exp_ln.jpg" src="../_images/mathematiques_exp_ln.jpg" />
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Propriétés</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+	\ln\left(a \times b\right) &amp;= \ln \left(a\right) + \ln \left(b\right)\\
+	\ln\left(a^b\right) &amp;= b\ln\left(a\right)\\
+	b^a &amp;= e^{a \ln b}
+\end{align*}\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Fonctions trigonométriques</strong></p>
+<p>Les trois fonctions trigonométriques sont <span class="math notranslate nohighlight">\(\sin(x), \cos(x), \tan(x)\)</span>. Elles sont toutes les trois périodiques de période <span class="math notranslate nohighlight">\(2 \pi\)</span> (en radians).</p>
+<p>Les fonctions cos et sin sont à valeurs dans <span class="math notranslate nohighlight">\([-1;1]\)</span> et on a <span class="math notranslate nohighlight">\(\sin(x) =\cos(x-\pi/2)\)</span> ce qui signifie comme nous le verrons par la suite que le tracé de la fonction sinus est le même que le tracé de la fonction cosinus mais décalé de <span class="math notranslate nohighlight">\(+ \pi/2\)</span> horizontalement.</p>
+<p>La fonction cosinus s’annule en <span class="math notranslate nohighlight">\(\pm \pi/2\)</span> et atteint ses extrema en 0 (1) et <span class="math notranslate nohighlight">\(\pi\)</span> (-1). Pour le sinus, c’est l’inverse. De plus cos est paire et sin impaire. On a <span class="math notranslate nohighlight">\(\cos' = -\sin\)</span> et <span class="math notranslate nohighlight">\(\sin' = \cos\)</span>.</p>
+<p>La fonction tan est définie par <span class="math notranslate nohighlight">\(\tan = \frac{\sin}{\cos}\)</span>: elle a donc les mêmes points d’annulation que la fonction sinus et diverge quand le cosinus s’annule. Elle est strictment croissante et sa dérivée vaut <span class="math notranslate nohighlight">\(\tan' = \frac{1}{cos^2} = 1 + tan^2\)</span>.</p>
+<div class="figure align-center" id="sin-tan">
+<img alt="../_images/mathematiques_cos_sin_tan.jpg" src="../_images/mathematiques_cos_sin_tan.jpg" />
+</div>
+<p>Les fonctions réciproques sont arccos, arcsin et arctan. Arccos et arcsin ont un domaine de définition restreint à [-1;1] alors que arctan a un domaine de définition étendu à <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. Arccos est à valeurs dans <strong><span class="math notranslate nohighlight">\([0;\pi]\)</span></strong> et arcsin est à valeur dans <strong><span class="math notranslate nohighlight">\([-\pi/2;\pi/2]\)</span></strong>. Arctan est à valeur dans <strong><span class="math notranslate nohighlight">\([-\pi/2;\pi/2]\)</span></strong>.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Relations trigonométriques</strong></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+ 	\cos^2(x) + \sin^2(x) &amp;= 1 \\
+ 	\cos(2x) &amp;= \cos^2(x)-\sin^2(x) = 2 \cos^2(x)-1=1-2\sin^2(x) \\
+ 	\sin(2x) &amp;= 2 \sin(x)\cos(x) \\
+    \cos(a+b) &amp;= \cos(a)\cos(b) - \sin(a)\sin(b) \\
+    \cos(a-b) &amp;= \cos(a)\cos(b) + \sin(a)\sin(b) \\
+    \sin(a+b) &amp;= \sin(a)\cos(b) + \cos(a)\sin(b) \\
+    \sin(a-b) &amp;= \sin(a)\cos(b) - \cos(a)\sin(b) \\
+    \cos(a)\cos(b) &amp;=\frac{\cos(a+b)+\cos(a-b)}{2} \\
+    \sin(a)\sin(b) &amp;=\frac{\cos(a-b)-\cos(a+b)}{2} \\
+    \sin(a)\cos(b) &amp;=\frac{\sin(a+b)+\sin(a-b)}{2} \\
+    \frac{1}{\tan(x)} = \tan\left(\frac{\pi}{2} - x\right)
+\end{align*}\]</div>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \cos(\arcsin(x)) &amp;= \sqrt{1-x^2}\\
+    \sin(\arccos(x)) &amp;= \sqrt{1-x^2}\\
+    \cos(\arctan(x)) &amp;= \sqrt{\frac{1}{1+x^2}}\\
+    \sin(\arctan(x)) &amp;= \sqrt{\frac{x^2}{1+x^2}}\\
+    \tan(\arcsin(x)) &amp;= \sqrt{\frac{x^2}{1-x^2}}\\
+    \tan(\arccos(x)) &amp;= \sqrt{\frac{1-x^2}{x^2}}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="section" id="transformations-usuelles">
+<h2>Transformations usuelles<a class="headerlink" href="#transformations-usuelles" title="Permalink to this headline">¶</a></h2>
+<div class="topic">
+<p class="topic-title first">Introduction</p>
+<p>Il faut pouvoir prévoir le tracé d’une fonction en repérant qu’il s’agit d’une fonction usuelle transformée par: symétrie, homothétie (agrandissement ou rétrécissement), translation…</p>
+<p>Nous allons voir ici quelles sont les principales transformations utiles et comment les reconnaître dans une expression mathématique d’une fonction.</p>
+<p>Nous verrons au fil des chapitres que repérer ces transformations mathématiques permet aussi de faire des raisonnements physiques.</p>
+</div>
+<div class="section" id="transformations-suivant-l-axe-vertical">
+<h3>Transformations suivant l’axe vertical<a class="headerlink" href="#transformations-suivant-l-axe-vertical" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Les transformations d’une fonction usuelle (ou pas) suivant l’axe vertical correspondent à un modification de l’expression globale de la fonction.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Translation verticale</strong>
+Considérons une fonction <span class="math notranslate nohighlight">\(f\)</span> et une fonction <span class="math notranslate nohighlight">\(g(x) = x+a\)</span>. La composition <span class="math notranslate nohighlight">\(h(x)=g \circ f(x)\)</span> correspond graphiquement à la translation verticale de la représentation graphique de <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\(+a\)</span>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Exemple : Translation verticale</p>
+<p>Soit la fonction <span class="math notranslate nohighlight">\(f(x) = xln(x)\)</span>. La fonction <span class="math notranslate nohighlight">\(h(x)=x\ln x - 2\)</span> est possède la même représentation graphique mais “décalée” de 2 unités vers le bas.</p>
+<div class="figure align-center" id="tr-verticale">
+<img alt="../_images/mathematiques_translation_verticale.jpg" src="../_images/mathematiques_translation_verticale.jpg" />
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Dilatation verticale</strong></p>
+<p>Considérons une fonction <span class="math notranslate nohighlight">\(f\)</span> et une fonction <span class="math notranslate nohighlight">\(g(x)=kx\)</span> avec <span class="math notranslate nohighlight">\(k&gt;0\)</span>. La composition <span class="math notranslate nohighlight">\(h(x)=g\circ f(x)\)</span> correspond graphiquement à la dilatation de la courbe verticale d’un facteur <span class="math notranslate nohighlight">\(k\)</span>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Exemple : Dilatation verticale</p>
+<p>Soit la fonction <span class="math notranslate nohighlight">\(f(x) = \sqrt{4-x^2}\)</span> définie sur <span class="math notranslate nohighlight">\([-2;2]\)</span>. La fonction <span class="math notranslate nohighlight">\(h(x) = 4 \sqrt{4-x^2}\)</span> possède la même représentation graphique mais dilatée d’un facteur <span class="math notranslate nohighlight">\(4\)</span> verticalement (d’un cercle on passe à une ellipse étirée vers le haut</p>
+<div class="figure align-center" id="dil-verticale">
+<img alt="../_images/mathematiques_dilatation_verticale.jpg" src="../_images/mathematiques_dilatation_verticale.jpg" />
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Symétrie par rapport à l’axe des abscisses</strong></p>
+<p>Soit une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>. La représentation graphique de la fonction <span class="math notranslate nohighlight">\(-f(x)\)</span> s’obtient par symétrie par rapport à l’axe des abscisses.</p>
+</div>
+</div>
+<div class="section" id="transformations-suivant-l-axe-horizontal">
+<h3>Transformations suivant l’axe horizontal<a class="headerlink" href="#transformations-suivant-l-axe-horizontal" title="Permalink to this headline">¶</a></h3>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<p>Les transformations d’une fonction usuelles (ou pas) suivant l’axe horizontal correspondent à un modification de l’expression de la fonction au plus près de la variable.</p>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Translation horizontale et physique</p>
+<p>La translation horizontale apparaît souvent en physique dans des phénomènes retardés (ou avancés): la fonction qui dépend du temps, étant retardée, va avoir une expression de la forme <span class="math notranslate nohighlight">\(f(t - t_0)\)</span> où <span class="math notranslate nohighlight">\(t_0\)</span> est le retard.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Translation horizontale</strong>
+Considérons une fonction <span class="math notranslate nohighlight">\(f\)</span> et une fonction <span class="math notranslate nohighlight">\(g(x) = x-a\)</span>. La composition <span class="math notranslate nohighlight">\(h(x)=f \circ g(x)\)</span> correspond graphiquement à la translation horizontale de la représentation graphique de <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\(+a\)</span>.</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Exemple : Translation horizontale</p>
+<p>Soit la fonction <span class="math notranslate nohighlight">\(f(x) = xln(x)\)</span>. La fonction <span class="math notranslate nohighlight">\(h(x)=(x-2)\ln(x-2)\)</span>  possède la même représentation graphique mais “décalée” de 2 unités vers la droite.</p>
+<div class="figure align-center" id="tr-horizon">
+<img alt="../_images/mathematiques_translation_horizontale.jpg" src="../_images/mathematiques_translation_horizontale.jpg" />
+</div>
+</div>
+<div class="sidebar">
+<p class="sidebar-title">Dilatation horizontale et physique</p>
+<p>La dilatation horizontale est très importante en physique car elle correspond à des lois d’échelle.</p>
+<p>Dans des fonctions du temps, si l’on a une fonction de la forme <span class="math notranslate nohighlight">\(f(\frac{t}{\tau})\)</span>, il s’agit d’une fonction qui sera d’autant plus lente à évoluer que <span class="math notranslate nohighlight">\(\tau\)</span> est grand (dilatation horizontale).</p>
+<p>On verra de la même manière des exemples de dilatation dans l’espace.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Dilatation horizontale</strong></p>
+<p>Considérons une fonction <span class="math notranslate nohighlight">\(f\)</span> et une fonction <span class="math notranslate nohighlight">\(g(x)=kx\)</span> avec <span class="math notranslate nohighlight">\(k&gt;0\)</span>. La composition <span class="math notranslate nohighlight">\(h(x)=f\circ g(x)\)</span> correspond graphiquement à la dilatation de la courbe horizontale d’un facteur <span class="math notranslate nohighlight">\(1/k\)</span> (donc contraction de facteur <span class="math notranslate nohighlight">\(k\)</span>).</p>
+</div>
+<div class="topic">
+<p class="topic-title first">Exemple : Dilatation horizontale</p>
+<p>Soit la fonction <span class="math notranslate nohighlight">\(f(x) = \sqrt{4-x^2}\)</span> définie sur <span class="math notranslate nohighlight">\([-2;2]\)</span>. La fonction <span class="math notranslate nohighlight">\(h(x) = \sqrt{4-{(2x)}^2}\)</span> possède la même représentation graphique mais dilatée d’un facteur <span class="math notranslate nohighlight">\(1/2\)</span> horizontalement (d’un cercle on passe à une ellipse contractée horizontalement.</p>
+<div class="figure align-center" id="dil-horizon">
+<img alt="../_images/mathematiques_dilatation_horizontale.jpg" src="../_images/mathematiques_dilatation_horizontale.jpg" />
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Symétrie par rapport à l’axe des ordonnées</strong>
+Soit une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>. La représentation graphique de la fonction <span class="math notranslate nohighlight">\(f(-x)\)</span> s’obtient par symétrie par rapport à l’axe des ordonnées.</p>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./notebook"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="bases.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Bases de mathématiques pour la physique</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="bases_trigonometrie.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Géométrie et trigonométrie</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+        
+        </div>
+    </div>
+    <footer class="footer">
+    <div class="container">
+      <p>
+        
+          By C. Lacpatia<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

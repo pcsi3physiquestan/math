@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fonctions mathématiques &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/fonctions.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Géométrie et trigonométrie" href="trigonometrie.html" />
     <link rel="prev" title="Bases de mathématiques pour la physique" href="bases.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#etude-generale">
@@ -354,7 +358,7 @@
         
               <div>
                 
-  <div class="section" id="fonctions-mathematiques">
+  <div class="tex2jax_ignore mathjax_ignore section" id="fonctions-mathematiques">
 <h1>Fonctions mathématiques<a class="headerlink" href="#fonctions-mathematiques" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="etude-generale">
 <h2>Etude générale<a class="headerlink" href="#etude-generale" title="Permalink to this headline">¶</a></h2>
@@ -374,8 +378,8 @@
 <p class="admonition-title">Note</p>
 <p><strong>Nombre dérivé et fonction dérivée</strong></p>
 <p>Le nombre dérivé de la fonction f en <span class="math notranslate nohighlight">\(x = x_0\)</span> est définie comme la limite du taux de variation de la fonction en ce point (on présuppose ici son existence):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-401324ab-c490-46dd-93c4-582c0418d275">
-<span class="eqno">(1)<a class="headerlink" href="#equation-401324ab-c490-46dd-93c4-582c0418d275" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-1147ef03-6ed2-4850-b30b-eeea0e3ccec1">
+<span class="eqno">(1)<a class="headerlink" href="#equation-1147ef03-6ed2-4850-b30b-eeea0e3ccec1" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f'(x_0) = \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}= \lim\limits_{h \to 0} \frac{f(x_0 + h) - f(x_0)}{h}
 \end{equation}\]</div>
 <p>La (fonction) dérivée de f est la fonction qui associe à tout x de l’intervalle de dérivabilité le nombre dérivé de f en x.</p>
@@ -396,8 +400,8 @@ f'(x_0) = \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}= \lim\limits_{h 
 <p class="admonition-title">Note</p>
 <p><strong>Polynôme</strong></p>
 <p>Ils sont sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-58083c74-609e-421b-85ac-4acf4a17f475">
-<span class="eqno">(2)<a class="headerlink" href="#equation-58083c74-609e-421b-85ac-4acf4a17f475" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-aad32fa7-29f2-486d-b4a7-089fc01fc93e">
+<span class="eqno">(2)<a class="headerlink" href="#equation-aad32fa7-29f2-486d-b4a7-089fc01fc93e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \sum\limits_{k=0}^{N}a_k x^k
 \end{equation}\]</div>
 <p>La puissance maximale donne le degré du polynôme.</p>
@@ -467,7 +471,7 @@ f'(x_0) = \lim\limits_{x \to x_0} \frac{f(x) - f(x_0)}{x - x_0}= \lim\limits_{h 
 <div class="section" id="transformations-usuelles">
 <h2>Transformations usuelles<a class="headerlink" href="#transformations-usuelles" title="Permalink to this headline">¶</a></h2>
 <div class="topic">
-<p class="topic-title">Introduction</p>
+<p class="topic-title first">Introduction</p>
 <p>Il faut pouvoir prévoir le tracé d’une fonction en repérant qu’il s’agit d’une fonction usuelle transformée par: symétrie, homothétie (agrandissement ou rétrécissement), translation…</p>
 <p>Nous allons voir ici quelles sont les principales transformations utiles et comment les reconnaître dans une expression mathématique d’une fonction.</p>
 <p>Nous verrons au fil des chapitres que repérer ces transformations mathématiques permet aussi de faire des raisonnements physiques.</p>
@@ -580,16 +584,27 @@ Soit une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>. La
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="bases.html" title="previous page">Bases de mathématiques pour la physique</a>
-    <a class='right-next' id="next-link" href="trigonometrie.html" title="next page">Géométrie et trigonométrie</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="bases.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Bases de mathématiques pour la physique</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="trigonometrie.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Géométrie et trigonométrie</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -605,8 +620,7 @@ Soit une fonction <span class="math notranslate nohighlight">\(f(x)\)</span>. La
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

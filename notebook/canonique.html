@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Equations différentielles: forme canonique et solution &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/canonique.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Exercice d’application: Équations différentielles" href="td_ed.html" />
     <link rel="prev" title="Equations différentielles" href="eq_diff.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#">
@@ -366,7 +370,7 @@
         
               <div>
                 
-  <div class="section" id="equations-differentielles-forme-canonique-et-solution">
+  <div class="tex2jax_ignore mathjax_ignore section" id="equations-differentielles-forme-canonique-et-solution">
 <h1>Equations différentielles: forme canonique et solution<a class="headerlink" href="#equations-differentielles-forme-canonique-et-solution" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="equation-d-ordre-1">
 <h2>Equation d’ordre 1<a class="headerlink" href="#equation-d-ordre-1" title="Permalink to this headline">¶</a></h2>
@@ -374,8 +378,8 @@
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Forme canonique d’une équation d’ordre 1.</strong>
 Une équation d’ordre 1 peut se mettre sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-11436826-d049-4689-8e02-aea71929ed08">
-<span class="eqno">(28)<a class="headerlink" href="#equation-11436826-d049-4689-8e02-aea71929ed08" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-030b228c-ad0f-479f-8906-8e1b84f2efe3">
+<span class="eqno">(28)<a class="headerlink" href="#equation-030b228c-ad0f-479f-8906-8e1b84f2efe3" title="Permalink to this equation">¶</a></span>\[\begin{align}
 	\frac{\rm{d}y}{\rm{dt}} + \frac{1}{\tau} y(t) &amp;= f(t) \textrm{ équation avec second membre}\\
 	\frac{\rm{d}y}{\rm{dt}} + \frac{1}{\tau} y(t) &amp;= 0 \textrm{ équation sans second membre}
 \end{align}\]</div>
@@ -384,8 +388,8 @@ Une équation d’ordre 1 peut se mettre sous la forme:</p>
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Solution de l’équation sans second membre</strong>
 Toutes les solutions de l’équation <strong>homogène</strong>, c’est-à-dire sans second membre sont de la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-e5073ec6-5906-4f77-8f12-3c614b02aa4e">
-<span class="eqno">(29)<a class="headerlink" href="#equation-e5073ec6-5906-4f77-8f12-3c614b02aa4e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-21eff112-e443-4119-91d6-1fbf7e2a46ce">
+<span class="eqno">(29)<a class="headerlink" href="#equation-21eff112-e443-4119-91d6-1fbf7e2a46ce" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 y(t) = A e^{-\frac{t}{\tau}}
 \end{equation}\]</div>
 </div>
@@ -401,14 +405,14 @@ y(t) = A e^{-\frac{t}{\tau}}
 <p class="admonition-title">Important</p>
 <p><strong>Définition : Forme canonique d’une équation d’ordre 2.</strong>
 Une équation d’ordre 2 peut se mettre sous la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5cb1d578-3c38-499e-b7fe-22e1357c63d0">
-<span class="eqno">(30)<a class="headerlink" href="#equation-5cb1d578-3c38-499e-b7fe-22e1357c63d0" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-a02c5bfd-5fcf-4281-b2ab-14873ebd2d31">
+<span class="eqno">(30)<a class="headerlink" href="#equation-a02c5bfd-5fcf-4281-b2ab-14873ebd2d31" title="Permalink to this equation">¶</a></span>\[\begin{align}
 	a \frac{\rm{d^2}y}{\rm{dt^2}} + b \frac{\rm{d}y}{\rm{dt}} + c y(t) &amp;= f(t) \textrm{ équation avec second membre}\\
 	a \frac{\rm{d^2}y}{\rm{dt^2}} + b \frac{\rm{d}y}{\rm{dt}} + c y(t) &amp;= 0 \textrm{ équation sans second membre}
 \end{align}\]</div>
 <p>On mettra en général l’équation sous la forme canonique:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-72727236-5194-4a3f-ae4f-2d6a4c8974df">
-<span class="eqno">(31)<a class="headerlink" href="#equation-72727236-5194-4a3f-ae4f-2d6a4c8974df" title="Permalink to this equation">¶</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-0e0edbd5-798b-412a-a24f-b0da024a1f4b">
+<span class="eqno">(31)<a class="headerlink" href="#equation-0e0edbd5-798b-412a-a24f-b0da024a1f4b" title="Permalink to this equation">¶</a></span>\[\begin{align}
 	\frac{\rm{d^2}y}{\rm{dt^2}} + \frac{\omega_0}{Q} \frac{\rm{d}y}{\rm{dt}} + \omega_0^2 y(t) = f(t)\\
 	\frac{\rm{d^2}y}{\rm{dt^2}} + 2 \xi \omega_0 \frac{\rm{d}y}{\rm{dt}} + \omega_0^2 y(t) = f(t)
 \end{align}\]</div>
@@ -418,13 +422,13 @@ Une équation d’ordre 2 peut se mettre sous la forme:</p>
 <p class="admonition-title">Important</p>
 <p><strong>Fondamental : Equation caractéristique</strong>
 La détermination de la solution générale passe par la résolution de l’équation caractéristique:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-1b1cc530-5741-4342-b92b-632b5860eaa0">
-<span class="eqno">(32)<a class="headerlink" href="#equation-1b1cc530-5741-4342-b92b-632b5860eaa0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-07455d7c-760a-4ddb-91b4-a1f5def36be2">
+<span class="eqno">(32)<a class="headerlink" href="#equation-07455d7c-760a-4ddb-91b4-a1f5def36be2" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 a r^2 + b r + c = 0
 \end{equation}\]</div>
 <p>dont les solutions sont:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-3978a184-7e96-4127-b84e-85ec74c2c359">
-<span class="eqno">(33)<a class="headerlink" href="#equation-3978a184-7e96-4127-b84e-85ec74c2c359" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-80bbabd2-d380-4903-9696-5c73b4cba4d0">
+<span class="eqno">(33)<a class="headerlink" href="#equation-80bbabd2-d380-4903-9696-5c73b4cba4d0" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 r_{1,2} = \frac{-b \pm \sqrt{\Delta}}{2a} \textrm{ avec } \Delta = b^2 - 4ac
 \end{equation}\]</div>
 </div>
@@ -435,22 +439,22 @@ Les solutions de l’équation <strong>homogène</strong>, c’est-à-dire sans 
 <ul class="simple">
 <li><p>Cas 1: <span class="math notranslate nohighlight">\(\Delta &gt; 0\)</span>, les racines <span class="math notranslate nohighlight">\(r_{1,2}\)</span> sont réelles. La solution générale de l’équation homogène s’écrit:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-b882913f-3888-4eee-89b1-0589fb94b6ca">
-<span class="eqno">(34)<a class="headerlink" href="#equation-b882913f-3888-4eee-89b1-0589fb94b6ca" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-3644739e-6264-4291-93b7-f9ceffc73782">
+<span class="eqno">(34)<a class="headerlink" href="#equation-3644739e-6264-4291-93b7-f9ceffc73782" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f_1(t) = A e^{r_1 t} + B e^{r_2 t}
 \end{equation}\]</div>
 <ul class="simple">
 <li><p>Cas 2: <span class="math notranslate nohighlight">\(\Delta = 0\)</span>, il y a une racine double notée <span class="math notranslate nohighlight">\(r_0 = \frac{-b}{2a}\)</span> et réelle. La solution générale de l’équation homogène s’écrit:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-d6b824f7-de16-4e22-9178-f1bf7f8469b3">
-<span class="eqno">(35)<a class="headerlink" href="#equation-d6b824f7-de16-4e22-9178-f1bf7f8469b3" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-39c0db29-7203-4720-9223-37f243ea9f66">
+<span class="eqno">(35)<a class="headerlink" href="#equation-39c0db29-7203-4720-9223-37f243ea9f66" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f_1(t) = (A + Bt) e^{r_0 t}
 \end{equation}\]</div>
 <ul class="simple">
 <li><p>Cas 3: <span class="math notranslate nohighlight">\(\Delta &lt; 0\)</span>, les racines <span class="math notranslate nohighlight">\(r_{1,2}\)</span> sont complexes et conjuguées, on peut les écrire sous la forme <span class="math notranslate nohighlight">\(r_{1,2} = \lambda \pm j \Omega\)</span>. La solution générale de l’équation homogène est à valeur réelle et il est important d’en donner une expression qui fait apparaître ce caractère et qui permet de l’analyser physiquement. On l’écrit donc sous les formes:</p></li>
 </ul>
-<div class="amsmath math notranslate nohighlight" id="equation-4aa45bc6-c65b-4fe2-8c2f-e7be2477d4a9">
-<span class="eqno">(36)<a class="headerlink" href="#equation-4aa45bc6-c65b-4fe2-8c2f-e7be2477d4a9" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-62c28283-e6d1-4f00-9aff-db81c5aa8ba4">
+<span class="eqno">(36)<a class="headerlink" href="#equation-62c28283-e6d1-4f00-9aff-db81c5aa8ba4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f_1(t) = (A \cos \Omega t + B \sin \Omega t) e^{\lambda t} =C \cos(\Omega t + \phi) e^{\lambda t}
 \end{equation}\]</div>
 </div>
@@ -461,7 +465,7 @@ f_1(t) = (A \cos \Omega t + B \sin \Omega t) e^{\lambda t} =C \cos(\Omega t + \p
 </div>
 </div>
 </div>
-<div class="section" id="equations-differentielles-methodes-de-resolution">
+<div class="tex2jax_ignore mathjax_ignore section" id="equations-differentielles-methodes-de-resolution">
 <h1>Equations différentielles: méthodes de résolution<a class="headerlink" href="#equations-differentielles-methodes-de-resolution" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="methode-de-resolution">
 <h2>Méthode de résolution<a class="headerlink" href="#methode-de-resolution" title="Permalink to this headline">¶</a></h2>
@@ -483,8 +487,8 @@ Pour résoudre une équation différentielle, il faut suivre <strong>scrupuleuse
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Résoudre l’équation différentielle suivante:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-9a1ded45-b315-4db1-bbb4-45a7064d8979">
-<span class="eqno">(37)<a class="headerlink" href="#equation-9a1ded45-b315-4db1-bbb4-45a7064d8979" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6bdcd16b-ba17-4473-a610-20262d208296">
+<span class="eqno">(37)<a class="headerlink" href="#equation-6bdcd16b-ba17-4473-a610-20262d208296" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\rm{d}f}{\rm{dt}}(t) + \frac{1}{\tau} f(t) = E
 \end{equation}\]</div>
 <p>avec f(0) = 0</p>
@@ -499,13 +503,13 @@ Correction<div class="summary-down docutils">
 <p class="card-text">L’équation est déjà sous forme canonique, la solution ESSM est <span class="math notranslate nohighlight">\(f_1(t) = A e^{-\frac{t}{\tau}}\)</span></p>
 <p class="card-text">Le second membre étant constant, on cherche une solution constante sous la forme <span class="math notranslate nohighlight">\(f_2(t) = K\)</span>. L’équation devient <span class="math notranslate nohighlight">\(0 + K/\tau = E\)</span> soit <span class="math notranslate nohighlight">\(K = \tau E\)</span>.</p>
 <p class="card-text">La solution générale de l’équation avec second membre :</p>
-<div class="amsmath math notranslate nohighlight" id="equation-f2b00002-2372-432d-9071-d6dda46280e4">
-<span class="eqno">(38)<a class="headerlink" href="#equation-f2b00002-2372-432d-9071-d6dda46280e4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-49abfd70-17a3-4b96-8613-1a82012e0baf">
+<span class="eqno">(38)<a class="headerlink" href="#equation-49abfd70-17a3-4b96-8613-1a82012e0baf" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(t) = A e^{-\frac{t}{\tau}} + \tau E
 \end{equation}\]</div>
 <p class="card-text">On cherche maintenant la constante d’intégration grâce à la condition initiale <span class="math notranslate nohighlight">\(f(0) = 0\)</span>. Il vient <span class="math notranslate nohighlight">\(A + \tau E = 0 \Longrightarrow A = - \tau E\)</span>. La solution est donc:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-755269ae-adaa-400e-a6b1-13a2195166b6">
-<span class="eqno">(39)<a class="headerlink" href="#equation-755269ae-adaa-400e-a6b1-13a2195166b6" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e393f46e-228c-48af-9756-8d3ec3ea681b">
+<span class="eqno">(39)<a class="headerlink" href="#equation-e393f46e-228c-48af-9756-8d3ec3ea681b" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
 \end{equation}\]</div>
 </div>
@@ -515,8 +519,8 @@ f(t) = \tau E \left(1 -  e^{-\frac{t}{\tau}}\right)
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>On considère l’équation suivante avec R et C positifs:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7298c5cb-f16d-4128-be30-3f23e277a0fb">
-<span class="eqno">(40)<a class="headerlink" href="#equation-7298c5cb-f16d-4128-be30-3f23e277a0fb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-e819dba3-fc24-4eb6-9583-6d1a04066454">
+<span class="eqno">(40)<a class="headerlink" href="#equation-e819dba3-fc24-4eb6-9583-6d1a04066454" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 R^{2}C^{2} \frac{\rm{d^2}u}{\rm{dt^2}} + 3RC \frac{\rm{d}u}{\rm{dt}} + u = E
 \end{equation}\]</div>
 <p>avec u(0) = 0 et <span class="math notranslate nohighlight">\(\frac{\rm{d}u}{\rm{dt}}(0) = 0\)</span></p>
@@ -529,23 +533,23 @@ Correction<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">En cours de physique, on introduira les grandeurs <span class="math notranslate nohighlight">\(\omega_0\)</span> et Q. Ici, on va résoudre directement l’équation sans ces grandeurs. L’équation caractéristique est donc: <span class="math notranslate nohighlight">\({(RC)}^2 r^2 + 3RC r + 1 = 0\)</span> dont le discriminant est: <span class="math notranslate nohighlight">\(\Delta = 5 {(RC)}^2&gt; 0\)</span>. Les solutions sont réelles et valent:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-5dbc3f2b-6959-41a5-8777-fd6eb6d4475f">
-<span class="eqno">(41)<a class="headerlink" href="#equation-5dbc3f2b-6959-41a5-8777-fd6eb6d4475f" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-9d3cfac6-2110-4fb3-8e29-ce3c4299e795">
+<span class="eqno">(41)<a class="headerlink" href="#equation-9d3cfac6-2110-4fb3-8e29-ce3c4299e795" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 r_{1,2} = \frac{1}{2RC} \left(3 \pm \sqrt{5}\right)
 \end{equation}\]</div>
 <p class="card-text">La solution générale ESSM est donc de la forme:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-7d827bc4-52f3-4921-8974-286a1575a512">
-<span class="eqno">(42)<a class="headerlink" href="#equation-7d827bc4-52f3-4921-8974-286a1575a512" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-23a98a70-a4e3-4049-904d-b345fcdebfa5">
+<span class="eqno">(42)<a class="headerlink" href="#equation-23a98a70-a4e3-4049-904d-b345fcdebfa5" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 u_1(t) = A e^{r_1 t} + B e^{r_2 t}
 \end{equation}\]</div>
 <p class="card-text">On cherche une solution particulière sous une forme constante <span class="math notranslate nohighlight">\(u_2(t) = K\)</span> ce qui donne l’équation <span class="math notranslate nohighlight">\(0 + 0 + K = E\)</span> soit une solution générale EASM:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-2df3f2c3-c72e-4df4-aba8-01c59c6c0c55">
-<span class="eqno">(43)<a class="headerlink" href="#equation-2df3f2c3-c72e-4df4-aba8-01c59c6c0c55" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-41d57562-f515-4981-9871-e5c072651bd4">
+<span class="eqno">(43)<a class="headerlink" href="#equation-41d57562-f515-4981-9871-e5c072651bd4" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 u(t) = A e^{r_1 t} + B e^{r_2 t} + E
 \end{equation}\]</div>
 <p class="card-text">On détermine maintenant les constantes d’intégration à partir des conditions initiales. On obtient le système:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-af305ebd-0e23-4c99-b1c3-ff5ee353e8ca">
-<span class="eqno">(44)<a class="headerlink" href="#equation-af305ebd-0e23-4c99-b1c3-ff5ee353e8ca" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-5c4076d3-d439-44b9-b37d-a1b154a62a66">
+<span class="eqno">(44)<a class="headerlink" href="#equation-5c4076d3-d439-44b9-b37d-a1b154a62a66" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \begin{cases}
 	A + B + E &amp;= 0\\
 	r_1 A + r_2 B &amp;= 0
@@ -583,16 +587,27 @@ u(t) = A e^{r_1 t} + B e^{r_2 t} + E
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="eq_diff.html" title="previous page">Equations différentielles</a>
-    <a class='right-next' id="next-link" href="td_ed.html" title="next page">Exercice d’application: Équations différentielles</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="eq_diff.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Equations différentielles</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="td_ed.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Exercice d’application: Équations différentielles</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -608,8 +623,7 @@ u(t) = A e^{r_1 t} + B e^{r_2 t} + E
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

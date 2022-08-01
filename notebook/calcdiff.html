@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calcul différentiel &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/calcdiff.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Equations différentielles" href="eq_diff.html" />
     <link rel="prev" title="Entrainement : Nouveautés" href="td_appro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#notation-differentielle">
@@ -366,7 +370,7 @@
         
               <div>
                 
-  <div class="section" id="calcul-differentiel">
+  <div class="tex2jax_ignore mathjax_ignore section" id="calcul-differentiel">
 <h1>Calcul différentiel<a class="headerlink" href="#calcul-differentiel" title="Permalink to this headline">¶</a></h1>
 <div class="tip admonition">
 <p class="admonition-title">Objectifs</p>
@@ -430,13 +434,13 @@ Généralisation<div class="summary-down docutils">
 <div class="section" id="separation-des-variables-generalites">
 <h3>Séparation des variables: Généralités<a class="headerlink" href="#separation-des-variables-generalites" title="Permalink to this headline">¶</a></h3>
 <p>On suppose qu’on doit résoudre une équation du type: <span class="math notranslate nohighlight">\(\frac{\rm{d}y}{\rm{dx}} = f(x,y)\)</span> où f est une fonction à variables séparables, c’est-à-dire qu’on peut la mettre sous la forme <span class="math notranslate nohighlight">\(f_1(x) \times f_2(x)\)</span></p>
-<div class="amsmath math notranslate nohighlight" id="equation-55cbe5ba-3741-4b92-90e8-8e6861b57266">
-<span class="eqno">(20)<a class="headerlink" href="#equation-55cbe5ba-3741-4b92-90e8-8e6861b57266" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8d6c384f-c0b5-4c5c-bfb2-b890c19c396d">
+<span class="eqno">(20)<a class="headerlink" href="#equation-8d6c384f-c0b5-4c5c-bfb2-b890c19c396d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\rm{d}y}{\rm{dx}} = f_1(x) \times f_2(y)
 \end{equation}\]</div>
 <p>En assimilant les différentielles à des variations infinitésimales, on peut réécrire l’équation précédente en séparation la partie en x de la partie en y puis intégrer l’ensemble.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-dcbe3966-e28a-4094-961f-d7dbce1cf0af">
-<span class="eqno">(21)<a class="headerlink" href="#equation-dcbe3966-e28a-4094-961f-d7dbce1cf0af" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-7b9d5f22-43ac-4c39-a2b4-20248d2a2a33">
+<span class="eqno">(21)<a class="headerlink" href="#equation-7b9d5f22-43ac-4c39-a2b4-20248d2a2a33" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{\rm{d}y}{f_2(y)} = \rm{d}x f_1(x) \Longrightarrow \int_{y(x_1)}^{y(x_2)}\frac{\rm{d}y}{f_2(y)} = \int_{x_1}^{x_2} f_1(x) \rm{d}x
 \end{equation}\]</div>
 </div>
@@ -455,18 +459,18 @@ Correction<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">Séparons les variables en mettant toutes les fonction en x d’un côté et toutes les fonctions en y de l’autre:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-65e9cbcc-d95c-40ad-ba3e-86b48722d0af">
-<span class="eqno">(22)<a class="headerlink" href="#equation-65e9cbcc-d95c-40ad-ba3e-86b48722d0af" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-c4530da1-8fcc-4260-8f1b-807877fea0dc">
+<span class="eqno">(22)<a class="headerlink" href="#equation-c4530da1-8fcc-4260-8f1b-807877fea0dc" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{dy}{y} = ax^2dx
 \end{equation}\]</div>
 <p class="card-text">On intègre en faisant <strong>attention à ce que les bornes des deux intégrales soient cohérentes</strong>. Ici, on a choisit les bornes de l’intégrale en x (0 et <span class="math notranslate nohighlight">\(x_0\)</span>), les bornes de l’intégrale en y doivent correspondre (<span class="math notranslate nohighlight">\(y(x=0)\)</span> et <span class="math notranslate nohighlight">\(y(x=x_0)\)</span>)</p>
-<div class="amsmath math notranslate nohighlight" id="equation-b164b405-da87-46fe-a182-16503fd5829d">
-<span class="eqno">(23)<a class="headerlink" href="#equation-b164b405-da87-46fe-a182-16503fd5829d" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-484a3b8a-b8ba-40c8-b002-8a3da2da5c07">
+<span class="eqno">(23)<a class="headerlink" href="#equation-484a3b8a-b8ba-40c8-b002-8a3da2da5c07" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \int_{y(x=0)}^{y(x=x_0)} \frac{dy}{y} = \int_{x=0}^{x=x_0}ax^2dx \Longrightarrow \ln\left(\frac{y(x_0)}{y_0}\right) = \frac{a}{3}x_0^3
 \end{equation}\]</div>
 <p class="card-text">Il reste à isoler y(x) (on a remplacé <span class="math notranslate nohighlight">\(x_0\)</span> par x car l’expression est vraie pour tout <span class="math notranslate nohighlight">\(x_0\)</span>):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-ca2bd391-808b-47de-aa34-4b052d59d585">
-<span class="eqno">(24)<a class="headerlink" href="#equation-ca2bd391-808b-47de-aa34-4b052d59d585" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-d817a0e3-3f19-4709-b13e-3a57229ebf8e">
+<span class="eqno">(24)<a class="headerlink" href="#equation-d817a0e3-3f19-4709-b13e-3a57229ebf8e" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 y(x) = y_0 \exp^{\frac{a}{3}x^3}
 \end{equation}\]</div>
 </div>
@@ -478,13 +482,13 @@ Remarque<div class="summary-down docutils">
 <svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
 </summary><div class="summary-content card-body docutils">
 <p class="card-text">On peut aussi procéder par changement de variables. On commence par isoler les fonctions de y avec la dérivée y’(x) puis on intègre (suivant x):</p>
-<div class="amsmath math notranslate nohighlight" id="equation-60e569d1-a97c-4f25-857f-2c880343aefb">
-<span class="eqno">(25)<a class="headerlink" href="#equation-60e569d1-a97c-4f25-857f-2c880343aefb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-4caf4b2d-7612-480f-abd0-96422679d2af">
+<span class="eqno">(25)<a class="headerlink" href="#equation-4caf4b2d-7612-480f-abd0-96422679d2af" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \frac{1}{y}\frac{\rm{d}y}{\rm{dx}} = ax^2 \Longrightarrow \int_{x=0}^{x=x_0}\frac{1}{y(x)}\frac{\rm{d}y}{\rm{dx}} dx = \int_{x=0}^{x_{0}} ax^2 dx
 \end{equation}\]</div>
 <p class="card-text">On réalise alors un changement de variables x vers u = y(x) dans la première intégrale. Les bornes deviennent <span class="math notranslate nohighlight">\(y(x=0)\)</span> et <span class="math notranslate nohighlight">\(y(x=x_0)\)</span> et <span class="math notranslate nohighlight">\(du = y'(x)dx= \frac{\rm{d}y}{\rm{dx}} dx\)</span>. L’intégrale devient donc:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-846cf776-0f53-4d3a-a52a-76f3a56f6035">
-<span class="eqno">(26)<a class="headerlink" href="#equation-846cf776-0f53-4d3a-a52a-76f3a56f6035" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-2a7cd356-9434-4d12-87c0-0a377fc012cd">
+<span class="eqno">(26)<a class="headerlink" href="#equation-2a7cd356-9434-4d12-87c0-0a377fc012cd" title="Permalink to this equation">¶</a></span>\[\begin{equation}
 \int_{y(x=0)}^{y(x=x_0)}\frac{1}{u}du = \int_{x=0}^{x_{0}} ax^2 dx
 \end{equation}\]</div>
 <p class="card-text">La suite du calcul est identique au cas précédent.</p>
@@ -516,16 +520,27 @@ Remarque<div class="summary-down docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="td_appro.html" title="previous page">Entrainement : Nouveautés</a>
-    <a class='right-next' id="next-link" href="eq_diff.html" title="next page">Equations différentielles</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="td_appro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Entrainement : Nouveautés</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="eq_diff.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Equations différentielles</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -541,8 +556,7 @@ Remarque<div class="summary-down docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>

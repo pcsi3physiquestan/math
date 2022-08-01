@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Géométrie dans le plan &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -22,8 +22,8 @@
       
 
     
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -31,26 +31,26 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
-    <script >
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
         const thebe_selector_output = ".output"
     </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"inlineMath": [["\\(", "\\)"]], "displayMath": [["\\[", "\\]"]], "processRefs": false, "processEnvironments": false}})</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_plan.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -58,7 +58,10 @@
     <link rel="next" title="Géométrie dans l’espace" href="geom_espace.html" />
     <link rel="prev" title="Géométrie vectorielle: Généralités" href="geom_gene.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
     
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
@@ -76,13 +79,14 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Mathématiques</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
@@ -103,27 +107,22 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="fonctions.html">
+    <a class="reference internal" href="bases_fonctions.html">
      Fonctions mathématiques
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="trigonometrie.html">
+    <a class="reference internal" href="bases_trigonometrie.html">
      Géométrie et trigonométrie
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="complexes.html">
+    <a class="reference internal" href="bases_complexes.html">
      Nombres complexes
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="methodes.html">
-     Méthodes
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
-    <a class="reference internal" href="td_math_1.html">
+    <a class="reference internal" href="bases_ex.html">
      Exercices
     </a>
     <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
@@ -133,28 +132,28 @@
     </label>
     <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_bases.html">
+      <a class="reference internal" href="bases_methodes.html">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
        Applications : Bases
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_litteral.html">
+      <a class="reference internal" href="bases_ex_litteral.html">
        Entrainement : Calcul littéral
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="td_appro.html">
+      <a class="reference internal" href="bases_ex_appro.html">
        Entrainement : Nouveautés
       </a>
      </li>
     </ul>
    </li>
   </ul>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="calcdiff.html">
-   Calcul différentiel
-  </a>
  </li>
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="eq_diff.html">
@@ -167,13 +166,18 @@
   </label>
   <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="canonique.html">
+    <a class="reference internal" href="eq_diff_canonique.html">
      Equations différentielles: forme canonique et solution
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_ed.html">
-     Exercice d’application: Équations différentielles
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
     </a>
    </li>
   </ul>
@@ -219,8 +223,8 @@
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="td_geom.html">
-     TD Géométrie vectorielle
+    <a class="reference internal" href="geom_ex.html">
+     Applcations : Géométrie vectorielle
     </a>
    </li>
   </ul>
@@ -314,7 +318,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#produit-scalaire-usuel-du-plan">
@@ -332,18 +336,13 @@
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#coordonnees-polaires-definition">
-     Coordonnées polaires: Définition
+    <a class="reference internal nav-link" href="#definition">
+     Définition
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#correspondance-cartesien-polaire">
-     Correspondance cartésien polaire
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#produit-scalaire">
-     Produit scalaire
+    <a class="reference internal nav-link" href="#methodes">
+     Méthodes
     </a>
    </li>
   </ul>
@@ -359,50 +358,45 @@
         
               <div>
                 
-  <div class="section" id="geometrie-dans-le-plan">
+  <div class="tex2jax_ignore mathjax_ignore section" id="geometrie-dans-le-plan">
 <h1>Géométrie dans le plan<a class="headerlink" href="#geometrie-dans-le-plan" title="Permalink to this headline">¶</a></h1>
+<div class="topic">
+<p class="topic-title first">Remarque</p>
 <p><em>Le plan peut être assimilé à l’espace vectoriel <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> et les caractéristiques énoncées précédemment restent vraies. A noter qu’il s’agit donc d’un espace de dimension 2. Précisons qu’on sera en physique amené à parler de points dans l’espace en parlant de <strong>repère</strong> et certains vecteurs auront un “point d’application”. On travaille alors dans un espace affine et non vectoriel. Celà étant les propriétés et méthodes vues précédemment ainsi que le vocabulaire restera en physique identique et cette subtile distinction a peu d’importance pour nous.</em></p>
+</div>
 <div class="section" id="produit-scalaire-usuel-du-plan">
 <h2>Produit scalaire usuel du plan<a class="headerlink" href="#produit-scalaire-usuel-du-plan" title="Permalink to this headline">¶</a></h2>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Angle orienté du plan<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Soit deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> du plan. On définit l’angle orienté <span class="math notranslate nohighlight">\(\theta = (\overrightarrow{u}; \overrightarrow{v})\)</span> comme l’angle orienté allant de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> vers <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>.</p>
+<div class="topic">
+<p class="topic-title first">Angle orienté du plan</p>
+<p>Soit deux vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> du plan. On définit l’angle orienté <span class="math notranslate nohighlight">\(\theta = (\overrightarrow{u}; \overrightarrow{v})\)</span> comme l’angle orienté allant de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> vers <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>.</p>
 </div>
-</details><p>On rappelle que:</p>
+<p>On rappelle que:</p>
 <ul class="simple">
 <li><p>la valeur de l’angle en radian est égale, en valeur absolue, à la longueur de l’arc de cercle de rayon 1 et de centre O délimité par <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> et <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span></p></li>
 <li><p>le signe de <span class="math notranslate nohighlight">\(\theta\)</span> est défini par convention, <strong>dans le plan</strong>, comme positif dans le sens trigonométrique et négatif dans l’autre sens.</p></li>
 </ul>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Produit scalaire usuel du plan<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Dans le plan, on utilise le produit scalaire usuel tel que: <span class="math notranslate nohighlight">\(\overrightarrow{u}\cdot\overrightarrow{v} = u v\cos (\overrightarrow{u}; \overrightarrow{v})\)</span> avec u et v les longueurs des vecteurs. Cette notion visuelle des longueurs reste cohérente avec la norme euclidienne définie précédemment.</p>
+<div class="topic">
+<p class="topic-title first">Produit scalaire usuel du plan</p>
+<p>Dans le plan, on utilise le produit scalaire usuel tel que: <span class="math notranslate nohighlight">\(\overrightarrow{u}\cdot\overrightarrow{v} = u v\cos (\overrightarrow{u}; \overrightarrow{v})\)</span> avec u et v les longueurs des vecteurs. Cette notion visuelle des longueurs reste cohérente avec la norme euclidienne définie précédemment.</p>
+<p><em>Il faut noter qu’on utilisera au maximum la bilinéarité et la projection dans une base orthonormée plutôt que de passer par cette formule. Elle devient néanmoins très utile et indispensable lorsque les deux vecteurs ne sont pas exprimer dans la même base (cf. suite).</em></p>
 </div>
-</details><p><em>Il faut noter qu’on utilisera au maximum la bilinéarité et la projection dans une base orthonormée plutôt que de passer par cette formule. Elle devient néanmoins très utile et indispensable lorsque les deux vecteurs ne sont pas exprimer dans la même base (cf. suite).</em></p>
 </div>
 <div class="section" id="coordonnees-cartesiennes">
 <h2>Coordonnées cartésiennes<a class="headerlink" href="#coordonnees-cartesiennes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Coordonnées cartésiennes</strong><br />
 Dans le plan, on peut définir une base orthonormée <span class="math notranslate nohighlight">\((\overrightarrow{e_x}; \overrightarrow{e_y})\)</span> et lui associer un point origine O. Le triplet <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y})\)</span> défini un <strong>repère</strong> orthonormée. On lui associe un système de coordonnée cartésien.</p>
 <p>Les coordonnées (x,y) d’un point M du plan dans le repère correspond aux composantes (scalaires) du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{OM} = x \overrightarrow{e_x} + y \overrightarrow{e_y}\)</span>.</p>
 <p>Le repère ainsi défini est dit <span class="math notranslate nohighlight">\(global\)</span> car les vectaurs de la base associée ne dépendent pas du point M considéré dont on veut exprimer les coordonnées.</p>
-<div class="highlight-{attention}, notranslate"><div class="highlight"><pre><span></span>Par convention, le second vecteur ($\overrightarrow{e_y}$) est toujours orienté de telle sorte que l&#39;angle $(\overrightarrow{e_x}, \overrightarrow{e_y})$ soit égale à $+ \frac{\pi}{2}$.
-</pre></div>
 </div>
 </div>
 <div class="section" id="coordonnees-polaires">
 <h2>Coordonnées polaires<a class="headerlink" href="#coordonnees-polaires" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="coordonnees-polaires-definition">
-<h3>Coordonnées polaires: Définition<a class="headerlink" href="#coordonnees-polaires-definition" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="definition">
+<h3>Définition<a class="headerlink" href="#definition" title="Permalink to this headline">¶</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Système de coordonnées polaires.</strong><br />
 Soit un point M du plan et un repère cartésien <span class="math notranslate nohighlight">\((O, \overrightarrow{e_x}, \overrightarrow{e_y})\)</span>. On définit les coordonnées polaires du M dans un système de centre O et d’origine des angles <span class="math notranslate nohighlight">\(\overrightarrow{e_x}\)</span> comme les coordonnées <span class="math notranslate nohighlight">\((r,\theta)\)</span> où:</p>
 <ul class="simple">
@@ -412,6 +406,9 @@ Soit un point M du plan et un repère cartésien <span class="math notranslate n
 <div class="figure align-center" id="fig-338">
 <img alt="../_images/mathematiques_coord_polaire.jpg" src="../_images/mathematiques_coord_polaire.jpg" />
 </div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>Base polaire</strong><br />
 Soit un point M de coordonnées polaires <span class="math notranslate nohighlight">\((r,\theta)\)</span> dans un système de coordonnées polaires de centre O et d’axe <span class="math notranslate nohighlight">\(\overrightarrow{e_x}\)</span>, on lui associe une base locale orthonormée <span class="math notranslate nohighlight">\((\overrightarrow{e_r}, \overrightarrow{e_{\theta}})\)</span> telle que:</p>
 <ul class="simple">
@@ -423,51 +420,37 @@ Soit un point M de coordonnées polaires <span class="math notranslate nohighlig
 <img alt="../_images/mathematiques_base_polaire.jpg" src="../_images/mathematiques_base_polaire.jpg" />
 </div>
 </div>
-<div class="section" id="correspondance-cartesien-polaire">
-<h3>Correspondance cartésien polaire<a class="headerlink" href="#correspondance-cartesien-polaire" title="Permalink to this headline">¶</a></h3>
-<p>Les expressions que nous allons prouver sont <strong>fondamentales</strong>. Il faut autant les connaître par coeur que savoir les reprouver.</p>
+</div>
+<div class="section" id="methodes">
+<h3>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">¶</a></h3>
 <div class="attention admonition">
-<p class="admonition-title">Exercice</p>
+<p class="admonition-title">Correspondance cartésien polaire </p>
 <p>Exprimer la coordonnées r en fonction de x et y les coordonnées du même point M dans un repère cartésien puis exprimer x et y en fonction de r et <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 <p>Exprimer ensuite les vecteurs de la base polaire dans la base cartésienne en fonction de <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Correction<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">Il vient directement:</p>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p>Il vient directement:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	r = \sqrt{x^2 + y^2}\\
 	x = r \cos \theta \\
 	y = r \sin \theta
 \end{align*}\]</div>
-<p class="card-text">Par projection, il vient:</p>
+<p>Par projection, il vient:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	\overrightarrow{e_r} = \cos \theta \overrightarrow{e_x} + \sin \theta \overrightarrow{e_y}\\
 	\overrightarrow{e_{\theta}} = \sin \theta \overrightarrow{e_x} - \cos \theta \overrightarrow{e_y}
 \end{align*}\]</div>
 </div>
-</details></div>
-<div class="section" id="produit-scalaire">
-<h3>Produit scalaire<a class="headerlink" href="#produit-scalaire" title="Permalink to this headline">¶</a></h3>
-<p>Nous allons voir ici comment calculer un produit scalaire quand les deux vecteurs ne sont pas exprimer dans la même base (par exemple ici une base cartésienne et une base polaire mais ce principe peut se généraliser). On va à nouveau utiliser la bilinéarité et le caractère orthonormé des bases mais on va ajouter le calcul du produit scalaire faisant intervenir l”angle entre les vecteurs.</p>
 <div class="attention admonition">
-<p class="admonition-title">Exercice</p>
+<p class="admonition-title">Produit scalaire </p>
 <p>Calculer le produit scalaire des vecteurs <span class="math notranslate nohighlight">\(\overrightarrow{u} = u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\)</span> et du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{v} = v_r \overrightarrow{e_r}\)</span>.</p>
 </div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Correction<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On va à nouveau utiliser la bilinéarité et le caractère orthonormé des bases mais on va ajouter le calcul du produit scalaire faisant intervenir l’angle entre les vecteurs (qui sont de norme 1).</p>
+<div class="topic">
+<p class="topic-title first">Correction</p>
+<p>On va à nouveau utiliser la bilinéarité et le caractère orthonormé des bases mais on va ajouter le calcul du produit scalaire faisant intervenir l’angle entre les vecteurs (qui sont de norme 1).</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
 	\overrightarrow{u} \cdot \overrightarrow{v} =&amp; \left(u_x \overrightarrow{e_x} + u_y \overrightarrow{e_y}\right) \cdot \left(v_r \overrightarrow{e_r}\right)\\
@@ -475,7 +458,7 @@ Correction<div class="summary-down docutils">
 	&amp;= u_x v_r \cos\theta + u_y v_r \sin \theta
 \end{align*}\]</div>
 </div>
-</details></div>
+</div>
 </div>
 </div>
 
@@ -502,16 +485,27 @@ Correction<div class="summary-down docutils">
               </div>
               
         
-        <div class='prev-next-bottom'>
-            
-    <a class='left-prev' id="prev-link" href="geom_gene.html" title="previous page">Géométrie vectorielle: Généralités</a>
-    <a class='right-next' id="next-link" href="geom_espace.html" title="next page">Géométrie dans l’espace</a>
-
+            <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="geom_gene.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Géométrie vectorielle: Généralités</p>
         </div>
+    </a>
+    <a class='right-next' id="next-link" href="geom_espace.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Géométrie dans l’espace</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
@@ -527,8 +521,7 @@ Correction<div class="summary-down docutils">
       </div>
     </div>
   
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
 
-  
   </body>
 </html>
