@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Géométrie vectorielle: Généralités &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,39 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/geom_gene.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -64,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -73,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
@@ -88,14 +103,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../mathematiques.html">
-   Mathématiques pour la physique
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../mathematiques.html">
+                    Mathématiques pour la physique
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="bases.html">
    Bases de mathématiques pour la physique
@@ -232,94 +248,181 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/geom_gene.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/geom_gene.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/geom_gene.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/geom_gene.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/geom_gene.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/geom_gene.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#espace-vectoriel-definition">
    Espace vectoriel: Définition
@@ -352,22 +455,70 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Géométrie vectorielle: Généralités</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#espace-vectoriel-definition">
+   Espace vectoriel: Définition
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#famille-et-base-en-ligne">
+   Famille et base (en ligne)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#produit-scalaire">
+   Produit scalaire
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#norme-euclidienne-en-ligne">
+   Norme euclidienne (en ligne)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#base-orthonormee-en-ligne">
+   Base orthonormée (en ligne)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-calcul-d-un-produit-scalaire">
+   Méthode: Calcul d’un produit scalaire
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="geometrie-vectorielle-generalites">
-<h1>Géométrie vectorielle: Généralités<a class="headerlink" href="#geometrie-vectorielle-generalites" title="Permalink to this headline">¶</a></h1>
+<h1>Géométrie vectorielle: Généralités<a class="headerlink" href="#geometrie-vectorielle-generalites" title="Permalink to this headline">#</a></h1>
 <p>Les définitions données ici ne sont pas à apprendre pour la physique. Elles sont là pour cadrer correctement le cours de physique. On utilisera leur version “opératoire” basée sur la vision des vecteurs introduits au lycée.</p>
 <div class="section" id="espace-vectoriel-definition">
-<h2>Espace vectoriel: Définition<a class="headerlink" href="#espace-vectoriel-definition" title="Permalink to this headline">¶</a></h2>
+<h2>Espace vectoriel: Définition<a class="headerlink" href="#espace-vectoriel-definition" title="Permalink to this headline">#</a></h2>
 <div class="topic">
-<p class="topic-title first">Espace vetoriel (pas à apprendre)</p>
+<p class="topic-title">Espace vetoriel (pas à apprendre)</p>
 <p>Soit un corps K commutatif. Un K-espace vectoriel est un ensemble E muni d’une loi interne (+, on l’appellera somme vectorielle) et d’une loi externe (*, on l’appellera multiplication par un scalaire) tel que:</p>
 <ul class="simple">
 <li><p>la somme vectorielle est commutative, associative, possède un élément neutre (vecteur nul) et tel que tout élément v possède un “opposé” (noté -v) tel que <span class="math notranslate nohighlight">\(\overrightarrow{v} + \overrightarrow{-v} = \overrightarrow{0}\)</span>.</p></li>
@@ -388,9 +539,9 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 </div>
 </div>
 <div class="section" id="famille-et-base-en-ligne">
-<h2>Famille et base (en ligne)<a class="headerlink" href="#famille-et-base-en-ligne" title="Permalink to this headline">¶</a></h2>
+<h2>Famille et base (en ligne)<a class="headerlink" href="#famille-et-base-en-ligne" title="Permalink to this headline">#</a></h2>
 <div class="topic">
-<p class="topic-title first">Famille libre</p>
+<p class="topic-title">Famille libre</p>
 <p>Une famille libre (ou linéairement indépendants) de vecteurs est une ensemble de vecteurs dont aucun ne peut être écrit comme une combinaison linéaire des autres. Cela revient à imposé la condition:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -399,26 +550,26 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 <p>c’est-à-dire que toute combinaison linéaire nulle des vecteurs d’une famille libre implique que tous les coefficients sont nuls.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Famille génératrice</p>
+<p class="topic-title">Famille génératrice</p>
 <p>Une famille génératrice est une famille de vecteurs tels que tout vecteur de l’espace vectoriel E peut s’écrire comme une combinaison linéaire des vecteurs de la famille.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Base</p>
+<p class="topic-title">Base</p>
 <p>Une famille de vecteur est une base s’il s’agit d’une famille linéairement indépendante et génératrice.</p>
 <p>Tous les vecteurs d’une base sont donc indépendants et tout vecteur de E peuvent s’écrire comme une combinaison linéaire des vecteurs d’une base.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Dimension d’un espace vectoriel (Admis)</p>
+<p class="topic-title">Dimension d’un espace vectoriel (Admis)</p>
 <p>Toutes les bases d’un même espaces vectoriel ont la même cardinalité (le même nombre d’élements). Ce cardinal définit la dimension de l’espace vectoriel.</p>
 <p>Ainsi <span class="math notranslate nohighlight">\(\mathbb{R}^2\)</span> est de dimension 2 et <span class="math notranslate nohighlight">\(\mathbb{R}^3\)</span> est de dimension 3. Remarque: il peut exister des espaces vectoriels de dimension infinie mais nous n’en rencontrerons pas en physique.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Nombre de base</p>
+<p class="topic-title">Nombre de base</p>
 <p>Si la dimension d’un espace vectoriel sera en général fini en physique, le nombre de base possibles est infini.</p>
 </div>
 </div>
 <div class="section" id="produit-scalaire">
-<h2>Produit scalaire<a class="headerlink" href="#produit-scalaire" title="Permalink to this headline">¶</a></h2>
+<h2>Produit scalaire<a class="headerlink" href="#produit-scalaire" title="Permalink to this headline">#</a></h2>
 <p>Un produit scalaire (noté <span class="math notranslate nohighlight">\(\cdot\)</span>) de E est une forme bilinéaire définie positive symétrique. C’est-à-dire:</p>
 <div class="margin sidebar">
 <p class="sidebar-title">Remarque</p>
@@ -440,19 +591,19 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 <p>Le produit scalaire est à valeur dans K (pour nous dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>), c’est-à-dire qu’<strong>il renvoie un scalaire et non un vecteur</strong>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Vecteurs orthogonaux</p>
+<p class="topic-title">Vecteurs orthogonaux</p>
 <p>Deux vecteurs sont sont dits orthogonaux si et seulement si leur produit scalaire est nul.</p>
 <p>Dans le cas plan ou de l’espace en physique, celà correspond à la notion d’angle droit usuel.</p>
 </div>
 </div>
 <div class="section" id="norme-euclidienne-en-ligne">
-<h2>Norme euclidienne (en ligne)<a class="headerlink" href="#norme-euclidienne-en-ligne" title="Permalink to this headline">¶</a></h2>
+<h2>Norme euclidienne (en ligne)<a class="headerlink" href="#norme-euclidienne-en-ligne" title="Permalink to this headline">#</a></h2>
 <div class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Attention à ne pas confondre norme et composante d’un vecteur.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Norme euclidienne</p>
+<p class="topic-title">Norme euclidienne</p>
 <p>Soit un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span>, on définit la norme euclidienne de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> par:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -465,9 +616,9 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 </div>
 </div>
 <div class="section" id="base-orthonormee-en-ligne">
-<h2>Base orthonormée (en ligne)<a class="headerlink" href="#base-orthonormee-en-ligne" title="Permalink to this headline">¶</a></h2>
+<h2>Base orthonormée (en ligne)<a class="headerlink" href="#base-orthonormee-en-ligne" title="Permalink to this headline">#</a></h2>
 <div class="topic">
-<p class="topic-title first">Base orthonormée</p>
+<p class="topic-title">Base orthonormée</p>
 <p>Une base orthonormée est une base dont tous les vecteurs sont normés et orthogonaux deux à deux.</p>
 <p>En physique, on travaillera <strong>toujours</strong> avec des base orthonormées.</p>
 </div>
@@ -476,18 +627,18 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 <p>En mathématiques, la projection est un scalaire mais pour des raisons pratiques, on considérera en physique qu’il s’agit du vecteur associé et on parlera de composante (cf. suite)</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Projection orthogonale sur une droite vectorielle</p>
+<p class="topic-title">Projection orthogonale sur une droite vectorielle</p>
 <p>Soit un vecteur non nul <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span>. Le projeté orthogonal (en physique) d’un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est le vecteur <span class="math notranslate nohighlight">\(\frac{\overrightarrow{u} \cdot \overrightarrow{v}}{\left \| v\right \|} \overrightarrow{v}\)</span>.</p>
 <p>Si <span class="math notranslate nohighlight">\(\overrightarrow{v}\)</span> est un vecteur unitaire (noté <span class="math notranslate nohighlight">\(\overrightarrow{e_m}\)</span>, alors le projecté orthogonal de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> se réécrit: <span class="math notranslate nohighlight">\((\overrightarrow{u} \cdot \overrightarrow{e_m}) \overrightarrow{e_m}\)</span></p>
 <p>Cette écriture du projeté orthogonal sur un vecteur normé est très utile en physique pour donner un sens à une composante d’un vecteur.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Projection dans une base orthonormée</p>
+<p class="topic-title">Projection dans une base orthonormée</p>
 <p>Soit une base orthonormée <span class="math notranslate nohighlight">\((\overrightarrow{e_k})\ k\in [\![1;n]\!]\)</span> et un vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dont la décomposition dans la base est <span class="math notranslate nohighlight">\(\overrightarrow{u} = \sum\limits_{k=1}^{n} u_k \overrightarrow{e_k}\)</span>. On appelle cette décomposition la projection de <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> dans la base et chaque <strong>composante</strong> <span class="math notranslate nohighlight">\(u_k \overrightarrow{e_k}\)</span> correspond à la projection du vecteur <span class="math notranslate nohighlight">\(\overrightarrow{u}\)</span> sur la droite vectorielle portée par <span class="math notranslate nohighlight">\(\overrightarrow{u_k}\)</span>.</p>
 </div>
 </div>
 <div class="section" id="methode-calcul-d-un-produit-scalaire">
-<h2>Méthode: Calcul d’un produit scalaire<a class="headerlink" href="#methode-calcul-d-un-produit-scalaire" title="Permalink to this headline">¶</a></h2>
+<h2>Méthode: Calcul d’un produit scalaire<a class="headerlink" href="#methode-calcul-d-un-produit-scalaire" title="Permalink to this headline">#</a></h2>
 <p>Comme nous allons le voir à travers un exemple, on utilise rarement les angles pour calculer les produits scalaires mais plutôt la décomposition des vecteurs dans une base orthonormée.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -500,7 +651,7 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 <p>Déterminer le produit scalaire <span class="math notranslate nohighlight">\(\overrightarrow{u} \cdot \overrightarrow{v}\)</span>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p>On va utiliser successivement la bilinéarité du produit scalaire et le caratère orthonormé de la base</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -537,9 +688,11 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="geometrie.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -555,26 +708,28 @@ Une combinaison linéaire est une somme vectorielle qui peut s’écrire <span c
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By C. Lacpatia<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>

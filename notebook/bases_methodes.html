@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Méthodes &#8212; Mathématiques</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,39 +19,38 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/bases_methodes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -64,7 +64,21 @@
     <!-- Google Analytics -->
     
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -73,9 +87,10 @@
     <div class="container-xl">
       <div class="row">
           
-<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
@@ -88,14 +103,15 @@
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../mathematiques.html">
-   Mathématiques pour la physique
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../mathematiques.html">
+                    Mathématiques pour la physique
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="bases.html">
    Bases de mathématiques pour la physique
@@ -232,94 +248,181 @@
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        <a class="dropdown-buttons"
-            href="../_sources/notebook/bases_methodes.ipynb"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
-                data-placement="left">.ipynb</button></a>
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/notebook/bases_methodes.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
-    <div class="dropdown-buttons">
-        
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/bases_methodes.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
-                data-placement="left"><img class="binder-button-logo"
-                    src="../_static/images/logo_binder.svg"
-                    alt="Interact on binder">Binder</button></a>
-        
-        
-        
-        
-    </div>
-</div>
-
-        </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/bases_methodes.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/bases_methodes.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/bases_methodes.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#resolution-d-equations">
    Résolution d’équations
@@ -356,22 +459,74 @@
  </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Méthodes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resolution-d-equations">
+   Résolution d’équations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-graphiquement-une-equation-f-x-g-x">
+     Résoudre graphiquement une équation f(x)=g(x)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-un-systeme-d-equation-2-2">
+     Résoudre un système d’équation 2*2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions">
+   Fonctions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformation-d-une-fonction-cosinus-ou-sinus">
+     Transformation d’une fonction cosinus ou sinus
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-calculer-le-module-et-l-argument-d-un-complexe">
+   Méthode: Calculer le module et l’argument d’un complexe
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
-<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">¶</a></h1>
+<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">#</a></h1>
 <p><em>Ces méthodes ont des corrections en ligne.</em></p>
 <div class="section" id="resolution-d-equations">
-<h2>Résolution d’équations<a class="headerlink" href="#resolution-d-equations" title="Permalink to this headline">¶</a></h2>
+<h2>Résolution d’équations<a class="headerlink" href="#resolution-d-equations" title="Permalink to this headline">#</a></h2>
 <div class="section" id="resoudre-graphiquement-une-equation-f-x-g-x">
-<h3>Résoudre graphiquement une équation f(x)=g(x)<a class="headerlink" href="#resoudre-graphiquement-une-equation-f-x-g-x" title="Permalink to this headline">¶</a></h3>
+<h3>Résoudre graphiquement une équation f(x)=g(x)<a class="headerlink" href="#resoudre-graphiquement-une-equation-f-x-g-x" title="Permalink to this headline">#</a></h3>
 <p>On ne peut pas toujours résoudre analytiquement une équation. On peut par contre toujours la résoudre graphiquement et on peut même obtenir des informations importantes sur le rôle de certains paramètres lors de ce genre de résolution.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -383,7 +538,7 @@ x = \frac{mg}{k} \sin(x)
 <p>avec k, m et g strictement positifs.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Résolution graphique</p>
+<p class="topic-title">Résolution graphique</p>
 <p>Graphiquement celà revient à chercher l’intersection entre la représentation de deux fonctions: <span class="math notranslate nohighlight">\(\frac{k}{mg}x\)</span> et sin(x).</p>
 <p>Traçons donc les deux fonctions (on a représenté plusieurs droites puisque la pente varie en fonction des paramètres k, m et g - on rappelle que la pente est nécessairement positive).</p>
 <div class="figure align-center" id="res-gr">
@@ -395,19 +550,19 @@ x = \frac{mg}{k} \sin(x)
 \[
 \boxed{\frac{k}{mg} &lt; 1}
 \]</div>
-<details class="sphinx-bs dropdown card mb-3">
-<summary class="summary-title card-header">
-Méthode analytique<div class="summary-down docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
-<div class="summary-up docutils">
-<svg version="1.1" width="24" height="24" class="octicon octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
-</summary><div class="summary-content card-body docutils">
-<p class="card-text">On peut démontrer analytiquement la propriété précédente en étudier les changements de signe de <span class="math notranslate nohighlight">\(h(x) = f(x)-g(x)\)</span> et en utilisant la continuité de <span class="math notranslate nohighlight">\(h\)</span>. Cette méthode ne sera que très peu demandée en physique.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Méthode analytique<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">On peut démontrer analytiquement la propriété précédente en étudier les changements de signe de <span class="math notranslate nohighlight">\(h(x) = f(x)-g(x)\)</span> et en utilisant la continuité de <span class="math notranslate nohighlight">\(h\)</span>. Cette méthode ne sera que très peu demandée en physique.</p>
 </div>
 </details></div>
 </div>
 <div class="section" id="resoudre-un-systeme-d-equation-2-2">
-<h3>Résoudre un système d’équation 2*2<a class="headerlink" href="#resoudre-un-systeme-d-equation-2-2" title="Permalink to this headline">¶</a></h3>
+<h3>Résoudre un système d’équation 2*2<a class="headerlink" href="#resoudre-un-systeme-d-equation-2-2" title="Permalink to this headline">#</a></h3>
 <p>La méthode proposée est à <strong>privilégier</strong> à la méthode de substitution. Elle vous semblera peut-être plus complexe au début mais avec l’entraînement elle permet un énorme gain de temps en physique (à moins que le système soit triangulaire et donc en partie déjà résolu !).</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -419,11 +574,11 @@ Méthode analytique<div class="summary-down docutils">
 \end{align*}\]</div>
 </div>
 <div class="topic">
-<p class="topic-title first">Résolution par combinaison</p>
+<p class="topic-title">Résolution par combinaison</p>
 <p>Nous allons utiliser deux fois le système de départ. Une première fois pour éliminer x et obtenir une équation en y puis une seconde fois pour éliminer y et obtenir une équation en x.</p>
 <p>Elimination de x:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-417b3a54-ebb0-4912-b555-58e12421ba1c">
-<span class="eqno">(4)<a class="headerlink" href="#equation-417b3a54-ebb0-4912-b555-58e12421ba1c" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-60f623f4-16c0-402f-9c04-b3defde8b145">
+<span class="eqno">(4)<a class="headerlink" href="#equation-60f623f4-16c0-402f-9c04-b3defde8b145" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{cases}
     3x + 4y &amp;= 5 \left(\times 4\right)\\
     4x - 5y &amp;= 2 \left(\times -3\right)
@@ -431,8 +586,8 @@ Méthode analytique<div class="summary-down docutils">
 \Longrightarrow 31 y = 14 \Longrightarrow y = \frac{14}{31}
 \end{equation}\]</div>
 <p>Elimination de y:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c7740569-2409-4e54-a4f5-b5b83e7d6833">
-<span class="eqno">(5)<a class="headerlink" href="#equation-c7740569-2409-4e54-a4f5-b5b83e7d6833" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-8bb1071a-1ef9-44f5-a995-bcbf61b124a4">
+<span class="eqno">(5)<a class="headerlink" href="#equation-8bb1071a-1ef9-44f5-a995-bcbf61b124a4" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{cases}
     3x + 4y &amp;= 5 \left(\times 5\right)\\
     4x - 5y &amp;= 2 \left(\times 4\right)
@@ -443,13 +598,13 @@ Méthode analytique<div class="summary-down docutils">
 </div>
 </div>
 <div class="section" id="fonctions">
-<h2>Fonctions<a class="headerlink" href="#fonctions" title="Permalink to this headline">¶</a></h2>
+<h2>Fonctions<a class="headerlink" href="#fonctions" title="Permalink to this headline">#</a></h2>
 <div class="admonition-derivee-d-une-composee-de-fonction admonition">
 <p class="admonition-title">Dérivée d’une composée de fonction </p>
 <p>Déterminer la dérivée de la fonction <span class="math notranslate nohighlight">\(f(x) = e^{kx^2}\)</span></p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p>Il s’agit d’une dérivée d’une composée de fonction: on compose la fonction exponentielle <span class="math notranslate nohighlight">\(h(x) =e^x\)</span> avec la fonction carré <span class="math notranslate nohighlight">\(g(x) = kx^2\)</span>: <span class="math notranslate nohighlight">\(f = h \circ g\)</span>. La dérivée est donc:</p>
 <div class="math notranslate nohighlight">
 \[
@@ -461,7 +616,7 @@ f'(x) = (h' \circ g)(x) \times g'(x) = e^{kx^2} \times 2kx
 <p>Montrer que <span class="math notranslate nohighlight">\(\sin(\arctan(x)) = \sqrt{\frac{x^2}{1+x^2}}\)</span></p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p>On va utiliser la relation <span class="math notranslate nohighlight">\(\sin^2(y) + \cos^2(y) =1\)</span> avec <span class="math notranslate nohighlight">\(y = \arctan(x)\)</span>. Divisons par <span class="math notranslate nohighlight">\(\sin^2(\arctan(x))\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
@@ -481,10 +636,10 @@ A \cos(x) + B \sin(x) = C \cos \left(x + \varphi\right)
 <p>avec <span class="math notranslate nohighlight">\(C = \pm\sqrt{A^2 + B^2},~\tan \varphi = - \frac{B}{A}\)</span> et <span class="math notranslate nohighlight">\(sign(\cos \varphi) = sign(\frac{A}{C})\)</span>.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <p>Le plus simple est de partir de <span class="math notranslate nohighlight">\(C \cos \left (x + \varphi \right )\)</span> est de développer le sinusoïde. Les deux expressions devant être valable pour tout x, il vient que les coefficients devant le cosinus et le sinus doivent être égaux deux à deux (on pourra s’en convaincre en appliquer l’égalité à x=0 et <span class="math notranslate nohighlight">\(x=\pi/2\)</span>).</p>
-<div class="amsmath math notranslate nohighlight" id="equation-555d1385-3e91-4e4e-9e55-0e2c235058eb">
-<span class="eqno">(6)<a class="headerlink" href="#equation-555d1385-3e91-4e4e-9e55-0e2c235058eb" title="Permalink to this equation">¶</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-f58a4595-5db9-4872-9dd1-ee07e4ec3b78">
+<span class="eqno">(6)<a class="headerlink" href="#equation-f58a4595-5db9-4872-9dd1-ee07e4ec3b78" title="Permalink to this equation">#</a></span>\[\begin{equation}
 A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longrightarrow
 \begin{cases}
   A &amp;= C \cos \varphi\\
@@ -495,14 +650,14 @@ A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longright
 <p>Il reste à passer les deux équations au carré et à sommer. En utilisant <span class="math notranslate nohighlight">\(\sin^2 + \cos^2 = 1\)</span>, il vient la relation <span class="math notranslate nohighlight">\(C^2 = A^2 + B^2\)</span></p>
 </div>
 <div class="section" id="transformation-d-une-fonction-cosinus-ou-sinus">
-<h3>Transformation d’une fonction cosinus ou sinus<a class="headerlink" href="#transformation-d-une-fonction-cosinus-ou-sinus" title="Permalink to this headline">¶</a></h3>
+<h3>Transformation d’une fonction cosinus ou sinus<a class="headerlink" href="#transformation-d-une-fonction-cosinus-ou-sinus" title="Permalink to this headline">#</a></h3>
 <p>Au delà de l’exemple d’application des propriétés précédentes, les conclusions sur les fonctions trigonométriques sont fondamentales car elles sont très utilisées et les éléments de vocabulaires introduits seront très importants pour la suite. Une simulation donnée <a class="reference external" href="https://stanislas.edunao.com/mod/resource/view.php?id=12959">ici</a> permet de voir l’effet des différents éléments sur le sinusoïde.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Décrivez graphiquement comment s’effectue la transformation de la fonction cos(t) à la fonction <span class="math notranslate nohighlight">\(S_m \cos \left ( \omega t + \varphi_0\right)\)</span></p>
 </div>
 <div class="topic">
-<p class="topic-title first">Caractéristiques d’un sinusoïde.</p>
+<p class="topic-title">Caractéristiques d’un sinusoïde.</p>
 <p>On multiplie la fonction complète par<span class="math notranslate nohighlight">\( S_m\)</span>, il y a donc une dilatation verticale. L’écartement maximal sera maintenant <span class="math notranslate nohighlight">\(2S_m\)</span>. On appelle <span class="math notranslate nohighlight">\(S_m\)</span> <strong>l’amplitude.</strong></p>
 <p>L’argument du cosinus se réécrit: <span class="math notranslate nohighlight">\(\omega ( t + \varphi_0 / \omega )\)</span>. On a donc:</p>
 <ul class="simple">
@@ -511,14 +666,14 @@ A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longright
 </ul>
 <div class="figure align-center" id="fig-sinusoide324">
 <img alt="../_images/sinusoide_vm_0.png" src="../_images/sinusoide_vm_0.png" />
-<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Sinusoïde</span><a class="headerlink" href="#fig-sinusoide324" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Sinusoïde</span><a class="headerlink" href="#fig-sinusoide324" title="Permalink to this image">#</a></p>
 </div>
 <p>Un sens physique plus approfondi sera donné à ces termes par les suite. On retiendra déjà le passage du cosinus simple à l’expression complète et surtout les effets sur la représentation graphique</p>
 </div>
 </div>
 </div>
 <div class="section" id="methode-calculer-le-module-et-l-argument-d-un-complexe">
-<h2>Méthode: Calculer le module et l’argument d’un complexe<a class="headerlink" href="#methode-calculer-le-module-et-l-argument-d-un-complexe" title="Permalink to this headline">¶</a></h2>
+<h2>Méthode: Calculer le module et l’argument d’un complexe<a class="headerlink" href="#methode-calculer-le-module-et-l-argument-d-un-complexe" title="Permalink to this headline">#</a></h2>
 <p><strong>Le calcul de l’argument et du module d’un complexe est fondamental en physique</strong> car nous verrons que l’utilisation des complexes et la détermination de ces deux caractristiques permet l’étude de tout un pan de la physique: l’analyse fréquentielle.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -533,7 +688,7 @@ z = \frac{i x}{2 + i x}
 <p>Il ne sert à rien (et ça complique même) d’éliminer la partie imaginaire du dénominateur pour calculer un module ou un argument. On va utiliser les relations très utiles sur le rapport de deux complexes.</p>
 </div>
 <div class="topic">
-<p class="topic-title first">Correction</p>
+<p class="topic-title">Correction</p>
 <div class="math notranslate nohighlight">
 \[
 \left\vert z \right\vert = \frac{\left\vert ix \right\vert}{\left\vert 1 +ix \right\vert} = \sqrt{\frac{x^2}{4 + x^2}}
@@ -580,9 +735,11 @@ z = \frac{i x}{2 + i x}
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="bases_ex.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
@@ -598,26 +755,28 @@ z = \frac{i x}{2 + i x}
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By C. Lacpatia<br/>
-        
-            &copy; Copyright 2021.<br/>
-      </p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
     </div>
-  </footer>
-</main>
+    
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
