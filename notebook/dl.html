@@ -554,8 +554,8 @@ f(x) = \sum\limits_{k=0}^{n} \frac{f^{(k)}(x_0)}{k !}{(x-x_0)}^k + \epsilon(x) {
 <p class="admonition-title">Important</p>
 <p><strong>Développements limités usuels</strong>
 Si la fonction est inconnue, on doit utiliser la formule ci-dessus. On utilise néanmoins souvent les mêmes formules en physique, il est donc bon de connaître leur développement (qu’on peut utiliser directement). Ils s’agit de fonctions usuelles prises autour du point <span class="math notranslate nohighlight">\(x_0 = 0\)</span>.</p>
-<div class="amsmath math notranslate nohighlight" id="equation-073d48f1-5a03-4be5-945c-9a9bf6e8d71b">
-<span class="eqno">(18)<a class="headerlink" href="#equation-073d48f1-5a03-4be5-945c-9a9bf6e8d71b" title="Permalink to this equation">#</a></span>\[\begin{align}
+<div class="amsmath math notranslate nohighlight" id="equation-7df6945f-2ef6-448f-8b6c-b6cd0cd9f018">
+<span class="eqno">(18)<a class="headerlink" href="#equation-7df6945f-2ef6-448f-8b6c-b6cd0cd9f018" title="Permalink to this equation">#</a></span>\[\begin{align}
 	{(1+x)}^{a} &amp;=_{0} 1 +  ax + \frac{a(a+1)}{2}x^2 + \cdots &amp;= &amp;1+ \sum\limits_{k=1}^{n} \frac{1}{k !}(\prod\limits_{j=0}^{j=k-1}(a-j))x^k + o(x^n)\\
 	\frac{1}{1+x} &amp;=_{0} 1 -  x + x^2 - x^3 + \cdots &amp;=&amp; \sum\limits_{k=0}^{n} {(-x)}^k + o(x^n)\\
 	\ln(1+x) &amp;= x -  \frac{x^2}{2} + \frac{x^3}{3} + \cdots &amp;=&amp; \sum\limits_{k=1}^{n} \frac{{(-1)}^(k-1)}{k} x^k + o(x^n)\\
@@ -597,6 +597,10 @@ Règle générale: si l’on fait un développements limités à l’ordre N, al
 </div>
 <div class="topic">
 <p class="topic-title">Correction</p>
+<div class="sidebar">
+<p class="sidebar-title">Attention</p>
+<p>On ne peut négliger un terme s’il n’y a pas de terme très grand devant lui. Par exemple, dans <span class="math notranslate nohighlight">\(\frac{r}{r+a}\)</span> où <span class="math notranslate nohighlight">\(r\ll a\)</span>. Au dénominateur, on peut négliger r devant a mais au numérateur, on doit laisser r car il est seul (donc négligeable devant rien). On a donc: <span class="math notranslate nohighlight">\(\frac{r}{r+a} \approx \frac{r}{a}\)</span> (c’est un développement limité à l’ordre 1, pour s’en rendre compte, il faut factoriser par a au dénominateur).</p>
+</div>
 <p>On commence par factoriser par r pour faire apparaître la grandeur <span class="math notranslate nohighlight">\(a/r \ll 1\)</span></p>
 <div class="math notranslate nohighlight">
 \[
