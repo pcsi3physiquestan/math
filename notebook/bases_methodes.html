@@ -1,60 +1,47 @@
 
-
 <!DOCTYPE html>
 
-
-<html lang="en" >
-
+<html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Méthodes &#8212; Mathématiques</title>
-  
-  
-  
-  <script data-cfasync="false">
-    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
-  </script>
-  
+    
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=ac02cc09edc035673794" rel="stylesheet" />
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
-  
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=ac02cc09edc035673794" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
-  
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=ac02cc09edc035673794"></script>
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -64,98 +51,58 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'notebook/bases_methodes';</script>
     <link rel="canonical" href="https://pcsi3physiquestan.github.io/mathematiques/notebook/bases_methodes.html" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Applications : Bases" href="bases_ex_app.html" />
     <link rel="prev" title="Exercices" href="bases_ex.html" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="docsearch:language" content="en"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
   </head>
-  
-  
-  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
 
-  
-  
-  <a class="skip-link" href="#main-content">Skip to main content</a>
-  
-  <div id="pst-scroll-pixel-helper"></div>
+    
+    <div class="container-fluid" id="banner"></div>
 
-  
-  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    
 
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
-<form class="bd-search d-flex align-items-center"
-      action="../search.html"
-      method="get">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search"
-         class="form-control"
-         name="q"
-         id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
-         autocomplete="off"
-         autocorrect="off"
-         autocapitalize="off"
-         spellcheck="false"/>
-  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
-  
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
-    </nav>
-  
-  <div class="bd-container">
-    <div class="bd-container__inner bd-page-width">
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
       
-      <div class="bd-sidebar-primary bd-sidebar">
-        
-
-  
-  <div class="sidebar-header-items sidebar-primary__section">
-    
-    
-    
-    
-  </div>
-  
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-  
-
-<a class="navbar-brand logo" href="../mathematiques.html">
-  
-  
-  
-  
-  
-    <p class="title logo__title">Mathématiques</p>
-  
-</a></div>
-        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item navbar-nav active">
+      
+      
+      <h1 class="site-logo" id="site-title">Mathématiques</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
@@ -165,209 +112,421 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="bases.html">Bases de mathématiques pour la physique</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="bases_fonctions.html">Fonctions mathématiques</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bases_trigonometrie.html">Géométrie et trigonométrie</a></li>
-<li class="toctree-l2"><a class="reference internal" href="bases_complexes.html">Nombres complexes</a></li>
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="bases_ex.html">Exercices</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
-<li class="toctree-l3 current active"><a class="current reference internal" href="#">Méthodes</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bases_ex_app.html">Applications : Bases</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bases_ex_litteral.html">Entrainement : Calcul littéral</a></li>
-<li class="toctree-l3"><a class="reference internal" href="bases_ex_appro.html">Entrainement : Nouveautés</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="eq_diff.html">Equations différentielles</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="eq_diff_canonique.html">Equations différentielles: forme canonique et solution</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eq_diff_methodes.html">Méthodes de résolution</a></li>
-<li class="toctree-l2"><a class="reference internal" href="eq_diff_td.html">Application: Équations différentielles</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="dl.html">Développements limités</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="geometrie.html">Géométrie vectorielle</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="geom_gene.html">Géométrie vectorielle: Généralités</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geom_plan.html">Géométrie dans le plan</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geom_espace.html">Géométrie dans l’espace</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geom_derivation.html">Dérivation d’un vecteur</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geom_champs.html">Champs scalaires et champs vectoriels</a></li>
-<li class="toctree-l2"><a class="reference internal" href="geom_ex.html">Applcations : Géométrie vectorielle</a></li>
-</ul>
-</li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="bases.html">
+   Bases de mathématiques pour la physique
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_fonctions.html">
+     Fonctions mathématiques
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_trigonometrie.html">
+     Géométrie et trigonométrie
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="bases_complexes.html">
+     Nombres complexes
+    </a>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="bases_ex.html">
+     Exercices
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Méthodes
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_app.html">
+       Applications : Bases
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_litteral.html">
+       Entrainement : Calcul littéral
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="bases_ex_appro.html">
+       Entrainement : Nouveautés
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="eq_diff.html">
+   Equations différentielles
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_canonique.html">
+     Equations différentielles: forme canonique et solution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_methodes.html">
+     Méthodes de résolution
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="eq_diff_td.html">
+     Application: Équations différentielles
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dl.html">
+   Développements limités
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="geometrie.html">
+   Géométrie vectorielle
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_gene.html">
+     Géométrie vectorielle: Généralités
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_plan.html">
+     Géométrie dans le plan
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_espace.html">
+     Géométrie dans l’espace
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_derivation.html">
+     Dérivation d’un vecteur
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_champs.html">
+     Champs scalaires et champs vectoriels
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="geom_ex.html">
+     Applcations : Géométrie vectorielle
+    </a>
+   </li>
+  </ul>
+ </li>
 </ul>
 
     </div>
 </nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
     </div>
-  
-  
-  <div class="sidebar-primary-items__end sidebar-primary__section">
-  </div>
-  
-  <div id="rtd-footer-container"></div>
-
-
-      </div>
-      
-      <main id="main-content" class="bd-main">
-        
-        
-
-<div class="sbt-scroll-pixel-helper"></div>
-
-          <div class="bd-content">
-            <div class="bd-article-container">
-              
-              <div class="bd-header-article">
-<div class="header-article-items header-article__inner">
-  
-    <div class="header-article-items__start">
-      
-        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-  <span class="fa-solid fa-bars"></span>
-</label></div>
-      
-    </div>
-  
-  
-    <div class="header-article-items__end">
-      
-        <div class="header-article-item">
-
-<div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-download-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
-    <i class="fas fa-download"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="../_sources/notebook/bases_methodes.md" target="_blank"
-   class="btn btn-sm btn-download-source-button dropdown-item"
-   title="Download source file"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="btn__text-container">.md</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li>
-<button onclick="window.print()"
-  class="btn btn-sm btn-download-pdf-button dropdown-item"
-  title="Print to PDF"
-  data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="btn__text-container">.pdf</span>
-</button>
-</li>
-      
-  </ul>
+    <div id="rtd-footer-container"></div>
 </div>
 
 
+          
 
 
-<button onclick="toggleFullScreen()"
-  class="btn btn-sm btn-fullscreen-button"
-  title="Fullscreen mode"
-  data-bs-placement="bottom" data-bs-toggle="tooltip"
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
 >
   
 
-<span class="btn__icon-container">
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/notebook/bases_methodes.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
   </button>
-`);
-</script>
-
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
-  </button>
-`);
-</script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
-</div></div>
-      
-    </div>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/notebook/bases_methodes.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download notebook file"
+>
   
-</div>
-</div>
-              
-              
 
-<div id="jb-print-docs-body" class="onlyprint">
-    <h1>Méthodes</h1>
-    <!-- Table of contents -->
-    <div id="print-main-content">
-        <div id="jb-print-toc">
-            
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution-d-equations">Résolution d’équations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resoudre-graphiquement-une-equation-f-x-g-x">Résoudre graphiquement une équation f(x)=g(x)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resoudre-un-systeme-d-equation-2-2">Résoudre un système d’équation 2*2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctions">Fonctions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation-d-une-fonction-cosinus-ou-sinus">Transformation d’une fonction cosinus ou sinus</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-calculer-le-module-et-l-argument-d-un-complexe">Méthode: Calculer le module et l’argument d’un complexe</a></li>
-</ul>
-            </nav>
-        </div>
+<span class="headerbtn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="../_sources/notebook/bases_methodes.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
     </div>
 </div>
 
-              
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resolution-d-equations">
+   Résolution d’équations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-graphiquement-une-equation-f-x-g-x">
+     Résoudre graphiquement une équation f(x)=g(x)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-un-systeme-d-equation-2-2">
+     Résoudre un système d’équation 2*2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions">
+   Fonctions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformation-d-une-fonction-cosinus-ou-sinus">
+     Transformation d’une fonction cosinus ou sinus
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-calculer-le-module-et-l-argument-d-un-complexe">
+   Méthode: Calculer le module et l’argument d’un complexe
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Méthodes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resolution-d-equations">
+   Résolution d’équations
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-graphiquement-une-equation-f-x-g-x">
+     Résoudre graphiquement une équation f(x)=g(x)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#resoudre-un-systeme-d-equation-2-2">
+     Résoudre un système d’équation 2*2
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#fonctions">
+   Fonctions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#transformation-d-une-fonction-cosinus-ou-sinus">
+     Transformation d’une fonction cosinus ou sinus
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#methode-calculer-le-module-et-l-argument-d-un-complexe">
+   Méthode: Calculer le module et l’argument d’un complexe
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
                 
-<div id="searchbox"></div>
-                <article class="bd-article" role="main">
-                  
-  <section class="tex2jax_ignore mathjax_ignore" id="methodes">
-<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this heading">#</a></h1>
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="methodes">
+<h1>Méthodes<a class="headerlink" href="#methodes" title="Permalink to this headline">#</a></h1>
 <p><em>Ces méthodes ont des corrections en ligne.</em></p>
-<section id="resolution-d-equations">
-<h2>Résolution d’équations<a class="headerlink" href="#resolution-d-equations" title="Permalink to this heading">#</a></h2>
-<section id="resoudre-graphiquement-une-equation-f-x-g-x">
-<h3>Résoudre graphiquement une équation f(x)=g(x)<a class="headerlink" href="#resoudre-graphiquement-une-equation-f-x-g-x" title="Permalink to this heading">#</a></h3>
+<div class="section" id="resolution-d-equations">
+<h2>Résolution d’équations<a class="headerlink" href="#resolution-d-equations" title="Permalink to this headline">#</a></h2>
+<div class="section" id="resoudre-graphiquement-une-equation-f-x-g-x">
+<h3>Résoudre graphiquement une équation f(x)=g(x)<a class="headerlink" href="#resoudre-graphiquement-une-equation-f-x-g-x" title="Permalink to this headline">#</a></h3>
 <p>On ne peut pas toujours résoudre analytiquement une équation. On peut par contre toujours la résoudre graphiquement et on peut même obtenir des informations importantes sur le rôle de certains paramètres lors de ce genre de résolution.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -378,13 +537,13 @@ x = \frac{mg}{k} \sin(x)
 \]</div>
 <p>avec k, m et g strictement positifs.</p>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Résolution graphique</p>
 <p>Graphiquement celà revient à chercher l’intersection entre la représentation de deux fonctions: <span class="math notranslate nohighlight">\(\frac{k}{mg}x\)</span> et sin(x).</p>
 <p>Traçons donc les deux fonctions (on a représenté plusieurs droites puisque la pente varie en fonction des paramètres k, m et g - on rappelle que la pente est nécessairement positive).</p>
-<figure class="align-center" id="res-gr">
+<div class="figure align-center" id="res-gr">
 <img alt="../_images/mathematique_projection_resolution_graphique.jpg" src="../_images/mathematique_projection_resolution_graphique.jpg" />
-</figure>
+</div>
 <p>On remarque que si la pente est trop pentue, la seule intersection est le point x=0, y=0 qu’on ne veut pas. Il y a une seconde intersection seulement si la pente de la droite est inférieure à la tangente du sinus en 0.</p>
 <p>Cette condition s’écrit:</p>
 <div class="math notranslate nohighlight">
@@ -400,10 +559,10 @@ Méthode analytique<div class="sd-summary-down docutils">
 </summary><div class="sd-summary-content sd-card-body docutils">
 <p class="sd-card-text">On peut démontrer analytiquement la propriété précédente en étudier les changements de signe de <span class="math notranslate nohighlight">\(h(x) = f(x)-g(x)\)</span> et en utilisant la continuité de <span class="math notranslate nohighlight">\(h\)</span>. Cette méthode ne sera que très peu demandée en physique.</p>
 </div>
-</details></aside>
-</section>
-<section id="resoudre-un-systeme-d-equation-2-2">
-<h3>Résoudre un système d’équation 2*2<a class="headerlink" href="#resoudre-un-systeme-d-equation-2-2" title="Permalink to this heading">#</a></h3>
+</details></div>
+</div>
+<div class="section" id="resoudre-un-systeme-d-equation-2-2">
+<h3>Résoudre un système d’équation 2*2<a class="headerlink" href="#resoudre-un-systeme-d-equation-2-2" title="Permalink to this headline">#</a></h3>
 <p>La méthode proposée est à <strong>privilégier</strong> à la méthode de substitution. Elle vous semblera peut-être plus complexe au début mais avec l’entraînement elle permet un énorme gain de temps en physique (à moins que le système soit triangulaire et donc en partie déjà résolu !).</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -414,12 +573,12 @@ Méthode analytique<div class="sd-summary-down docutils">
     4x - 5y &amp;= 2
 \end{align*}\]</div>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Résolution par combinaison</p>
 <p>Nous allons utiliser deux fois le système de départ. Une première fois pour éliminer x et obtenir une équation en y puis une seconde fois pour éliminer y et obtenir une équation en x.</p>
 <p>Elimination de x:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-c76f7c79-bf05-4754-98f4-996e28bccc3e">
-<span class="eqno">(4)<a class="headerlink" href="#equation-c76f7c79-bf05-4754-98f4-996e28bccc3e" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-a357d036-9ae5-4631-914b-25a431197793">
+<span class="eqno">(4)<a class="headerlink" href="#equation-a357d036-9ae5-4631-914b-25a431197793" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{cases}
     3x + 4y &amp;= 5 \left(\times 4\right)\\
     4x - 5y &amp;= 2 \left(\times -3\right)
@@ -427,36 +586,36 @@ Méthode analytique<div class="sd-summary-down docutils">
 \Longrightarrow 31 y = 14 \Longrightarrow y = \frac{14}{31}
 \end{equation}\]</div>
 <p>Elimination de y:</p>
-<div class="amsmath math notranslate nohighlight" id="equation-54d0cf5d-7265-4eda-b38d-086cd5a99f67">
-<span class="eqno">(5)<a class="headerlink" href="#equation-54d0cf5d-7265-4eda-b38d-086cd5a99f67" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-6ea5188a-5c32-4a82-80c2-deea2a142dd7">
+<span class="eqno">(5)<a class="headerlink" href="#equation-6ea5188a-5c32-4a82-80c2-deea2a142dd7" title="Permalink to this equation">#</a></span>\[\begin{equation}
 \begin{cases}
     3x + 4y &amp;= 5 \left(\times 5\right)\\
     4x - 5y &amp;= 2 \left(\times 4\right)
 \end{cases}
 \Longrightarrow 31 x = 33 \Longrightarrow x = \frac{33}{31}
 \end{equation}\]</div>
-</aside>
-</section>
-</section>
-<section id="fonctions">
-<h2>Fonctions<a class="headerlink" href="#fonctions" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="fonctions">
+<h2>Fonctions<a class="headerlink" href="#fonctions" title="Permalink to this headline">#</a></h2>
 <div class="admonition-derivee-d-une-composee-de-fonction admonition">
 <p class="admonition-title">Dérivée d’une composée de fonction </p>
 <p>Déterminer la dérivée de la fonction <span class="math notranslate nohighlight">\(f(x) = e^{kx^2}\)</span></p>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Correction</p>
 <p>Il s’agit d’une dérivée d’une composée de fonction: on compose la fonction exponentielle <span class="math notranslate nohighlight">\(h(x) =e^x\)</span> avec la fonction carré <span class="math notranslate nohighlight">\(g(x) = kx^2\)</span>: <span class="math notranslate nohighlight">\(f = h \circ g\)</span>. La dérivée est donc:</p>
 <div class="math notranslate nohighlight">
 \[
 f'(x) = (h' \circ g)(x) \times g'(x) = e^{kx^2} \times 2kx
 \]</div>
-</aside>
+</div>
 <div class="attention admonition">
 <p class="admonition-title">Retrouver les formules trigonométriques des inverses</p>
 <p>Montrer que <span class="math notranslate nohighlight">\(\sin(\arctan(x)) = \sqrt{\frac{x^2}{1+x^2}}\)</span></p>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Correction</p>
 <p>On va utiliser la relation <span class="math notranslate nohighlight">\(\sin^2(y) + \cos^2(y) =1\)</span> avec <span class="math notranslate nohighlight">\(y = \arctan(x)\)</span>. Divisons par <span class="math notranslate nohighlight">\(\sin^2(\arctan(x))\)</span>:</p>
 <div class="amsmath math notranslate nohighlight">
@@ -465,7 +624,7 @@ f'(x) = (h' \circ g)(x) \times g'(x) = e^{kx^2} \times 2kx
   1 + \frac{1}{\tan^2\left(\arctan x\right)} &amp;= \frac{1}{\sin^2\left(\arctan x\right)}\\
   \sin\left(\arctan x\right) &amp;= \frac{x}{\sqrt{1 + x^2}} 
 \end{align*}\]</div>
-</aside>
+</div>
 <div class="attention full-width admonition">
 <p class="admonition-title">Manipulation de fonction trigonométrique </p>
 <p>La relation entre les deux expressions données ci-dessous est <strong>fondamentale</strong> en physique. Vous devez retenir leur égalité et les moyens de passer de l’une à l’autre.</p>
@@ -476,11 +635,11 @@ A \cos(x) + B \sin(x) = C \cos \left(x + \varphi\right)
 \]</div>
 <p>avec <span class="math notranslate nohighlight">\(C = \pm\sqrt{A^2 + B^2},~\tan \varphi = - \frac{B}{A}\)</span> et <span class="math notranslate nohighlight">\(sign(\cos \varphi) = sign(\frac{A}{C})\)</span>.</p>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Correction</p>
 <p>Le plus simple est de partir de <span class="math notranslate nohighlight">\(C \cos \left (x + \varphi \right )\)</span> est de développer le sinusoïde. Les deux expressions devant être valable pour tout x, il vient que les coefficients devant le cosinus et le sinus doivent être égaux deux à deux (on pourra s’en convaincre en appliquer l’égalité à x=0 et <span class="math notranslate nohighlight">\(x=\pi/2\)</span>).</p>
-<div class="amsmath math notranslate nohighlight" id="equation-a55ac543-c978-4e0e-b441-41f71643b1b2">
-<span class="eqno">(6)<a class="headerlink" href="#equation-a55ac543-c978-4e0e-b441-41f71643b1b2" title="Permalink to this equation">#</a></span>\[\begin{equation}
+<div class="amsmath math notranslate nohighlight" id="equation-18bdab24-592d-44b4-ba67-12f97c7ed369">
+<span class="eqno">(6)<a class="headerlink" href="#equation-18bdab24-592d-44b4-ba67-12f97c7ed369" title="Permalink to this equation">#</a></span>\[\begin{equation}
 A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longrightarrow
 \begin{cases}
   A &amp;= C \cos \varphi\\
@@ -489,15 +648,15 @@ A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longright
 \end{equation}\]</div>
 <p>Le signe de <span class="math notranslate nohighlight">\( \cos \varphi\)</span> et immédiat et en divisant les deux équations, on trouve l’expression de <span class="math notranslate nohighlight">\(\tan \varphi\)</span></p>
 <p>Il reste à passer les deux équations au carré et à sommer. En utilisant <span class="math notranslate nohighlight">\(\sin^2 + \cos^2 = 1\)</span>, il vient la relation <span class="math notranslate nohighlight">\(C^2 = A^2 + B^2\)</span></p>
-</aside>
-<section id="transformation-d-une-fonction-cosinus-ou-sinus">
-<h3>Transformation d’une fonction cosinus ou sinus<a class="headerlink" href="#transformation-d-une-fonction-cosinus-ou-sinus" title="Permalink to this heading">#</a></h3>
+</div>
+<div class="section" id="transformation-d-une-fonction-cosinus-ou-sinus">
+<h3>Transformation d’une fonction cosinus ou sinus<a class="headerlink" href="#transformation-d-une-fonction-cosinus-ou-sinus" title="Permalink to this headline">#</a></h3>
 <p>Au delà de l’exemple d’application des propriétés précédentes, les conclusions sur les fonctions trigonométriques sont fondamentales car elles sont très utilisées et les éléments de vocabulaires introduits seront très importants pour la suite. Une simulation donnée <a class="reference external" href="https://moodlecpge.stanislas.fr/mod/resource/view.php?id=229">ici</a> permet de voir l’effet des différents éléments sur le sinusoïde.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
 <p>Décrivez graphiquement comment s’effectue la transformation de la fonction cos(t) à la fonction <span class="math notranslate nohighlight">\(S_m \cos \left ( \omega t + \varphi_0\right)\)</span></p>
 </div>
-<aside class="topic">
+<div class="topic">
 <p class="topic-title">Caractéristiques d’un sinusoïde.</p>
 <p>On multiplie la fonction complète par<span class="math notranslate nohighlight">\( S_m\)</span>, il y a donc une dilatation verticale. L’écartement maximal sera maintenant <span class="math notranslate nohighlight">\(2S_m\)</span>. On appelle <span class="math notranslate nohighlight">\(S_m\)</span> <strong>l’amplitude.</strong></p>
 <p>L’argument du cosinus se réécrit: <span class="math notranslate nohighlight">\(\omega ( t + \varphi_0 / \omega )\)</span>. On a donc:</p>
@@ -505,18 +664,16 @@ A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longright
 <li><p>une dilatation horizontale du sinusoïde d’un facteur <span class="math notranslate nohighlight">\(\frac{1}{\omega}\)</span>. Ainsi la période du sinusoïde est maintenant <span class="math notranslate nohighlight">\(T = \frac{2 \pi}{\omega}\)</span> (et plus <span class="math notranslate nohighlight">\(2\pi\)</span>). <span class="math notranslate nohighlight">\(\omega\)</span> est appelée <strong>pulsation</strong>.</p></li>
 <li><p>une translation horizontale de <span class="math notranslate nohighlight">\(\Delta t_0 = - \frac{\varphi_0}{\omega}\)</span> (un retard ou une avance suivant le signe de <span class="math notranslate nohighlight">\(\varphi_0\)</span>). On appelle <span class="math notranslate nohighlight">\(\varphi_0\)</span>, la <strong>phase à l’origine.</strong></p></li>
 </ul>
-<figure class="align-center" id="fig-sinusoide324">
+<div class="figure align-center" id="fig-sinusoide324">
 <img alt="../_images/sinusoide_vm_0.png" src="../_images/sinusoide_vm_0.png" />
-<figcaption>
-<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Sinusoïde</span><a class="headerlink" href="#fig-sinusoide324" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
+<p class="caption"><span class="caption-number">Fig. 1 </span><span class="caption-text">Sinusoïde</span><a class="headerlink" href="#fig-sinusoide324" title="Permalink to this image">#</a></p>
+</div>
 <p>Un sens physique plus approfondi sera donné à ces termes par les suite. On retiendra déjà le passage du cosinus simple à l’expression complète et surtout les effets sur la représentation graphique</p>
-</aside>
-</section>
-</section>
-<section id="methode-calculer-le-module-et-l-argument-d-un-complexe">
-<h2>Méthode: Calculer le module et l’argument d’un complexe<a class="headerlink" href="#methode-calculer-le-module-et-l-argument-d-un-complexe" title="Permalink to this heading">#</a></h2>
+</div>
+</div>
+</div>
+<div class="section" id="methode-calculer-le-module-et-l-argument-d-un-complexe">
+<h2>Méthode: Calculer le module et l’argument d’un complexe<a class="headerlink" href="#methode-calculer-le-module-et-l-argument-d-un-complexe" title="Permalink to this headline">#</a></h2>
 <p><strong>Le calcul de l’argument et du module d’un complexe est fondamental en physique</strong> car nous verrons que l’utilisation des complexes et la détermination de ces deux caractristiques permet l’étude de tout un pan de la physique: l’analyse fréquentielle.</p>
 <div class="attention admonition">
 <p class="admonition-title">Exercice</p>
@@ -526,11 +683,11 @@ A \cos(x) + B \sin(x) = C \cos x \cos \varphi - C \sin x \sin \varphi \Longright
 z = \frac{i x}{2 + i x}
 \]</div>
 </div>
-<aside class="margin sidebar">
+<div class="margin sidebar">
 <p class="sidebar-title"><strong>A ne pas faire…</strong></p>
 <p>Il ne sert à rien (et ça complique même) d’éliminer la partie imaginaire du dénominateur pour calculer un module ou un argument. On va utiliser les relations très utiles sur le rapport de deux complexes.</p>
-</aside>
-<aside class="topic">
+</div>
+<div class="topic">
 <p class="topic-title">Correction</p>
 <div class="math notranslate nohighlight">
 \[
@@ -541,10 +698,10 @@ z = \frac{i x}{2 + i x}
 \arg z = \arg (ix) - \arg(2 + ix) = \frac{\pi}{2} - \arg(2 + ix)
 \]</div>
 <p><strong>Méthode à utiliser en physique</strong>: La connaissance du signe du cosinus et de la valeur de la tangente suffit à caractériser l’angle (cf. cercle trigonométrique). On va donc calculer les deux.</p>
-<aside class="margin sidebar">
+<div class="margin sidebar">
 <p class="sidebar-title"></p>
 <p>Si le cosinus est négatif, l’argument du complexe est dans l’intervale <span class="math notranslate nohighlight">\([\pi/2;3\pi/2]\)</span> et la solution d’une équation <span class="math notranslate nohighlight">\(\tan \theta = k\)</span> est donc de la forme <span class="math notranslate nohighlight">\(\theta = \pi + \arctan k\)</span>.</p>
-</aside>
+</div>
 <p>Le cosinus est du même signe que la partie réelle, donc ici, il est positif  donc l’argument de 2 + ix est dans l’intervale <span class="math notranslate nohighlight">\([-\pi/2;\pi/2]\)</span>. La solution d’une équation <span class="math notranslate nohighlight">\(\tan \theta = k\)</span> est donc de la forme <span class="math notranslate nohighlight">\(\theta = \arctan k\)</span>.</p>
 <p>La tangente s’écrit:</p>
 <div class="math notranslate nohighlight">
@@ -552,9 +709,9 @@ z = \frac{i x}{2 + i x}
 \tan \left(\arg (2 + ix)\right) = \frac{\Im(2+ix)}{\Re(2+ix)} = \frac{x}{2}
 \]</div>
 <p>La solution est donc: <span class="math notranslate nohighlight">\(\arg (2+ix) = \arctan \frac{x}{2}\)</span> donc <span class="math notranslate nohighlight">\(\arg(z) = \frac{\pi}{2} -\arctan \frac{x}{2}\)</span></p>
-</aside>
-</section>
-</section>
+</div>
+</div>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -568,7 +725,7 @@ z = \frac{i x}{2 + i x}
             mode: "python"
         },
         kernelOptions: {
-            name: "python3",
+            kernelName: "python3",
             path: "./notebook"
         },
         predefinedOutput: true
@@ -576,110 +733,50 @@ z = \frac{i x}{2 + i x}
     </script>
     <script>kernelName = 'python3'</script>
 
-                </article>
+              </div>
               
-
-              
-              
-              
-              
-                <footer class="prev-next-footer">
-                  <!-- Previous / next buttons -->
-<div class="prev-next-area">
-    <a class="left-prev"
-       href="bases_ex.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Exercices</p>
-      </div>
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="bases_ex.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Exercices</p>
+        </div>
     </a>
-    <a class="right-next"
-       href="bases_ex_app.html"
-       title="next page">
-      <div class="prev-next-info">
+    <a class='right-next' id="next-link" href="bases_ex_app.html" title="next page">
+    <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Applications : Bases</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
+    </div>
+    <i class="fas fa-angle-right"></i>
     </a>
 </div>
-                </footer>
-              
-            </div>
-            
-            
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#resolution-d-equations">Résolution d’équations</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resoudre-graphiquement-une-equation-f-x-g-x">Résoudre graphiquement une équation f(x)=g(x)</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#resoudre-un-systeme-d-equation-2-2">Résoudre un système d’équation 2*2</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fonctions">Fonctions</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#transformation-d-une-fonction-cosinus-ou-sinus">Transformation d’une fonction cosinus ou sinus</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methode-calculer-le-module-et-l-argument-d-un-complexe">Méthode: Calculer le module et l’argument d’un complexe</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
-            
-          </div>
-          <footer class="bd-footer-content">
-            
-<div class="bd-footer-content__inner container">
-  
-  <div class="footer-item">
-    
-<p class="component-author">
-By C. Lacpatia
-</p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  <p class="copyright">
-    
-      © Copyright 2021.
-      <br/>
-    
-  </p>
-
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-  <div class="footer-item">
-    
-  </div>
-  
-</div>
-          </footer>
-        
-
-      </main>
+            </footer>
+        </div>
     </div>
-  </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By C. Lacpatia<br/>
+  
+      &copy; Copyright 2021.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=ac02cc09edc035673794"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=ac02cc09edc035673794"></script>
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
 
-  <footer class="bd-footer">
-  </footer>
+
   </body>
 </html>
